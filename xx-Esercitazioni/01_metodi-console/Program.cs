@@ -30,8 +30,8 @@ Console.WriteLine($"Hai {eta} anni");
 // stampo nome cognome ed eta concatenati
 Console.WriteLine($"Ciao {nome} {cognome} hai {eta} anni");
 // dichiaro una variabile intera etaint
-int etaint = 21; // inizializzo la variabile etaInt con il valore 21
-string etaStr = etaint.ToString();
+int etaInt = 21; // inizializzo la variabile etaInt con il valore 21
+string etaStr = etaInt.ToString();
 // concateno etaint con una stringa
 Console.WriteLine($"Hai {etaInt} anni");
 
