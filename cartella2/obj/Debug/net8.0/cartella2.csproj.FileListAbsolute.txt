@@ -1,0 +1,14 @@
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\bin\Debug\net8.0\cartella2.exe
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\bin\Debug\net8.0\cartella2.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\bin\Debug\net8.0\cartella2.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\bin\Debug\net8.0\cartella2.dll
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\bin\Debug\net8.0\cartella2.pdb
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\cartella2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\cartella2.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\cartella2.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\cartella2.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\cartella2.dll
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\refint\cartella2.dll
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\cartella2.pdb
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\cartella2.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\cartella2\obj\Debug\net8.0\ref\cartella2.dll
