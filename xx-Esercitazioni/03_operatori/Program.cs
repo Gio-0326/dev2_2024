@@ -55,9 +55,9 @@ Console.WriteLine(t);
 
 // ESEMPIO DI OPERATORI DI ASSEGNAZIONE
 int u = 10;
-u +- 5; // u = u + 5
+u += 5; // u = u + 5
 Console.WriteLine(u); // 15
-u -- 5; // u = u - 5
+u -= 5; // u = u - 5
 Console.WriteLine(u); // 10
 
 // ESEMPIO DI OPERATORI DI INCREMENTO E DECREMENTO

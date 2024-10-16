@@ -1,5 +1,0 @@
-C:\Users\Dev2\Documents\DEV2_2024\cartella2\xx-Esercitazioni\01_metodi-console\obj\Debug\net8.0\01_metodi-console.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Dev2\Documents\DEV2_2024\cartella2\xx-Esercitazioni\01_metodi-console\obj\Debug\net8.0\01_metodi-console.AssemblyInfoInputs.cache
-C:\Users\Dev2\Documents\DEV2_2024\cartella2\xx-Esercitazioni\01_metodi-console\obj\Debug\net8.0\01_metodi-console.AssemblyInfo.cs
-C:\Users\Dev2\Documents\DEV2_2024\cartella2\xx-Esercitazioni\01_metodi-console\obj\Debug\net8.0\01_metodi-console.csproj.CoreCompileInputs.cache
-C:\Users\Dev2\Documents\DEV2_2024\cartella2\xx-Esercitazioni\01_metodi-console\obj\Debug\net8.0\01_metodi-console.sourcelink.json
