@@ -7,7 +7,6 @@ i metodi disponibili per manipolare le liste sono:
 - Clear
 - Contains
 - IndexOf
-- Insert
 - Remove
 - RemoveAt
 - Sort
@@ -19,8 +18,8 @@ Console.Clear();
 
 // ESEMPIO DI METODO COUNT
 // restituisce il numero di elementi di una lista
-List<int> lista1 = new List<int> { 1, 2, 3, 4, 5 };
-Console.WriteLine(lista1.Count);
+List<int> lista1 = new List<int> { 1, 2, 3, 4, 5 }; // dichiara e inizializza una lista di interi
+Console.WriteLine(lista1.Count); // stampa il  numero di elementi di lista1
 
 // ESEMPIO DI METODO ADD
 // aggiunge un elemnto alla fine di una lista 
@@ -73,7 +72,11 @@ Console.WriteLine(string.Join(",", lista10));
 // ESEMPIO DI METODO TOARRAY
 // restituisce un array a partire da una lista 
 List<int> lista11 = new List<int> { 1, 2, 3, 4, 5 };
-int[] array = lista11.ToArray();
-Console.WriteLine(array.Length);
+int[] array = lista11.ToArray(); // converte lista11 in un array
+Console.WriteLine(string.Join(",", array)); // stampa array
 
 // ESEMPIIO DI METODO TRIMEXCESS
+// riduce la capacita di una lista al numero di elementi presenti
+List<int> lista12 = new List<int> { 1, 2, 3, 4, 5 }; // dichiara e inizializza una lista di interi
+lista12.TrimExcess(); // riduce la capacita di lista12 al numero di elementi presenti
+Console.WriteLine(lista12.Capacity); // stampa la capacita di lista12

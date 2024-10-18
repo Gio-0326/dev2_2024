@@ -1,4 +1,4 @@
-﻿// METODI ARRAT
+﻿// METODI ARRAY
 //  un metodo e un blocco di codice che esegue un azione
 // solitamente i metodi restituiscono un valore
 // solitamente sono definiti come array.metodo()
@@ -9,9 +9,9 @@ I principali metodi per manipolare sono:
 - Clear
 - Reverse
 - Sort
+- IndexOf
 */
 
-using System.Globalization;
 
 Console.Clear();
 
@@ -44,8 +44,10 @@ Console.WriteLine(string.Join(",", array4));
 // ESEMPIO DI METODO SORT
 // ordina gli elementi di un array
 int[] array5 = { 5, 3, 1, 4, 2 };
-Array.Sort(array5);
-Console.WriteLine(string.Join(",", array5));
+Array.Sort(array5); // ordina gli elementi di array5
+Console.WriteLine(string.Join(",", array5)); // stampa array5
 
 // ESEMPIO DI METODO INDEXOF
-// 
+// restituisce l indice di un elemento di un array
+int[] array6 = { 1, 2, 3, 4 , 5 }; // dichiara e inizializza un array di interi
+Console.WriteLine(Array.IndexOf(array6, 3)); // stampa l indice di 3 in array6 (2) se non ce restituisce -1 
