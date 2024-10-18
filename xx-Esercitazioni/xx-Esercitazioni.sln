@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_cicli", "05_cicli\05_cic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_metodi-array", "06_metodi-array\06_metodi-array.csproj", "{1A94040F-EFA1-4375-9955-6E49DF7CADE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_metodi-list", "07_metodi-list\07_metodi-list.csproj", "{8213A427-DF39-42CB-B699-745F9F4B68B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{1A94040F-EFA1-4375-9955-6E49DF7CADE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A94040F-EFA1-4375-9955-6E49DF7CADE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A94040F-EFA1-4375-9955-6E49DF7CADE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8213A427-DF39-42CB-B699-745F9F4B68B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8213A427-DF39-42CB-B699-745F9F4B68B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8213A427-DF39-42CB-B699-745F9F4B68B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8213A427-DF39-42CB-B699-745F9F4B68B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
