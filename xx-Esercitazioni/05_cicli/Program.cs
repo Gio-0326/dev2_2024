@@ -47,11 +47,11 @@ while (true) // finche vero
 // ESEMPIO DI DO WHILE
 // esegue un blocco di codice almeno una volta e poi finche una condizione e vera
 
-int 1 = 0; // 1 e una variabile di controllo
+int l = 0; // 1 e una variabile di controllo
 do
 {
     Console.WriteLine(1); // stampa 1
-    1++; // incrementa 1
+    l++; // incrementa 1
 } while (1 > 10); // finche 1 e maggiore di 10
 
 // ALTRO ESEMPIO DI DO WHILE
