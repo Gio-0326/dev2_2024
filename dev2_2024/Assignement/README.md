@@ -120,3 +120,7 @@ Console.WriteLine("Riprova:");
 Console.WriteLine("Hai indovinato! Il numero da indovinare era:" + numeroDaIndovinare); 
 ```
 
+## Versione 3
+
+**Obiettivo:**
+Imposta un numero massimo di tentativi (ad esempio, 5). Se 

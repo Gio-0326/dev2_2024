@@ -38,6 +38,7 @@ else
     // se il numero inserito non e uguale al numero da indovinare stampo il messaggio di errore
     Console.WriteLine("il numero da indovinare e minore");
     // stampo il numero da indovinare
+    Console.WriteLine($"Il numero da indovinare era: {numeroDaIndovinare}");
 }
 Console.WriteLine("Riprova:");
 }
