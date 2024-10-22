@@ -234,3 +234,23 @@ Console.WriteLine("Indovina il numero (tra 1 e 100). Hai 5 tentativi.");
 
         Console.WriteLine($"Hai effettuato {tentativi} tentativi. Il tuo punteggio finale è: {punteggio}");
 ```
+
+# Versione 5
+
+**Obiettivo:**
+
+**Livelli di Difficoltà:** Permetti all'utente di scegliere tra diversi livelli di difficoltà che modificano il numero di punti sottratti o l'intervallo dei numeri o il numero di tentativi disponibili.
+
+**Istruzioni:**
+
+1. **Livelli di Difficoltà:**
+     **Facile** Numeri da 1 a 50, 10 tentativi.
+     **Normale** Numeri da 1 a 100, 7 tentativi.
+     **Difficile** Numeri da 1 a 200, 5 tentativi.
+
+```csharp
+
+
+
+
+

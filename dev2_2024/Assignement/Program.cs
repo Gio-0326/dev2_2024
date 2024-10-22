@@ -8,7 +8,12 @@ int tentativi = 0;
 bool haIndovinato = false;
 Console.Clear();
 Console.WriteLine("Indovina il numero (tra 1 e 100). Hai 5 tentativi.");
-
+switch (numeroDaIndovinare)
+{
+    case 1: 
+}
+ 
+ 
  while (!haIndovinato)
         {
             Console.WriteLine("Inserisci il tuo numero: ");
