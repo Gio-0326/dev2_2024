@@ -1,0 +1,15 @@
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\bin\Debug\net8.0\01_indovina-numero.exe
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\bin\Debug\net8.0\01_indovina-numero.deps.json
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\bin\Debug\net8.0\01_indovina-numero.runtimeconfig.json
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\bin\Debug\net8.0\01_indovina-numero.dll
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\bin\Debug\net8.0\01_indovina-numero.pdb
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.AssemblyInfoInputs.cache
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.AssemblyInfo.cs
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.csproj.CoreCompileInputs.cache
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.sourcelink.json
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.dll
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\refint\01_indovina-numero.dll
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.pdb
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\01_indovina-numero.genruntimeconfig.cache
+C:\Users\gioju\OneDrive\Documenti\dev2_2024\dev2_2024\Assignement\01_indovina-numero\obj\Debug\net8.0\ref\01_indovina-numero.dll
