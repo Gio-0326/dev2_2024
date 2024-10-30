@@ -1,7 +1,4 @@
-﻿﻿// possiamo evitare la confusione tra lettere maiuscole e minuscole (S s , N n) convertendo la risposta dell'utente in minuscolo o in maiuscolo cosi
-// risposta = Console.ReadLine().ToLower(); // converto la risposta in minuscolo
-// risposta = Console.ReadLine().ToUpper(); // converto la risposta in maiuscolo
-Console.Clear();
+﻿﻿Console.Clear();
 Random random = new Random();
 int numeroDaIndovinare = 0;
 int punteggio = 0;
@@ -9,9 +6,9 @@ bool haIndovinato = false;
 int tentativi = 0;
 int numeroUtente = 0;
 
-List<int> tentativiUtente = new List<int>(); // creo una lista per memorizzare i tentativi
+Dictionary<string, int> punteggiUtenti = new Dictionary<string, int>(); // creo un dizionario per memorizzare i punteggi degli utenti
 
-string risposta = "s"; // inizializzo la risposta a "s" per far partire il gioco
+string risposta = "s";
 
 do
 {
@@ -70,8 +67,9 @@ do
             continue;
         }
 
-        tentativiUtente.Add(numeroUtente);
         tentativi--;
+        // aggiungo il numero del tentativo al dizionario come chiave
+        punteggiUtenti.Add($"Tentativo {tentativi + 1}", numeroUtente);
 
         if (numeroUtente < numeroDaIndovinare)
         {
@@ -91,27 +89,39 @@ do
         {
             Console.WriteLine($"Hai esaurito i tentativi. Il numero era {numeroDaIndovinare}.");
         }
+
+    }
+
+    if (haIndovinato)
+    {
+        // stampa il punteggio dell utente
+        Console.WriteLine($"Punteggio: {punteggio}");
     }
 
     Console.WriteLine("Tentativi effettuati: ");
 
-    foreach (int tentativo in tentativiUtente)
+    foreach (var punteggioUtente in punteggiUtenti)
     {
-        Console.Write($"{tentativo} ");
+        Console.WriteLine($"{punteggioUtente.Key}: {punteggioUtente.Value}"); // stampo i punteggi degli utenti
     }
+     
 
     Console.WriteLine("Vuoi giocare di nuovo? (s/n)");
+
     risposta = Console.ReadLine();
-    // pulisco la console
-        Console.Clear();
+
+    Console.Clear();
+
     while (risposta != "s" && risposta != "S" && risposta != "n" && risposta != "N")
     {
         Console.WriteLine("Risposta non valida. Vuoi giocare di nuovo? (s/n)");
         risposta = Console.ReadLine();
-        // pulisco la console
         Console.Clear();
     }
-    haIndovinato = false; // resetto la variabile haIndovinato
-    tentativiUtente.Clear(); // cancello i tentativi effettuati
+
+    haIndovinato = false;
+
+    punteggiUtenti.Clear(); // cancello i punteggi degli utenti
 
 } while (risposta == "s" || risposta == "S");
+    
