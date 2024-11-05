@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_indovina-numero", "Assig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_metodi-dizionario", "xx-Esercitazioni\08_metodi-dizionario\08_metodi-dizionario.csproj", "{3A733450-B073-4226-B8FD-191D3D19F77D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-sorteggio-partecipanti", "Assignement\02-sorteggio-partecipanti\02-sorteggio-partecipanti.csproj", "{FF8D7874-5DC6-4E2E-976A-B90069232B3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{3A733450-B073-4226-B8FD-191D3D19F77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A733450-B073-4226-B8FD-191D3D19F77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A733450-B073-4226-B8FD-191D3D19F77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8D7874-5DC6-4E2E-976A-B90069232B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8D7874-5DC6-4E2E-976A-B90069232B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8D7874-5DC6-4E2E-976A-B90069232B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8D7874-5DC6-4E2E-976A-B90069232B3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{05C0E73D-EE4E-45F7-95A2-E3538DD4B482} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
@@ -81,5 +87,6 @@ Global
 		{48A63854-D187-4A91-8CCE-95B001536631} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 		{DA68AB8D-B427-409E-B32D-06856F8A7C25} = {C7D08AF8-3F9D-47F8-AF21-DDB6892ABE38}
 		{3A733450-B073-4226-B8FD-191D3D19F77D} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
+		{FF8D7874-5DC6-4E2E-976A-B90069232B3B} = {C7D08AF8-3F9D-47F8-AF21-DDB6892ABE38}
 	EndGlobalSection
 EndGlobal

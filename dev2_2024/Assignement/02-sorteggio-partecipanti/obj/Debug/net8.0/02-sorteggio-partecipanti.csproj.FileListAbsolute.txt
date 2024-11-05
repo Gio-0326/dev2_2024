@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\bin\Debug\net8.0\02-sorteggio-partecipanti.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\bin\Debug\net8.0\02-sorteggio-partecipanti.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\bin\Debug\net8.0\02-sorteggio-partecipanti.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\bin\Debug\net8.0\02-sorteggio-partecipanti.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\bin\Debug\net8.0\02-sorteggio-partecipanti.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\refint\02-sorteggio-partecipanti.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\02-sorteggio-partecipanti.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\02-sorteggio-partecipanti\obj\Debug\net8.0\ref\02-sorteggio-partecipanti.dll
