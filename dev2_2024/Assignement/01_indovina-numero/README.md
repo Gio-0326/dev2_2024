@@ -1230,14 +1230,43 @@ git commit -m "Versione 12"
 git push -u origin main
 ```
 
-## Versione 13
+## Flowchart del gioco usando mermaid versione 12
 
-**Obiettivo:**
+```mermaid
+flowchart LR
+    Start --> ScegliLivelloDifficolta
+    ScegliLivelloDifficolta --> InserisciNomeUtente
+    InserisciNomeUtente --> IndovinaNumero
+    IndovinaNumero --> Tentativo
+    Tentativo --> NumeroMaggiore
+    Tentativo --> NumeroMinore
+    Tentativo --> NumeroIndovinato
+    NumeroMaggiore --> Tentativo
+    NumeroMinore --> Tentativo
+    NumeroIndovinato --> Punteggio
+    Punteggio --> TentativiEffettuati
+    TentativiEffettuati --> GiocaDiNuovo
+    GiocaDiNuovo --> ScegliLivelloDifficolta
+    GiocaDiNuovo --> Stop
+    Stop --> End
+```
+# Flowchart del gioco usando mermaid versione 12
 
-Gestione del punteggio assegnando il valore specificato nello switch
-
-Istruzioni:
-
-- Far si che a seconda del livello di difficoltà scelto venga assegnato all'utente il punteggio specificato nello switch.
-
-
+```mermaid
+flowchart TB
+    Start --> ScegliLivelloDifficolta
+    ScegliLivelloDifficolta --> InserisciNomeUtente
+    InserisciNomeUtente --> IndovinaNumero
+    IndovinaNumero --> Tentativo
+    Tentativo --> NumeroMaggiore
+    Tentativo --> NumeroMinore
+    Tentativo --> NumeroIndovinato
+    NumeroMaggiore --> Tentativo
+    NumeroMinore --> Tentativo
+    NumeroIndovinato --> Punteggio
+    Punteggio --> TentativiEffettuati
+    TentativiEffettuati --> GiocaDiNuovo
+    GiocaDiNuovo --> ScegliLivelloDifficolta
+    GiocaDiNuovo --> Stop
+    Stop --> End
+```

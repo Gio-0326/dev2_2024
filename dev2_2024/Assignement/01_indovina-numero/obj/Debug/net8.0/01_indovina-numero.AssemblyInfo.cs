@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("01_indovina-numero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86b02e5079a932d85a740ffb1641bacf302d0912")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a0992704e22c3b31f5331bd79519f40ec2e8f51")]
 [assembly: System.Reflection.AssemblyProductAttribute("01_indovina-numero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("01_indovina-numero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
