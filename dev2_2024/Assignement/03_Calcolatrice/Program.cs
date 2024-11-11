@@ -1,30 +1,73 @@
-﻿// Chiedi all'utente di inserire due numeri
-Console.WriteLine("Inserisci due numeri");
-double numeroUtente = int.Parse(Console.ReadLine());
-double numeroUtente1 = int.Parse(Console.ReadLine());
-// Chiedi all'utente di selezionare un operatore matematico
-Console.Write("Scegli l'operatore (+, -, *, /): ");
-string operatore = Console.ReadLine();
-// Esegui l'operazione selezionata
- double risultato = 0;
+﻿
+        double numeroUtente = 0;
+        double numeroUtente1 = 0;
+        string operatore = "";
+        double risultato = 0;
 
-        if (operatore == "+")
+        // Inserimento del primo numero con gestione degli errori
+        Console.WriteLine("Inserisci il primo numero:");
+        try
         {
-            risultato = numeroUtente + numeroUtente1;
+            numeroUtente = double.Parse(Console.ReadLine());
         }
-        else if (operatore == "-")
+        catch (FormatException)
         {
-            risultato = numeroUtente - numeroUtente1;
-        }
-        else if (operatore == "*")
-        {
-            risultato = numeroUtente * numeroUtente1;
-        }
-        else if (operatore == "/")
-        {
-             risultato = numeroUtente / numeroUtente1;
+            Console.WriteLine("Errore: Devi inserire un numero valido.");
+            return; 
         }
 
-        // Stampa il risultato
-        Console.WriteLine($"Il risultato di {numeroUtente} {operatore} {numeroUtente1} è: {risultato}");
+        // Inserimento del secondo numero con gestione degli errori
+        Console.WriteLine("Inserisci il secondo numero:");
+        try
+        {
+            numeroUtente1 = double.Parse(Console.ReadLine());
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Errore: Devi inserire un numero valido.");
+            return; 
+        }
+
+        // Scelta dell'operatore
+        Console.Write("Scegli l'operatore (+, -, *, /): ");
+        operatore = Console.ReadLine();
+
+        try
+        {
+            // Calcolo del risultato in base all'operatore scelto
+            if (operatore == "+")
+            {
+                risultato = numeroUtente + numeroUtente1;
+            }
+            else if (operatore == "-")
+            {
+                risultato = numeroUtente - numeroUtente1;
+            }
+            else if (operatore == "*")
+            {
+                risultato = numeroUtente * numeroUtente1;
+            }
+            else if (operatore == "/")
+            {
+                if (numeroUtente1 == 0)
+                {
+                    Console.WriteLine("Errore: La divisione per zero non è consentita.");
+                    return; 
+                }
+                risultato = numeroUtente / numeroUtente1;
+            }
+            else
+            {
+                Console.WriteLine("Errore: Operatore non valido.");
+                return; 
+            }
+
+            // Visualizzazione del risultato
+            Console.WriteLine($"Il risultato di {numeroUtente} {operatore} {numeroUtente1} è: {risultato}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Si è verificato un errore: {ex.Message}");
+        }
+    
     
