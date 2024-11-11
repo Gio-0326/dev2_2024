@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\bin\Debug\net8.0\03_Calcolatrice.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\bin\Debug\net8.0\03_Calcolatrice.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\bin\Debug\net8.0\03_Calcolatrice.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\bin\Debug\net8.0\03_Calcolatrice.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\bin\Debug\net8.0\03_Calcolatrice.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\refint\03_Calcolatrice.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\03_Calcolatrice.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\03_Calcolatrice\obj\Debug\net8.0\ref\03_Calcolatrice.dll

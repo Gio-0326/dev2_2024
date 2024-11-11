@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_math", "xx-Esercitazioni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_gestione-eccezioni", "xx-Esercitazioni\11_gestione-eccezioni\11_gestione-eccezioni.csproj", "{B00107EC-D5B0-438B-9908-C798060D6E3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Calcolatrice", "Assignement\03_Calcolatrice\03_Calcolatrice.csproj", "{6C6B6796-DD2F-42C6-9CA1-FA7D8323B46E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,10 @@ Global
 		{B00107EC-D5B0-438B-9908-C798060D6E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B00107EC-D5B0-438B-9908-C798060D6E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B00107EC-D5B0-438B-9908-C798060D6E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C6B6796-DD2F-42C6-9CA1-FA7D8323B46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6B6796-DD2F-42C6-9CA1-FA7D8323B46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C6B6796-DD2F-42C6-9CA1-FA7D8323B46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6B6796-DD2F-42C6-9CA1-FA7D8323B46E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{05C0E73D-EE4E-45F7-95A2-E3538DD4B482} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
@@ -109,5 +115,6 @@ Global
 		{08598D49-D172-47D1-9B3D-158AA49E0D52} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 		{12B56C84-EFF3-4E66-BEA8-EF61B2235B51} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 		{B00107EC-D5B0-438B-9908-C798060D6E3C} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
+		{6C6B6796-DD2F-42C6-9CA1-FA7D8323B46E} = {C7D08AF8-3F9D-47F8-AF21-DDB6892ABE38}
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,7 @@
 // - try-catch-finally
 
 // è possibile usare il try Parse pero l'eccezione non viene gestita ma notificata all'utente
-int number = int.Parse("abc");
+//int number = int.Parse("abc");
 
 // e possibile gestire l errore di conversione
 try
