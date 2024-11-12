@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\bin\Debug\net8.0\04_Calcolatrice-con-funzioni.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\bin\Debug\net8.0\04_Calcolatrice-con-funzioni.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\bin\Debug\net8.0\04_Calcolatrice-con-funzioni.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\bin\Debug\net8.0\04_Calcolatrice-con-funzioni.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\bin\Debug\net8.0\04_Calcolatrice-con-funzioni.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\refint\04_Calcolatrice-con-funzioni.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\04_Calcolatrice-con-funzioni.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\04_Calcolatrice-con-funzioni\obj\Debug\net8.0\ref\04_Calcolatrice-con-funzioni.dll

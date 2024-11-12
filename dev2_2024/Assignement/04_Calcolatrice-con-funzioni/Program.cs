@@ -5,33 +5,67 @@
         double risultato = 0;
 
         // Inserimento del primo numero con gestione degli errori
-        Console.WriteLine("Inserisci il primo numero:");
+        void StampaMessaggio()
+        {
+            Console.WriteLine("Inserisci il primo numero:");
+        }
+        StampaMessaggio();
+        
         try
         {
-            numeroUtente = double.Parse(Console.ReadLine());
+            void LeggeMessaggio()
+            {
+                numeroUtente = double.Parse(Console.ReadLine());
+            }
+            LeggeMessaggio();
         }
         catch (FormatException e)
         {
-            Console.WriteLine("Errore: Devi inserire un numero valido.");
-            return; 
+            void StampaMessaggio1()
+            {
+                Console.WriteLine("Errore: Devi inserire un numero valido.");
+                return;
+            }
+            StampaMessaggio1();
         }
 
         // Inserimento del secondo numero con gestione degli errori
-        Console.WriteLine("Inserisci il secondo numero:");
+        void StampaMessaggio2()
+        {
+            Console.WriteLine("Inserisci il secondo numero:");
+        }
+        StampaMessaggio2();
         try
         {
-            numeroUtente1 = double.Parse(Console.ReadLine());
+            void LeggeMessaggio1()
+            {
+                numeroUtente1 = double.Parse(Console.ReadLine());
+            }
+            LeggeMessaggio1();
         }
         catch (FormatException e)
         {
-            Console.WriteLine("Errore: Devi inserire un numero valido.");
-            return; 
+            void StampaMessaggio3()
+            {
+                Console.WriteLine("Errore: Devi inserire un numero valido.");
+                return;
+            }
+             StampaMessaggio3();
         }
 
         // Scelta dell'operatore
-        Console.Write("Scegli l'operatore (+, -, *, /): ");
-        operatore = Console.ReadLine();
-
+        void StampaMessaggio4()
+        {
+            Console.Write("Scegli l'operatore (+, -, *, /): ");
+        }
+        StampaMessaggio4();
+        
+        void LeggeMessaggio2()
+        {
+            operatore = Console.ReadLine();
+        }
+        LeggeMessaggio2();
+    
         try
         {
             // Calcolo del risultato in base all'operatore scelto
@@ -51,8 +85,12 @@
             {
                 if (numeroUtente1 == 0)
                 {
-                    Console.WriteLine("Errore: La divisione per zero non è consentita.");
-                    return; 
+                    void StampaMessaggio5()
+                    {
+                        Console.WriteLine("Errore: La divisione per zero non è consentita.");
+                        return; 
+                    }
+                    StampaMessaggio5();
                 }
                 risultato = numeroUtente / numeroUtente1;
             }
