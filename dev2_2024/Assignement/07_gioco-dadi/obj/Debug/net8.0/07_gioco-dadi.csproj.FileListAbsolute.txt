@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\bin\Debug\net8.0\07_gioco-dadi.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\bin\Debug\net8.0\07_gioco-dadi.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\bin\Debug\net8.0\07_gioco-dadi.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\bin\Debug\net8.0\07_gioco-dadi.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\bin\Debug\net8.0\07_gioco-dadi.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\refint\07_gioco-dadi.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\07_gioco-dadi.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\07_gioco-dadi\obj\Debug\net8.0\ref\07_gioco-dadi.dll
