@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\02-sorteggio-partecipanti\\02-sorteggio-partecipanti.csproj": {}
+    "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\05_sorteggio-partecipanti-con-funzioni.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\02-sorteggio-partecipanti\\02-sorteggio-partecipanti.csproj": {
+    "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\05_sorteggio-partecipanti-con-funzioni.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\02-sorteggio-partecipanti\\02-sorteggio-partecipanti.csproj",
-        "projectName": "02-sorteggio-partecipanti",
-        "projectPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\02-sorteggio-partecipanti\\02-sorteggio-partecipanti.csproj",
+        "projectUniqueName": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\05_sorteggio-partecipanti-con-funzioni.csproj",
+        "projectName": "05_sorteggio-partecipanti-con-funzioni",
+        "projectPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\05_sorteggio-partecipanti-con-funzioni.csproj",
         "packagesPath": "C:\\Users\\gioju\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\02-sorteggio-partecipanti\\obj\\",
+        "outputPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gioju\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,32 +1,22 @@
 ﻿// FUNZIONI
-// una funzione è un blocco di codice che esegue un compito specifico
+
+// una funzione e un blocco di codice che esegue un compito specifico
 // ci sono funzioni che elaborano i dati ma non restituiscono alcun valore
 // ci sono funzioni che restituiscono un valore
 
-// una funzione è composta da:
+// una funzione e composta da:
 // - nome
 // - parametri
 
 // un esempio di funzione che non restituisce alcun valore (void)
 // void NomeFunzione(parametri)
 // {
-//    codice
-// }
-// blocco di codice esterno alla funzione che la chiama
-// MODIFICATORI
-// le funzioni hanno anche dei modificatori di accesso come public e private che ne limitano la visibilità
-// una funzione public può essere chiamata da qualsiasi parte del programma
-// una funzione private può essere chiamata solo all'interno del codice della classe in cui è definita
-
-// quindi una funzione completa di modificatore di accesso potrebbe essere così:
-// public void NomeFunzione(parametri)
-// {
-//    codice
+//     codice
 // }
 // blocco di codice esterno alla funzione che la chiama
 
 // esempio di funzione void che stampa un messaggio
-void StampaMessaggio() // devo mettere il modificatore public
+void StampaMessaggio()
 {
     Console.WriteLine("funzione void");
 }
@@ -37,21 +27,21 @@ void StampaMessaggioConParametro(string messaggio)
 {
     Console.WriteLine(messaggio);
 }
-
 StampaMessaggioConParametro("funzione void con parametro");// utilizzo della funzione
-// esempio di funzione che stampa un messaggio con più parametri
+
+// esempio di funzione che stampa un messaggio con piu parametri
 void StampaMessaggioConPiuParametri(string messaggio1, string messaggio2)
 {
     Console.WriteLine($"{messaggio1} {messaggio2}");
 }
-StampaMessaggioConPiuParametri("funzione void con", "piu parametri"); // utilizzo della funzione
+StampaMessaggioConPiuParametri("funzione void con", "piu parametri");// utilizzo della funzione
 
 // esempio di funzione che restituisce un valore
 // una funzione che restituisce un valore deve specificare il tipo di quel valore al posto di void
-// poiche prende due interi come parametri e restituisce la somma, il tipo di ritorno e int anziche void
+// poiche prende due interi come parametri e restituisce la loro somma, il tipo di ritorno e int anziche void
 int Somma(int a, int b)
 {
-    return a + b;
+    return a + b; // restituisce la somma di a e b
 }
 int risultato = Somma(2, 3); // utilizzo della funzione
 Console.WriteLine(risultato); // stampa 5
@@ -71,3 +61,15 @@ bool ParolaPari(string parola)
 }
 bool risultatoPari = ParolaPari("cane"); // utilizzo della funzione
 Console.WriteLine(risultatoPari); // stampa true
+
+// esempio di funzione che restituisce piu valori
+// una funzione puo restituire piu valori utilizzando i parametri out
+void Divisione(int dividendo, int divisore, out int quoziente, out int resto)
+{
+    quoziente = dividendo / divisore; // calcola il quoziente
+    resto = dividendo % divisore; // calcola il resto
+    // non posso fare un return di due valori, quindi utilizzo i parametri out
+}
+int q, r;
+Divisione(10, 3, out q, out r);
+Console.WriteLine($"Quoziente: {q}, Resto: {r}"); // stampa Quoziente: 3, Resto: 1

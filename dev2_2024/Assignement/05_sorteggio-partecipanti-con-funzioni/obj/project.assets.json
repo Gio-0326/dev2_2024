@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\04_Calcolatrice-con-funzioni\\04_Calcolatrice-con-funzioni.csproj",
-      "projectName": "04_Calcolatrice-con-funzioni",
-      "projectPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\04_Calcolatrice-con-funzioni\\04_Calcolatrice-con-funzioni.csproj",
+      "projectUniqueName": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\05_sorteggio-partecipanti-con-funzioni.csproj",
+      "projectName": "05_sorteggio-partecipanti-con-funzioni",
+      "projectPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\05_sorteggio-partecipanti-con-funzioni.csproj",
       "packagesPath": "C:\\Users\\gioju\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\04_Calcolatrice-con-funzioni\\obj\\",
+      "outputPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\05_sorteggio-partecipanti-con-funzioni\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gioju\\AppData\\Roaming\\NuGet\\NuGet.Config"

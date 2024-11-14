@@ -1,111 +1,74 @@
-﻿
-        double numeroUtente = 0;
-        double numeroUtente1 = 0;
-        string operatore = "";
-        double risultato = 0;
+﻿// chiedi all utente di inserire due numeri
+double num1 = ChiediNumero();
+double num2 = ChiediNumero();
 
-        // Inserimento del primo numero con gestione degli errori
-        void StampaMessaggio()
-        {
-            Console.WriteLine("Inserisci il primo numero:");
-        }
-        StampaMessaggio();
-        
+// chiedi all utente di selezionare un operatore matematico
+char operatore = ChiediOperatore();
+
+// esegui l operazione selezionata
+double risultato = EseguiOperazione(num1, num2, operatore);
+
+// visualizza il risultato
+Console.WriteLine($"Il risultato è: {risultato}");
+
+double ChiediNumero()
+{
+    double num = 0; // dichiarazione e inizializzazione di una variabile che conterra il numero inserito dall utente
+    bool inputValido = false; // dichiarazione e inizializzazione di una variabile booleana che controlla se l input e valido
+    while (!inputValido)
+    {
         try
         {
-            void LeggeMessaggio()
-            {
-                numeroUtente = double.Parse(Console.ReadLine());
-            }
-            LeggeMessaggio();
+            Console.Write("Inserisci un numero: "); // richiesta di inserimento di un numero all utente
+            num = Convert.ToDouble(Console.ReadLine()); // acquisizione del numero inserito dall utente
+            inputValido = true; // se l input e valido, il ciclo termina
         }
-        catch (FormatException e)
+        catch (FormatException)
         {
-            void StampaMessaggio1()
-            {
-                Console.WriteLine("Errore: Devi inserire un numero valido.");
-                return;
-            }
-            StampaMessaggio1();
+            Console.WriteLine("Inserisci un numero valido."); // messaggio di errore se l utente inserisce un valore non numerico
         }
+    }
+    return num; // restituzione del numero inserito dall utente alla funzione chiamante (nel caso specifico, al main)
+}
 
-        // Inserimento del secondo numero con gestione degli errori
-        void StampaMessaggio2()
+char ChiediOperatore()
+{
+    char operatore = ' '; // dichiarazione e inizializzazione di una variabile che conterra l operatore inserito dall utente
+    bool inputValido = false; // dichiarazione e inizializzazione di una variabile booleana che controlla se l input e valido
+    while (!inputValido) // ciclo che continua finche l input non e valido
+    {
+        Console.Write("Seleziona un operatore (+, -, *, /): "); // richiesta di selezione di un operatore all utente
+        operatore = Console.ReadKey().KeyChar; // acquisizione dell operatore inserito dall utente
+        Console.WriteLine(); // andare a capo
+        if (operatore == '+' || operatore == '-' || operatore == '*' || operatore == '/') // controllo se l operatore e valido
         {
-            Console.WriteLine("Inserisci il secondo numero:");
+            inputValido = true; // se l input e valido, il ciclo termina
         }
-        StampaMessaggio2();
-        try
+        else
         {
-            void LeggeMessaggio1()
-            {
-                numeroUtente1 = double.Parse(Console.ReadLine());
-            }
-            LeggeMessaggio1();
+            Console.WriteLine("Operatore non valido."); // messaggio di errore se l utente inserisce un operatore non valido
         }
-        catch (FormatException e)
-        {
-            void StampaMessaggio3()
-            {
-                Console.WriteLine("Errore: Devi inserire un numero valido.");
-                return;
-            }
-             StampaMessaggio3();
-        }
+    }
+    return operatore; // restituzione dell operatore inserito dall utente alla funzione chiamante (nel caso specifico, al main)
+}
 
-        // Scelta dell'operatore
-        void StampaMessaggio4()
-        {
-            Console.Write("Scegli l'operatore (+, -, *, /): ");
-        }
-        StampaMessaggio4();
-        
-        void LeggeMessaggio2()
-        {
-            operatore = Console.ReadLine();
-        }
-        LeggeMessaggio2();
-    
-        try
-        {
-            // Calcolo del risultato in base all'operatore scelto
-            if (operatore == "+")
-            {
-                risultato = numeroUtente + numeroUtente1;
-            }
-            else if (operatore == "-")
-            {
-                risultato = numeroUtente - numeroUtente1;
-            }
-            else if (operatore == "*")
-            {
-                risultato = numeroUtente * numeroUtente1;
-            }
-            else if (operatore == "/")
-            {
-                if (numeroUtente1 == 0)
-                {
-                    void StampaMessaggio5()
-                    {
-                        Console.WriteLine("Errore: La divisione per zero non è consentita.");
-                        return; 
-                    }
-                    StampaMessaggio5();
-                }
-                risultato = numeroUtente / numeroUtente1;
-            }
-            else
-            {
-                Console.WriteLine("Errore: Operatore non valido.");
-                return; 
-            }
-
-            // Visualizzazione del risultato
-            Console.WriteLine($"Il risultato di {numeroUtente} {operatore} {numeroUtente1} è: {risultato}");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Si è verificato un errore: {e.Message}");
-        }
-    
-    
+double EseguiOperazione(double num1, double num2, char operatore)
+{
+    double risultato = 0; // dichiarazione e inizializzazione di una variabile che conterra il risultato dell operazione
+    switch (operatore)
+    {
+        case '+':
+            risultato = num1 + num2; // somma dei due numeri
+            break;
+        case '-':
+            risultato = num1 - num2; // differenza dei due numeri
+            break;
+        case '*':
+            risultato = num1 * num2; // prodotto dei due numeri
+            break;
+        case '/':
+            risultato = num1 / num2; // divisione dei due numeri
+            break;
+    }
+    return risultato; // restituzione del risultato dell operazione alla funzione chiamante (nel caso specifico, al main)
+}
