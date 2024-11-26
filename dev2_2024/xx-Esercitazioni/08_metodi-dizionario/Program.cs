@@ -89,6 +89,9 @@ foreach (var coppia in dizionario3)
     Console.WriteLine($"{string.Join(", ", coppia.Key)}\t{coppia.Value}");
 }
 
+// posso stampare una chiave specifica ad esempio la seconda chiave della prima coppia
+Console.WriteLine(dizionario3.Keys.ElementAt(0)[1]);
+
 // ESEMPIO DI METODO TRYGETVALUE
 // cerca un elemento in un dizionario e restituisce il valore associato
 
