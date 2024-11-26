@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\bin\Debug\net8.0\14_sorteggio-partecipanti-txt.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\bin\Debug\net8.0\14_sorteggio-partecipanti-txt.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\bin\Debug\net8.0\14_sorteggio-partecipanti-txt.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\bin\Debug\net8.0\14_sorteggio-partecipanti-txt.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\bin\Debug\net8.0\14_sorteggio-partecipanti-txt.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\refint\14_sorteggio-partecipanti-txt.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\14_sorteggio-partecipanti-txt.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\14_sorteggio-partecipanti-txt\obj\Debug\net8.0\ref\14_sorteggio-partecipanti-txt.dll

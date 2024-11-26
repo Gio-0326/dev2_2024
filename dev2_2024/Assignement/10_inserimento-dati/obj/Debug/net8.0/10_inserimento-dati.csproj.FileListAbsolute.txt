@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\bin\Debug\net8.0\10_inserimento-dati.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\bin\Debug\net8.0\10_inserimento-dati.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\bin\Debug\net8.0\10_inserimento-dati.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\bin\Debug\net8.0\10_inserimento-dati.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\bin\Debug\net8.0\10_inserimento-dati.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\refint\10_inserimento-dati.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\10_inserimento-dati.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\10_inserimento-dati\obj\Debug\net8.0\ref\10_inserimento-dati.dll

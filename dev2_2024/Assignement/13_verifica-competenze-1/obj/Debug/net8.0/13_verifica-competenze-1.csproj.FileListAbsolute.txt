@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\bin\Debug\net8.0\13_verifica-competenze-1.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\bin\Debug\net8.0\13_verifica-competenze-1.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\bin\Debug\net8.0\13_verifica-competenze-1.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\bin\Debug\net8.0\13_verifica-competenze-1.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\bin\Debug\net8.0\13_verifica-competenze-1.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\refint\13_verifica-competenze-1.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\13_verifica-competenze-1.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\13_verifica-competenze-1\obj\Debug\net8.0\ref\13_verifica-competenze-1.dll

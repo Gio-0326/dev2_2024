@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\bin\Debug\net8.0\11_metodo-verifica-input-generico.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\bin\Debug\net8.0\11_metodo-verifica-input-generico.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\bin\Debug\net8.0\11_metodo-verifica-input-generico.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\bin\Debug\net8.0\11_metodo-verifica-input-generico.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\bin\Debug\net8.0\11_metodo-verifica-input-generico.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\refint\11_metodo-verifica-input-generico.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\11_metodo-verifica-input-generico.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\11_metodo-verifica-input-generico\obj\Debug\net8.0\ref\11_metodo-verifica-input-generico.dll
