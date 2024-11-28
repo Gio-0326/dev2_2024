@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("05_sorteggio-partecipanti-con-funzioni")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e04e83cb68d0422d24bf116702030dc3e8e2929c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e9a3ac2d75736788b1e02efa7c86c73e6684e66")]
 [assembly: System.Reflection.AssemblyProductAttribute("05_sorteggio-partecipanti-con-funzioni")]
 [assembly: System.Reflection.AssemblyTitleAttribute("05_sorteggio-partecipanti-con-funzioni")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

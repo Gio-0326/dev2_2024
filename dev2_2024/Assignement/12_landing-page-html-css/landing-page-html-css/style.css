@@ -9,6 +9,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 574px) {
+    body {
+        font-size: 14px;
+        background-color: aqua;
+    }
+}
+
 header {
     background-color: #343232;
     color: #ffffff;
@@ -16,6 +23,26 @@ header {
     text-align: center;
 }
 
+
+#home{
+    background-color: lightgray;
+    
+}
+
+#about{
+    background-color: lightgray;
+}
+
+#skills{
+    background-color: lightgray;
+}
+
+#portfolio{
+    background-color: lightgray;
+}
+#contact{
+    background-color: lightgray;
+}
 nav ul {
     list-style: none;
     display: flex;
