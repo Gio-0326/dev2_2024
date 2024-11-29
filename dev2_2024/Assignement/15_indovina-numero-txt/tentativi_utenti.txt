@@ -1,0 +1,24 @@
+Utente: giorgio
+Numero da indovinare: 3
+Tentativi: 50, 30, 1, 15, 10, 5, 8, 7, 2, 4
+
+Utente: giorgio
+Numero da indovinare: 19
+Tentativi: 50, 30, 1, 15, 10, 5, 8, 7, 2, 4, 50, 3, 40, 20, 10, 13, 16
+
+Utente: giorgio
+Numero da indovinare: 54
+Tentativi: 50, 70, 60, 55, 52, 53, 54
+
+Utente: giorgio
+Numero da indovinare: 29
+Tentativi: 150, 100, 50, 30, 9
+
+Utente: giorgio
+Numero da indovinare: 94
+Tentativi: 7
+
+Utente: gio
+Numero da indovinare: 46
+Tentativi: 10
+

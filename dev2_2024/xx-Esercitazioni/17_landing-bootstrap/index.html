@@ -2,7 +2,7 @@
 <html lang="it">
 
 <head>
-    <title>Title</title>
+    <title>Landing page Bootstrap</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -26,10 +26,14 @@
         .content {
             padding-top: 100px;
         }
+        body {
+            background-image: url('https://png.pngtree.com/background/20230416/original/pngtree-website-contrast-color-illustration-background-picture-image_2443563.jpg');
+        }
     </style>
 </head>
 
 <body>
+
     <div class="container-fluid">
 
         <header>
@@ -42,7 +46,7 @@
 
                 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
+                        <a class="navbar-brand" href="#">Giorgio Adamo</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -51,19 +55,19 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Skills</a>
+                                    <a class="nav-link" href="#skills">Skills</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Portfolio</a>
+                                    <a class="nav-link" href="#portfolio">Portfolio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#contact">Contact</a>
                                 </li>
                                 <form class="d-flex" role="search">
                                     <input class="form-control me-2" type="search" placeholder="Search"
@@ -83,44 +87,133 @@
 
         </header>
         <main>
+            <section id="home">
+                <div class="container">
+                    <div class="col">
+                        <div class="col-md-6 mx-auto">
+                            <div class="box text-bg-dark p-3 text-center "
+                                style="height: 400px; margin: 2rem; background-color: lightgray;">
+                                <div class="d-flex flex-row mb-3"></div>
+                                <img src="data:image/jpeg;base64,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"
+                                    style=height:150px;>
+                                <h1>Home</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus, atque rem qui
+                                    eveniet provident nihil veritatis asperiores praesentium minus distinctio
+                                    exercitationem, reiciendis aliquam possimus aliquid doloremque quis ab impedit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container">
+                    <div class="col">
+                        <div class="col-md-6 mx-auto">
+                            <div class="box text-bg-dark p-3 text-center "
+                                style="height: 400px; margin: 2rem; background-color: lightgray;">
+                                <div class="d-flex flex-row mb-3"></div>
+                                <h1>About</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus, atque rem qui
+                                    eveniet provident nihil veritatis asperiores praesentium minus distinctio
+                                    exercitationem, reiciendis aliquam possimus aliquid doloremque quis ab impedit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="container">
+                    <div class="col">
+                        <div class="col-md-6 mx-auto">
+                            <div class="box text-bg-dark p-3 text-center "
+                                style="height: 400px; margin: 2rem; background-color: lightgray;">
+                                <div class="d-flex flex-row mb-3"></div>
+                                <h1>Skills</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus, atque rem qui
+                                    eveniet provident nihil veritatis asperiores praesentium minus distinctio
+                                    exercitationem, reiciendis aliquam possimus aliquid doloremque quis ab impedit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
             <div class="container">
                 <div class="col">
                     <div class="col-md-6 mx-auto">
-                        <div class="box text-white text-center" style="height: 200px; margin: 2rem; background-color: lightgray;">
-                            <h1>Home</h1>
-                            <p>gghhtrthtr</p>
+                        <div class="box text-bg-dark p-3 text-center "
+                            style="height: 400px; margin: 2rem; background-color: lightgray;">
+                            <div class="d-flex flex-row mb-3"></div>
+                            <h1>Portfolio</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus, atque rem qui
+                                eveniet provident nihil veritatis asperiores praesentium minus distinctio
+                                exercitationem, reiciendis aliquam possimus aliquid doloremque quis ab impedit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-            
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="col">
+                    <div class="col-md-6 mx-auto">
+                        <div class="box text-bg-dark p-3 text-center "
+                            style="height: 700px; margin: 2rem; background-color: lightgray;">
+                            <div class="d-flex flex-row mb-3"></div>
+                            <h1>Contact</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus, atque rem qui
+                                eveniet provident nihil veritatis asperiores praesentium minus distinctio
+                                exercitationem, reiciendis aliquam possimus aliquid doloremque quis ab impedit.</p>
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="https://blog.boon.so/wp-content/uploads/2024/03/facebook-logo-2-1024x640.jpg"
+                                        class="card-img-top" height="130">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Facebook</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://logocreator.io/wp-content/uploads/2023/11/hero-image.fill_.size_1200x675.v1650318899.png"
+                                        class="card-img-top" height="130">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Instagram</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://api.freelogodesign.org/assets/blog/thumb/152880db593345cdb307307a5df1c663_1176x840.jpg"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Twitter</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This card has even longer content
+                                            than the first to show that equal height action.</p>
+                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
     </div>
     </main>
     <footer>
         <div class="container-fluid">
-            <div class="col-md-3">
-                <h5>Seguici</h5>
-                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i> Facebook</a><br>
-                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i> Twitter</a><br>
-                <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i> Instagram</a>
-            </div>
 
-            <!-- Sezione "Contatti" -->
-            <div class="col-md-3">
-                <h5>Contatti</h5>
-                <p>Email: info@esempio.com</p>
-                <p>Telefono: +123 456 789</p>
+            <div class="text-center py-3 text-white">
+                <p>&copy; 2024 Giorgio Adamo. Tutti i diritti riservati.</p>
             </div>
-        </div>
-        </div>
-        <!-- Copyright -->
-        <div class="text-center py-3">
-            <p>&copy; 2024 Giorgio Adamo. Tutti i diritti riservati.</p>
-        </div>
-        </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
