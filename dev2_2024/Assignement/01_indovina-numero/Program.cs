@@ -1,5 +1,4 @@
-﻿
-Console.Clear();
+﻿Console.Clear();
 Random random = new Random();
 int numeroDaIndovinare = 0;
 int punteggio = 0;
@@ -56,11 +55,7 @@ do
     Console.WriteLine("Inserisci il tuo nome:");
     string nomeUtente = Console.ReadLine();
 
-    Console.WriteLine("Indovina il numero.");
-
-    // stampo il numero segreto come debug
-
-     Console.WriteLine($"Il numero segreto e {numeroDaIndovinare}");
+    Console.WriteLine("Indovina il numero. Punteggio massimo: 100 punti.");
 
     while (!haIndovinato && tentativi > 0)
     {
@@ -103,6 +98,12 @@ do
             Console.WriteLine($"Hai esaurito i tentativi. Il numero era {numeroDaIndovinare}.");
         }
 
+    }
+
+    if (haIndovinato)
+    {
+        // stampa il punteggio dell utente
+        Console.WriteLine($"Punteggio: {punteggio}");
     }
 
     Console.WriteLine("Tentativi effettuati: ");
