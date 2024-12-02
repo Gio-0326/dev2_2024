@@ -1,0 +1,15 @@
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\bin\Debug\net8.0\16_indovina-numero-csv.exe
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\bin\Debug\net8.0\16_indovina-numero-csv.deps.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\bin\Debug\net8.0\16_indovina-numero-csv.runtimeconfig.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\bin\Debug\net8.0\16_indovina-numero-csv.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\bin\Debug\net8.0\16_indovina-numero-csv.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.AssemblyInfoInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.AssemblyInfo.cs
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.csproj.CoreCompileInputs.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.sourcelink.json
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\refint\16_indovina-numero-csv.dll
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.pdb
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\16_indovina-numero-csv.genruntimeconfig.cache
+C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\Assignement\16_indovina-numero-csv\obj\Debug\net8.0\ref\16_indovina-numero-csv.dll
