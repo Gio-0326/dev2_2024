@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("11_metodo-verifica-input-generico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c59da7e6af30d068d47161f4e462895785302af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+126dc719ec1ac507036bf091b9a88ffdf805da84")]
 [assembly: System.Reflection.AssemblyProductAttribute("11_metodo-verifica-input-generico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("11_metodo-verifica-input-generico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

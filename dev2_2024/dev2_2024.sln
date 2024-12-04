@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_persistenza-json", "xx-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_indovina-numero-csv", "Assignement\16_indovina-numero-csv\16_indovina-numero-csv.csproj", "{6B8DB3EC-66B9-4057-BD99-4052A1D804BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_supermercato-completo", "Assignement\17_supermercato-completo\17_supermercato-completo.csproj", "{45F4CCFE-8FE9-4C69-9E6F-C18469CFA69C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -202,6 +204,10 @@ Global
 		{6B8DB3EC-66B9-4057-BD99-4052A1D804BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B8DB3EC-66B9-4057-BD99-4052A1D804BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B8DB3EC-66B9-4057-BD99-4052A1D804BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F4CCFE-8FE9-4C69-9E6F-C18469CFA69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F4CCFE-8FE9-4C69-9E6F-C18469CFA69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F4CCFE-8FE9-4C69-9E6F-C18469CFA69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F4CCFE-8FE9-4C69-9E6F-C18469CFA69C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{05C0E73D-EE4E-45F7-95A2-E3538DD4B482} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
@@ -235,5 +241,6 @@ Global
 		{8A54ED65-7557-4D31-B18E-0A47BCAF6172} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 		{3B0EB3A2-6006-4D91-8ED1-7AF862B09B48} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 		{6B8DB3EC-66B9-4057-BD99-4052A1D804BF} = {C7D08AF8-3F9D-47F8-AF21-DDB6892ABE38}
+		{45F4CCFE-8FE9-4C69-9E6F-C18469CFA69C} = {C7D08AF8-3F9D-47F8-AF21-DDB6892ABE38}
 	EndGlobalSection
 EndGlobal
