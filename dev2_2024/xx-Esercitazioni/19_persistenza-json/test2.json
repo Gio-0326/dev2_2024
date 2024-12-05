@@ -1,9 +1,9 @@
 {
-    "nome": "nome1",
-    "cognome": "cognome1",
+    "nome": "antonio",
+    "cognome": "rossi",
     "eta": 20,
     "indirizzo": {
-        "via":"via roma",
-        "città":"roma"
+        "via": "via roma",
+        "citta": "roma"
     }
 }

@@ -1,8 +1,8 @@
 ﻿
-/*using Newtonsoft.Json; 
+using Newtonsoft.Json; 
 
  
-string FilePath = @"catalogo.json"; 
+string FilePath = "Json"; 
  
 if (!Directory.Exists(FilePath)) 
 { 
@@ -36,7 +36,7 @@ while (continua)
         switch (sceltaOperatore) 
         { 
             case "1": 
-                AggiungiProdottoUI(catalogo); 
+                CreaProdotto(catalogo); 
                 break; 
  
             case "2": 
@@ -99,7 +99,7 @@ while (continua)
     } 
 } 
  
-static void AggiungiProdottoUI(List<Dictionary<string, object>> catalogo) 
+static void CreaProdotto(List<Dictionary<string, object>> catalogo) 
 { 
     Console.Write("Inserisci ID prodotto: "); 
     string id = Console.ReadLine(); 
@@ -331,10 +331,10 @@ static List<Dictionary<string, object>> PopolaCatalogo()
         new Dictionary<string, object> { { "Id", "002" }, { "Nome", "Latte" }, { "Prezzo", "0,99" }, { "Quantita", "50" } }, 
         new Dictionary<string, object> { { "Id", "003" }, { "Nome", "Mela" }, { "Prezzo", "2,00" }, { "Quantita", "200" } } 
     }; 
-}*/
+}
 
 
-using Newtonsoft.Json; // libreria per gestire il file JSON
+/*using Newtonsoft.Json; // libreria per gestire il file JSON
 
 string filePath = "catalogo.json"; // percorso del file JSON
 
@@ -411,7 +411,7 @@ static Dictionary<string, object> CreaProdotto()
     var prodotto = new Dictionary<string, object>(); //crea un nuovo dizionario per il prodotto che in questo caso
     // è un oggetto generico che ha come chiave una stringa (Nome, Prezzo, Quantità) e come valore un oggetto generico che può essere di diversi tipi (stringa, decimale, intero)
 
-    Console.Write("Inserisic il nome del prodotto:");
+    Console.Write("Inserisci il nome del prodotto:");
     // devo mettere prodotto ["Nome"] perchè il dizionario è di tipo Dictionary<string, object> e non posso usare l'operatore.
     // per accedere ai campi quindi devo usare le parentesi quadre[] ed inserire la chiave
     prodotto["Nome"] = Console.ReadLine();
@@ -545,4 +545,4 @@ static void VisualizzaCarrello(List<Dictionary<string, object>> carrello)
    }
 
    Console.WriteLine($"\nTotale: €{totale}");
-}
+}*/
