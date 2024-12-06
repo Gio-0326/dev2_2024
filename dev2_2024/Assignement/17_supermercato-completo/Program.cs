@@ -114,7 +114,7 @@ static void CreaProdotto(List<Dictionary<string, object>> catalogo)
     string quantita = Console.ReadLine(); 
  
     AggiungiProdotto(catalogo, id, nome, prezzo, quantita); 
-    Console.WriteLine($"Prodotto \"{nome}\" aggiunto al catalogo."); 
+    Console.WriteLine($"Prodotto {nome} aggiunto al catalogo."); 
     string catalogoPathJson = @"./Json/catalogo.json"; 
  
     List<Dictionary<string, object>> catalogoEsistente = new List<Dictionary<string, object>>(); 
@@ -331,7 +331,7 @@ static List<Dictionary<string, object>> PopolaCatalogo()
         new Dictionary<string, object> { { "Id", "002" }, { "Nome", "Latte" }, { "Prezzo", "0,99" }, { "Quantita", "50" } }, 
         new Dictionary<string, object> { { "Id", "003" }, { "Nome", "Mela" }, { "Prezzo", "2,00" }, { "Quantita", "200" } } 
     }; 
-}
+}  // popolaCatalogo deve popolare il file Json
 
 
 /*using Newtonsoft.Json; // libreria per gestire il file JSON
