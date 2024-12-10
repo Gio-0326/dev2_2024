@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Amministratore - Supermercato</title>
+  <!-- CDN di Bootstrap 4 -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .admin-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .admin-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .admin-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+    .admin-btn:hover {
+      background-color: #218838;
+    }
+    .delete-btn {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+    }
+    .delete-btn:hover {
+      background-color: #c82333;
+    }
+    .btn-sm {
+      padding: 0.3rem 0.8rem;
+    }
+    .table th, .table td {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra di Navigazione -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Supermercato Admin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Gestione Prodotti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gestione Utenti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intestazione -->
+  <div class="admin-header mt-5">
+    <h1>Benvenuto, Amministratore</h1>
+    <p>Gestisci i prodotti in vendita e gli utenti del supermercato.</p>
+  </div>
+
+  <!-- Contenuto della Pagina Amministratore -->
+  <div class="container admin-container">
+    <!-- Pulsante per aggiungere un prodotto -->
+    <div class="text-right mb-3">
+      <button class="admin-btn btn-lg" type="button" data-toggle="modal" data-target="#addProductModal">Aggiungi Prodotto</button>
+      <button class="admin-btn btn-lg" type="button" data-toggle="modal" data-target="#addUserModal">Aggiungi Utente</button>
+    </div>
+
+    <!-- Tabella dei Prodotti -->
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Categoria</th>
+          <th scope="col">Prezzo</th>
+          <th scope="col">Disponibilità</th>
+          <th scope="col">Azione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Prodotto 1 -->
+        <tr>
+          <td>1</td>
+          <td>Latte (1L)</td>
+          <td>Bevande</td>
+          <td>€1.50</td>
+          <td>50</td>
+          <td>
+            <button class="btn btn-warning btn-sm" type="button" data-toggle="modal" data-target="#editProductModal">Modifica</button>
+            <button class="btn delete-btn btn-sm" type="button">Elimina</button>
+          </td>
+        </tr>
+        <!-- Prodotto 2 -->
+        <tr>
+          <td>2</td>
+          <td>Pasta (500g)</td>
+          <td>Alimenti</td>
+          <td>€1.20</td>
+          <td>100</td>
+          <td>
+            <button class="btn btn-warning btn-sm" type="button" data-toggle="modal" data-target="#editProductModal">Modifica</button>
+            <button class="btn delete-btn btn-sm" type="button">Elimina</button>
+          </td>
+        </tr>
+        <!-- Prodotto 3 -->
+        <tr>
+          <td>3</td>
+          <td>Pane (1kg)</td>
+          <td>Forneria</td>
+          <td>€2.00</td>
+          <td>30</td>
+          <td>
+            <button class="btn btn-warning btn-sm" type="button" data-toggle="modal" data-target="#editProductModal">Modifica</button>
+            <button class="btn delete-btn btn-sm" type="button">Elimina</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal Aggiungi Prodotto -->
+  <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addProductModalLabel">Aggiungi Nuovo Prodotto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="productName">Nome del Prodotto</label>
+              <input type="text" class="form-control" id="productName" placeholder="Inserisci nome prodotto">
+            </div>
+            <div class="form-group">
+              <label for="productCategory">Categoria</label>
+              <input type="text" class="form-control" id="productCategory" placeholder="Inserisci categoria">
+            </div>
+            <div class="form-group">
+              <label for="productPrice">Prezzo</label>
+              <input type="number" class="form-control" id="productPrice" placeholder="Inserisci prezzo">
+            </div>
+            <div class="form-group">
+              <label for="productStock">Disponibilità</label>
+              <input type="number" class="form-control" id="productStock" placeholder="Inserisci quantità disponibile">
+            </div>
+            <button type="submit" class="btn btn-primary">Aggiungi Prodotto</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Aggiungi Utente -->
+  <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addUserModalLabel">Aggiungi Nuovo Utente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="userName">Nome Utente</label>
+              <input type="text" class="form-control" id="userName" placeholder="Inserisci nome utente">
+            </div>
+            <div class="form-group">
+              <label for="userEmail">Email Utente</label>
+              <input type="email" class="form-control" id="userEmail" placeholder="Inserisci email utente">
+            </div>
+            <div class="form-group">
+              <label for="userRole">Ruolo</label>
+              <select class="form-control" id="userRole">
+                <option>Cliente</option>
+                <option>Dipendente</option>
+                <option>Amministratore</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Aggiungi Utente</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Modifica Prodotto -->
+  <div class="modal fade" id="editProductModal" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editProductModalLabel">Modifica Prodotto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="editProductName">Nome del Prodotto</label>
+              <input type="text" class="form-control" id="editProductName" value="Latte (1L)">
+            </div>
+            <div class="form-group">
+              <label for="editProductCategory">Categoria</label>
+              <input type="text" class="form-control" id="editProductCategory" value="Bevande">
+            </div>
+            <div class="form-group">
+              <label for="editProductPrice">Prezzo</label>
+              <input type="number" class="form-control" id="editProductPrice" value="1.50">
+            </div>
+            <div class="form-group">
+              <label for="editProductStock">Disponibilità</label>
+              <input type="number" class="form-control" id="editProductStock" value="50">
+            </div>
+            <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include jQuery, Popper.js, e Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

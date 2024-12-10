@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Supermercato</title>
+  <!-- CDN di Bootstrap 4 -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome per le icone (opzionale) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .login-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .login-header h1 {
+      font-size: 2.5rem;
+      color: #343a40;
+    }
+    .login-header p {
+      font-size: 1.2rem;
+      color: #6c757d;
+    }
+    .login-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      font-size: 1rem;
+    }
+    .login-btn:hover {
+      background-color: #218838;
+    }
+    .nav-link {
+      color: #343a40;
+    }
+    .nav-link:hover {
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Barra di Navigazione -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img
+        src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000"
+        width="50" height="44">Supermercato</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prodotti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Offerte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatti</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- Intestazione -->
+  <div class="login-header mt-5">
+    <h1>Accedi al tuo account</h1>
+    <p>Inserisci le tue credenziali per accedere al nostro supermercato online.</p>
+  </div>
+
+  <!-- Modulo di Login -->
+  <div class="container">
+    <div class="login-container">
+      <form action="#" method="POST">
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email" required>
+        </div>
+        
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Inserisci la tua password" required>
+        </div>
+
+        <!-- Pulsante di login -->
+        <button type="submit" class="login-btn btn-lg btn-block">Accedi</button>
+
+        <!-- Link per la registrazione -->
+        <div class="mt-3 text-center">
+          <p>Non hai un account? <a href="#">Registrati qui</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Include jQuery, Popper.js, e Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

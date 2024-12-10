@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrello - Supermercato</title>
+  <!-- CDN di Bootstrap 4 -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .cart-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .cart-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .cart-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      width: 100%;
+    }
+    .cart-btn:hover {
+      background-color: #218838;
+    }
+    .remove-btn {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+    }
+    .remove-btn:hover {
+      background-color: #c82333;
+    }
+    .total-price {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .btn-sm {
+      padding: 0.3rem 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra di Navigazione -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img
+        src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000"
+        width="50" height="44">Supermercato</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prodotti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Offerte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatti</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- Intestazione -->
+  <div class="cart-header mt-5">
+    <h1>Il tuo Carrello</h1>
+    <p>Rivedi i tuoi prodotti e procedi all'acquisto.</p>
+  </div>
+
+  <!-- Contenuto del Carrello -->
+  <div class="container cart-container">
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Prodotto</th>
+          <th scope="col">Quantità</th>
+          <th scope="col">Prezzo Unitario</th>
+          <th scope="col">Totale</th>
+          <th scope="col">Azione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Prodotto 1 -->
+        <tr>
+          <td>Latte (1L)</td>
+          <td>
+            <div class="input-group">
+              <button class="btn btn-sm btn-outline-secondary" type="button">-</button>
+              <input type="number" class="form-control form-control-sm" value="2" min="1">
+              <button class="btn btn-sm btn-outline-secondary" type="button">+</button>
+            </div>
+          </td>
+          <td>€1.50</td>
+          <td>€3.00</td>
+          <td>
+            <button class="btn remove-btn btn-sm" type="button"><i class="fas fa-trash"></i> Rimuovi</button>
+          </td>
+        </tr>
+        <!-- Prodotto 2 -->
+        <tr>
+          <td>Pasta (500g)</td>
+          <td>
+            <div class="input-group">
+              <button class="btn btn-sm btn-outline-secondary" type="button">-</button>
+              <input type="number" class="form-control form-control-sm" value="1" min="1">
+              <button class="btn btn-sm btn-outline-secondary" type="button">+</button>
+            </div>
+          </td>
+          <td>€1.20</td>
+          <td>€1.20</td>
+          <td>
+            <button class="btn remove-btn btn-sm" type="button"><i class="fas fa-trash"></i> Rimuovi</button>
+          </td>
+        </tr>
+        <!-- Prodotto 3 -->
+        <tr>
+          <td>Pane (1kg)</td>
+          <td>
+            <div class="input-group">
+              <button class="btn btn-sm btn-outline-secondary" type="button">-</button>
+              <input type="number" class="form-control form-control-sm" value="3" min="1">
+              <button class="btn btn-sm btn-outline-secondary" type="button">+</button>
+            </div>
+          </td>
+          <td>€2.00</td>
+          <td>€6.00</td>
+          <td>
+            <button class="btn remove-btn btn-sm" type="button"><i class="fas fa-trash"></i> Rimuovi</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Totale e Pulsante per procedere all'acquisto -->
+    <div class="d-flex justify-content-between mt-4">
+      <div class="total-price">
+        <span>Totale:</span> €10.20
+      </div>
+      <button class="cart-btn" type="button">Procedi all'Acquisto</button>
+    </div>
+  </div>
+
+  <!-- Include jQuery, Popper.js, e Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome (per le icone) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

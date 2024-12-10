@@ -1,122 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-
 <head>
-    <title>Landing page Supermercato Bootstrap</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercato Online</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include Font Awesome per le icone -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Optional: Aggiungi il tuo stile personalizzato -->
+  <style>
+    .highlighted-product {
+      margin-top: 20px;
+    }
+    .product-card {
+      margin-bottom: 20px;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
 </head>
-
 <body>
 
-    <div class="container-fluid p-0 m-0">
+  <!-- Barra di Navigazione -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img
+        src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000"
+        width="50" height="44">Supermercato</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prodotti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Offerte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatti</a>
+          </li>
+        </ul>
+        <!-- Barra di ricerca -->
+        <form class="form-inline my-2 my-lg-0 ml-3">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cerca prodotti" aria-label="Cerca">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cerca</button>
+          </form>
+          <!-- Icone di Login e Carrello -->
+        <div class="navbar-nav ml-3">
+            <a class="nav-item nav-link" href="#">
+              <i class="fas fa-user-circle fa-lg"></i> <!-- Icona Login -->
+            </a>
+            <a class="nav-item nav-link" href="#">
+              <i class="fas fa-shopping-cart fa-lg"></i> <!-- Icona Carrello -->
+            </a>
+          </div>
+      </div>
+    </div>
+  </nav>
 
-        <header>
-            <div class="container-fluid">
-                <nav class="navbar sticky-top bg-body-tertiary">
-                    <div class="container-fluid bg-body-tertiary">
-                        <div class="">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                                <a class="navbar-brand" href="#"> <img
-                                        src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000"
-                                        width="50" height="44">Supermercato</a>
-                            </button>
-                        </div>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header flex-column">
+  <!-- Intestazione -->
+  <header class="bg-info text-white text-center py-5">
+    <div class="container">
+      <h1>Benvenuti nel nostro Supermercato Online!</h1>
+      <p>Acquista i tuoi prodotti freschi e convenienti direttamente a casa.</p>
+    </div>
+  </header>
 
-                                <div class="d-flex justify-content-between align-items-center" style="width:100%">
-                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prodotti</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-
-
-                                <div class="offcanvas-body d-flex justify-content-between" style="width: 100%">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" aria-current="page"
-                                                href="Pasta,pane"><b>Pasta,pane</b></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href=""><b>Carne</b></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href=""><b>Frutta,verdura</b></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href=""><b>Dolci</b></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href=""><b>Spezie</b></a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </nav>
-
-
-
-
-
+  <!-- Sezione Prodotti in Evidenza (Carousel) -->
+  <section class="highlighted-product">
+    <div class="container">
+      <h2 class="text-center mb-4">Prodotti in Evidenza</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.coopshop.it/photo/2024/11/27/44/banner/raw/BARILLA.jpg" class="d-block w-100" alt="Prodotto 1" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p></p>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Prodotto 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Prodotto 2</h5>
+              <p>Descrizione del prodotto 2</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Prodotto 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Prodotto 3</h5>
+              <p>Descrizione del prodotto 3</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Precedente</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Successivo</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-        </header>
-
-        <main>
-<div class="container">
-
-    <div class="container text-center">
-        <div class="row">
-          <div class="col-8">col-8</div>
-          <div class="col-4">col-4</div>
+  <!-- Sezione Prodotti in Offerta -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Prodotti in Offerta</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Offerta 1">
+            <div class="card-body">
+              <h5 class="card-title">Offerta 1</h5>
+              <p class="card-text">Descrizione breve dell'offerta.</p>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Offerta 2">
+            <div class="card-body">
+              <h5 class="card-title">Offerta 2</h5>
+              <p class="card-text">Descrizione breve dell'offerta.</p>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Offerta 3">
+            <div class="card-body">
+              <h5 class="card-title">Offerta 3</h5>
+              <p class="card-text">Descrizione breve dell'offerta.</p>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- Sezione Prodotti in Vetrina -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">I Nostri Prodotti</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 1">
+            <div class="card-body">
+              <h5 class="card-title">Prodotto 1</h5>
+              <p class="card-text">Descrizione del prodotto 1</p>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 2">
+            <div class="card-body">
+              <h5 class="card-title">Prodotto 2</h5>
+              <p class="card-text">Descrizione del prodotto 2</p>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 3">
+            <div class="card-body">
+              <h5 class="card-title">Prodotto 3</h5>
+              <p class="card-text">Descrizione del prodotto 3</p>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 4">
+            <div class="card-body">
+              <h5 class="card-title">Prodotto 4</h5>
+              <p class="card-text">Descrizione del prodotto 4</p>
+              <a href="#" class="btn btn-primary">Acquista</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Include Bootstrap JS e jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-</div>
-            
-
-            
-        </main>
-        <footer>
-            <div class="container-fluid">
-
-                <div class="text-center py-3 text-black">
-                    <p>&copy; 2024 Giorgio Adamo. Tutti i diritti riservati.</p>
-                </div>
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
 </body>
-
 </html>

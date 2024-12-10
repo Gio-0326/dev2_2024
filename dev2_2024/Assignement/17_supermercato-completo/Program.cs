@@ -1,338 +1,508 @@
 ﻿
-using Newtonsoft.Json; 
+using Newtonsoft.Json;
 
- 
-string FilePath = "Json"; 
- 
-if (!Directory.Exists(FilePath)) 
-{ 
-    Directory.CreateDirectory(FilePath); 
-} 
- 
-var catalogo = CaricaCatalogo(); // Carica il catalogo esistente o inizializza con prodotti di esempio 
-var carrello = new List<Dictionary<string, object>>(); 
-var scontrini = CaricaScontrini(); // Carica gli scontrini esistenti 
- 
-bool continua = true; 
- 
-Console.WriteLine("Sei un operatore o un cliente?"); 
-Console.WriteLine("1. Operatore"); 
-Console.WriteLine("2. Cliente"); 
-Console.Write("Scegli un'opzione: "); 
- 
-string tipoUtente = Console.ReadLine(); 
- 
-while (continua) 
-{ 
-    if (tipoUtente == "1") // Operatore 
+string fileCatalogo = @"catalogo.json"; // è il nome del file json
+List<Dictionary<string, object>> carrello = new List<Dictionary<string, object>>(); // Lista del carrello
+List<Dictionary<string, object>> catalogo = new List<Dictionary<string, object>>()
+{
+    new Dictionary<string, object> { { "Id", "001" }, { "Nome", "Pane" }, { "Prezzo", 1.50 }, { "Quantita", 100 } },
+    new Dictionary<string, object> { { "Id", "002" }, { "Nome", "Latte" }, { "Prezzo", 0.99 }, { "Quantita", 50 } },
+    new Dictionary<string, object> { { "Id", "003" }, { "Nome", "Mela" }, { "Prezzo", 2.00 }, { "Quantita", 200 } }
+};
+Dictionary<string, object> scontrino = new Dictionary<string, object>();
+
+var catalogoJson = JsonConvert.SerializeObject(catalogo, Formatting.Indented);
+File.WriteAllText(fileCatalogo, catalogoJson); // Scrivi il file JSON
+
+Console.WriteLine("Benvenuto nel supermercato!");
+string scelta;
+do
+{
+    Console.WriteLine("Sei un cliente o un operatore?\n1. Cliente \n2. Operatore");
+    Console.Write("Scegli un'opzione: ");
+    scelta = Console.ReadLine()!;
+
+    switch (scelta)
+    {
+        case "1":
+            Cliente(carrello, fileCatalogo, catalogo, scontrino);
+            break;
+
+        case "2":
+            Operatore(catalogo, fileCatalogo);
+            break;
+
+        default:
+            Console.WriteLine("Non hai scelto l'opzione corretta!");
+            break;
+    }
+} while (scelta != "1" && scelta != "2");
+
+static void Cliente(List<Dictionary<string, object>> carrello, string fileCatalogo, List<Dictionary<string, object>> catalogo, Dictionary<string, object> scontrino)
+{
+    string scelta;
+    do
+    {
+        Console.WriteLine("");
+        Console.WriteLine("\n------- Menu Cliente -------");
+        Console.WriteLine("1. Aggiungi al carrello");
+        Console.WriteLine("2. Visualizza il carrello");
+        Console.WriteLine("3. Modifica prodotto nel carrello");
+        Console.WriteLine("4. Elimina prodotto dal carrello");
+        Console.WriteLine("5. Stampa scontrino");
+        Console.WriteLine("6. Esci");
+
+        scelta = Console.ReadLine()!;
+
+        switch (scelta)
+        {
+            case "1":
+                Console.WriteLine("");
+                AggiungiAlCarrello(carrello, catalogo, fileCatalogo);
+                break;
+
+            case "2":
+                Console.WriteLine("");
+                VisualizzaCarrello(carrello);
+                break;
+
+            case "3":
+                Console.WriteLine("");
+                ModificaCarrello(carrello, catalogo, fileCatalogo);
+                break;
+
+            case "4":
+                Console.WriteLine("");
+                EliminaDalCarrello(carrello, catalogo, fileCatalogo);
+                break;
+
+            case "5":
+                Console.WriteLine("");
+                VisualizzaeStampaScontrino(carrello, scontrino);
+                break;
+
+            case "6":
+                Console.WriteLine("Arrivederci!");
+                return;
+
+            default:
+                Console.WriteLine("Non hai scelto l'opzione corretta!");
+                break;
+        }
+    }
+    while (scelta != "6");
+}
+
+static void Operatore(List<Dictionary<string, object>> catalogo, string fileCatalogo)
+{
+    string scelta;
+    do
+    {
+        Console.WriteLine("");
+        Console.WriteLine("------- Menu Operatore -------");
+        Console.WriteLine("1. Aggiungi al catalogo");
+        Console.WriteLine("2. Visualizza il catalogo");
+        Console.WriteLine("3. Modifica prodotto nel catalogo");
+        Console.WriteLine("4. Elimina prodotto dal catalogo");
+        Console.WriteLine("5. Esci");
+
+        scelta = Console.ReadLine()!;
+
+        switch (scelta)
+        {
+            case "1":
+                Console.WriteLine("");
+                AggiungiAlCatalogo(catalogo, fileCatalogo);
+                break;
+
+            case "2":
+                Console.WriteLine("");
+                VisualizzaCatalogo(catalogo);
+                break;
+
+            case "3":
+                Console.WriteLine("");
+                ModificaCatalogo(catalogo, fileCatalogo);
+                break;
+
+            case "4":
+                Console.WriteLine("");
+                EliminaDalCatalogo(catalogo, fileCatalogo);
+                break;
+
+            case "5":
+                Console.WriteLine("Arrivederci!");
+                return;
+            default:
+                Console.WriteLine("Non hai scelto l'opzione corretta!");
+                break;
+        }
+    }
+    while (scelta != "6");
+}
+
+static void AggiungiAlCatalogo(List<Dictionary<string, object>> catalogo, string fileCatalogo)
+{
+    VisualizzaCatalogo(catalogo);
+
+    Console.WriteLine("");
+    Console.Write("Inserisci ID prodotto: ");
+    string id = Console.ReadLine()!;
+
+    Console.Write("Inserisci nome prodotto: ");
+    string nome = Console.ReadLine()!;
+
+    Console.Write("Inserisci prezzo prodotto: ");
+    string prezzo = Console.ReadLine()!;
+
+    Console.Write("Inserisci quantità disponibile: ");
+    string quantita = Console.ReadLine()!;
+
+    catalogo.Add(new Dictionary<string, object>
+    {
+        { "Id", id },
+        { "Nome", nome },
+        { "Prezzo", Convert.ToDouble(prezzo) },
+        { "Quantita", Convert.ToInt32(quantita) }
+    });
+
+    // Serializzazione della lista catalogo aggiornata in formato JSON.
+    var catalogoJson = JsonConvert.SerializeObject(catalogo, Formatting.Indented);
+
+    // Scrittura del JSON nel file, sovrascrivendo il vecchio file.
+    File.WriteAllText(fileCatalogo, catalogoJson);
+
+    Console.WriteLine($"Prodotto aggiunto al catalogo.");
+}
+
+static List<Dictionary<string, object>> VisualizzaCatalogo(List<Dictionary<string, object>> catalogo)
+{
+    Console.WriteLine("------- Catalogo -------");
+    foreach (var prodotto in catalogo)
+    {
+        Console.WriteLine($"Id: {prodotto["Id"]} - Nome: {prodotto["Nome"]} - Prezzo: {prodotto["Prezzo"]:C2} - Quantita: {prodotto["Quantita"]}");
+    }
+
+    return catalogo;
+}
+
+static void ModificaCatalogo(List<Dictionary<string, object>> catalogo, string fileCatalogo)
+{
+    VisualizzaCatalogo(catalogo);
+
+    Console.WriteLine("");
+    Console.Write("Inserisci il nome del prodotto da modificare: ");
+    string nome = Console.ReadLine()!;
+
+    var prodottoDaModificare = catalogo.FirstOrDefault(p => p.ContainsKey("Nome") && p["Nome"].ToString() == nome);
+
+    if (prodottoDaModificare != null)
+    {
+        Console.WriteLine($"Prodotto trovato: {prodottoDaModificare["Nome"]}, Prezzo: {prodottoDaModificare["Prezzo"]}, Quantità: {prodottoDaModificare["Quantita"]}");
+
+        Console.Write("Vuoi modificare il nome del prodotto? (premi Enter per mantenere il nome attuale): ");
+        string nuovoNome = Console.ReadLine()!;
+        if (!string.IsNullOrEmpty(nuovoNome))
+        {
+            prodottoDaModificare["Nome"] = nuovoNome;
+        }
+
+        Console.Write("Vuoi modificare il prezzo del prodotto? (premi Enter per mantenere il prezzo attuale): ");
+        string nuovoPrezzo = Console.ReadLine()!;
+        if (!string.IsNullOrEmpty(nuovoPrezzo) && double.TryParse(nuovoPrezzo, out double prezzo)) 
+        {
+            prodottoDaModificare["Prezzo"] = prezzo;
+        }
+
+        Console.Write("Vuoi modificare la quantità disponibile? (premi Enter per mantenere la quantità attuale): ");
+        string nuovaQuantita = Console.ReadLine()!;
+        if (!string.IsNullOrEmpty(nuovaQuantita) && int.TryParse(nuovaQuantita, out int quantita))
+        {
+            prodottoDaModificare["Quantita"] = quantita;
+        }
+
+        var catalogoJson = JsonConvert.SerializeObject(catalogo, Formatting.Indented);
+        File.WriteAllText(fileCatalogo, catalogoJson);
+
+        Console.WriteLine("Prodotto aggiornato.");
+    }
+    else
+    {
+        Console.WriteLine($"Prodotto con nome '{nome}' non trovato.");
+    }
+}
+
+static void EliminaDalCatalogo(List<Dictionary<string, object>> catalogo, string fileCatalogo)
+{
+    VisualizzaCatalogo(catalogo);
+
+    Console.WriteLine("");
+    Console.Write("Inserisci il nome del prodotto da eliminare: ");
+    string nomeProdotto = Console.ReadLine()!;
+
+    var prodottoDaEliminare = catalogo.FirstOrDefault(p => p.ContainsKey("Nome") && p["Nome"].ToString() == nomeProdotto);
+
+    if (prodottoDaEliminare != null)
+    {
+        catalogo.Remove(prodottoDaEliminare);
+
+        var catalogoJson = JsonConvert.SerializeObject(catalogo, Formatting.Indented);
+        File.WriteAllText(fileCatalogo, catalogoJson);
+
+        Console.WriteLine($"Prodotto rimosso.");
+    }
+    else
+    {
+        Console.WriteLine($"Prodotto non trovato.");
+    }
+}
+
+static void VisualizzaeStampaScontrino(List<Dictionary<string, object>> carrello, Dictionary<string, object> scontrino)
+{
+    if (carrello.Count == 0)
+    {
+        Console.WriteLine("Il carrello è vuoto.");
+        return;
+    }
+
+    // Calcola il totale del carrello (somma dei prezzi di tutti i prodotti)
+    double totaleCarrello = 0;
+
+    // Lista dei prodotti acquistati con la quantità e il totale per prodotto
+    List<string> prodottiAcquistati = new List<string>();
+
+    foreach (var prodotto in carrello)
+    {
+        double prezzoSingolo = Convert.ToDouble(prodotto["Prezzo singolo"]);
+        int quantita = Convert.ToInt32(prodotto["Quantita"]);
+        double totaleProdotto = prezzoSingolo * quantita;
+
+        // Aggiungi il prodotto alla lista degli acquisti
+        prodottiAcquistati.Add($"{prodotto["Nome"]} x{quantita} - Prezzo: {prezzoSingolo:C2} - Totale: {totaleProdotto:C2}");
+
+        // Aggiungi il totale del prodotto al totale carrello
+        totaleCarrello += totaleProdotto;
+    }
+
+    // Aggiungi i dettagli allo scontrino
+    scontrino = new Dictionary<string, object> 
     { 
-        Console.WriteLine("\n--- Menu Operatore ---"); 
-        Console.WriteLine("1. Aggiungi prodotto al catalogo"); 
-        Console.WriteLine("2. Visualizza catalogo"); 
-        Console.WriteLine("3. Esci"); 
-        Console.Write("Scegli un'opzione: "); 
- 
-        string sceltaOperatore = Console.ReadLine(); 
-        switch (sceltaOperatore) 
-        { 
-            case "1": 
-                CreaProdotto(catalogo); 
-                break; 
- 
-            case "2": 
-                VisualizzaCatalogo(catalogo); 
-                break; 
- 
-            case "3": 
-                continua = false; 
-                Console.WriteLine("Arrivederci!"); 
-                break; 
- 
-            default: 
-                Console.WriteLine("Opzione non valida. Riprova."); 
-                break; 
-        } 
-    } 
-    else if (tipoUtente == "2") // Cliente 
-    { 
-        Console.WriteLine("\n--- Menu Cliente ---"); 
-        Console.WriteLine("1. Aggiungi prodotto al carrello"); 
-        Console.WriteLine("2. Visualizza carrello"); 
-        Console.WriteLine("3. Genera e salva scontrino"); 
-        Console.WriteLine("4. Visualizza storico scontrini"); 
-        Console.WriteLine("5. Esci"); 
-        Console.Write("Scegli un'opzione: "); 
- 
-        string sceltaCliente = Console.ReadLine(); 
-        switch (sceltaCliente) 
-        { 
-            case "1": 
-                AggiungiAlCarrelloUI(catalogo, carrello); 
-                break; 
- 
-            case "2": 
-                VisualizzaCarrello(carrello); 
-                break; 
- 
-            case "3": 
-                GeneraESalvaScontrino(carrello, scontrini); 
-                break; 
- 
-            case "4": 
-                VisualizzaScontrini(scontrini); 
-                break; 
- 
-            case "5": 
-                continua = false; 
-                Console.WriteLine("Arrivederci!"); 
-                break; 
- 
-            default: 
-                Console.WriteLine("Opzione non valida. Riprova."); 
-                break; 
-        } 
-    } 
-    else 
-    { 
-        Console.WriteLine("Opzione non valida. Riprova."); 
-        continua = false; 
-    } 
-} 
- 
-static void CreaProdotto(List<Dictionary<string, object>> catalogo) 
-{ 
-    Console.Write("Inserisci ID prodotto: "); 
-    string id = Console.ReadLine(); 
- 
-    Console.Write("Inserisci nome prodotto: "); 
-    string nome = Console.ReadLine(); 
- 
-    Console.Write("Inserisci prezzo prodotto: "); 
-    string prezzo = Console.ReadLine(); 
- 
-    Console.Write("Inserisci quantità disponibile: "); 
-    string quantita = Console.ReadLine(); 
- 
-    AggiungiProdotto(catalogo, id, nome, prezzo, quantita); 
-    Console.WriteLine($"Prodotto {nome} aggiunto al catalogo."); 
-    string catalogoPathJson = @"./Json/catalogo.json"; 
- 
-    List<Dictionary<string, object>> catalogoEsistente = new List<Dictionary<string, object>>(); 
- 
-    if (File.Exists(catalogoPathJson)) 
-    { 
-        string jsonCatalogo = File.ReadAllText(catalogoPathJson); 
- 
-        try 
-        { 
-            var prodotto = JsonConvert.DeserializeObject<Dictionary<string, object>>(jsonCatalogo); 
-            catalogoEsistente.Add(prodotto); 
-        } 
-        catch (JsonException) 
-        { 
-            catalogoEsistente = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(jsonCatalogo); 
-        } 
-    } 
- 
-    catalogoEsistente.Add(new Dictionary<string, object> 
-    { 
-        { "Id", id }, 
-        { "Nome", nome }, 
-        { "Prezzo", prezzo }, 
-        { "Quantita", quantita } 
-    }); 
- 
-    File.WriteAllText(catalogoPathJson, JsonConvert.SerializeObject(catalogoEsistente, Formatting.Indented)); 
-} 
- 
-static void AggiungiProdotto(List<Dictionary<string, object>> catalogo, string id, string nome, string prezzo, string quantita) 
-{ 
-    catalogo.Add(new Dictionary<string, object> 
-    { 
-        { "Id", id }, 
-        { "Nome", nome }, 
-        { "Prezzo", prezzo }, 
-        { "Quantita", quantita } 
-    }); 
-} 
- 
-static void VisualizzaCatalogo(List<Dictionary<string, object>> catalogo) 
-{ 
-    if (catalogo == null || catalogo.Count == 0) 
-    { 
-        Console.WriteLine("Il catalogo è vuoto."); 
-        return; 
-    } 
- 
-    Console.WriteLine("--- Catalogo Prodotti ---"); 
-    foreach (var prodotto in catalogo) 
-    { 
-        // Controlla se la chiave "Id" esiste nel dizionario 
-        if (prodotto.ContainsKey("Id") && prodotto.ContainsKey("Nome") && prodotto.ContainsKey("Prezzo") && prodotto.ContainsKey("Quantita")) 
-        { 
-            Console.WriteLine($"Id: {prodotto["Id"]}, Nome: {prodotto["Nome"]}, Prezzo: {prodotto["Prezzo"]}, Quantità: {prodotto["Quantita"]}"); 
-        } 
-        else 
-        { 
-            Console.WriteLine("Errore: Prodotto incompleto nel catalogo."); 
-        } 
-    } 
-} 
- 
- 
-static void AggiungiAlCarrelloUI(List<Dictionary<string, object>> catalogo, List<Dictionary<string, object>> carrello) 
-{ 
-    Console.Write("Inserisci ID prodotto: "); 
-    string id = Console.ReadLine(); 
- 
-    Console.Write("Inserisci quantità: "); 
-    string quantita = Console.ReadLine(); 
- 
-    AggiungiAlCarrello(catalogo, carrello, id, quantita); 
-} 
- 
-static void AggiungiAlCarrello(List<Dictionary<string, object>> catalogo, List<Dictionary<string, object>> carrello, string id, string quantita) 
-{ 
-    var prodotto = catalogo.FirstOrDefault(p => p["Id"] == id); 
- 
-    if (prodotto == null) 
-    { 
-        Console.WriteLine($"Prodotto con Id {id} non trovato."); 
-        return; 
-    } 
- 
-    if (int.Parse(prodotto["Quantita"].ToString()) < int.Parse(quantita)) 
-    { 
-        Console.WriteLine($"Quantità non disponibile per il prodotto {prodotto["Nome"]}."); 
-        return; 
-    } 
- // Aggiorna il catalogo
-    prodotto["Quantita"] = (int.Parse(prodotto["Quantita"].ToString()) - int.Parse(quantita)).ToString(); 
- // Aggiungi al carrello
-    carrello.Add(new Dictionary<string, object> 
-    { 
-        { "Nome", prodotto["Nome"] }, 
-        { "Prezzo", prodotto["Prezzo"] }, 
-        { "Quantita", quantita }, 
-        { "Totale", (Convert.ToDouble(prodotto["Prezzo"]) * int.Parse(quantita)).ToString("F2") } 
-    }); 
- 
-    Console.WriteLine($"Prodotto \"{prodotto["Nome"]}\" aggiunto al carrello."); 
-} 
- 
-static void VisualizzaCarrello(List<Dictionary<string, object>> carrello) 
-{ 
-    if (carrello.Count == 0) 
-    { 
-        Console.WriteLine("Il carrello è vuoto."); 
-        return; 
-    } 
- 
-    Console.WriteLine("--- Carrello ---"); 
-    foreach (var item in carrello) 
-    { 
-        Console.WriteLine($"{item["Nome"]} x{item["Quantita"]} - Totale: {Convert.ToDouble(item["Totale"]):C2}"); 
-    } 
-} 
- 
-static void GeneraESalvaScontrino(List<Dictionary<string, object>> carrello, List<Dictionary<string, object>> scontrini) 
-{ 
-    if (carrello.Count == 0) 
-    { 
-        Console.WriteLine("Il carrello è vuoto. Aggiungi prodotti prima di generare lo scontrino."); 
-        return; 
-    } 
- 
-    var scontrino = GeneraScontrino(carrello); 
-    scontrini.Add(scontrino); 
-    carrello.Clear(); 
- 
-    Console.WriteLine("Scontrino generato e salvato."); 
-    SalvaScontrino(scontrino);  // Salva lo scontrino nel file JSON 
-    VisualizzaScontrino(scontrino); 
-} 
- 
-static Dictionary<string, object> GeneraScontrino(List<Dictionary<string, object>> carrello) 
-{ 
-    double totale = carrello.Sum(item => Convert.ToDouble(item["Totale"])); 
- 
-    return new Dictionary<string, object> 
-    { 
-        { "DataAcquisto", DateTime.Now.ToString() }, 
-        { "ProdottiAcquistati", string.Join("; ", carrello.Select(item => $"{item["Nome"]} x{item["Quantita"]} ({item["Totale"]})")) }, 
-        { "TotaleSpesa", totale.ToString("F2") } 
+        { "DataAcquisto", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") }, 
+        { "ProdottiAcquistati", prodottiAcquistati }, 
+        { "TotaleSpesa", totaleCarrello.ToString("F2") } 
     }; 
-} 
- 
-static void VisualizzaScontrino(Dictionary<string, object> scontrino) 
-{ 
+
+    // Visualizza lo scontrino nel terminale
+    Console.WriteLine("\n-------- Scontrino --------");
     Console.WriteLine($"Data: {scontrino["DataAcquisto"]}"); 
-    Console.WriteLine($"Prodotti Acquistati: {scontrino["ProdottiAcquistati"]}"); 
+    Console.WriteLine("Prodotti Acquistati:");
+    foreach (var prodotto in scontrino["ProdottiAcquistati"] as List<string>)
+    {
+        Console.WriteLine(prodotto);
+    }
     Console.WriteLine($"Totale Scontrino: {scontrino["TotaleSpesa"]:C2}"); 
-} 
- 
-static void VisualizzaScontrini(List<Dictionary<string, object>> scontrini) 
-{ 
-    if (scontrini.Count == 0) 
-    { 
-        Console.WriteLine("Nessuno scontrino trovato."); 
-        return; 
-    } 
- 
-    foreach (var scontrino in scontrini) 
-    { 
-        VisualizzaScontrino(scontrino); 
-        Console.WriteLine("---------------"); 
-    } 
-} 
- 
-static void SalvaScontrino(Dictionary<string, object> scontrino) 
-{ 
-    string scontriniPathJson = @"scontrini.json"; 
- 
-    List<Dictionary<string, object>> scontriniEsistenti = CaricaScontrini(); 
- 
-    scontriniEsistenti.Add(scontrino); 
- 
-    File.WriteAllText(scontriniPathJson, JsonConvert.SerializeObject(scontriniEsistenti, Formatting.Indented)); 
-} 
- 
-static List<Dictionary<string, object>> CaricaScontrini() 
-{ 
-    string scontriniPathJson = @"scontrini.json"; 
-    if (File.Exists(scontriniPathJson)) 
-    { 
-        string jsonScontrini = File.ReadAllText(scontriniPathJson); 
-        return JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(jsonScontrini); 
-    } 
-    return new List<Dictionary<string, object>>(); // Se non esistono scontrini, ritorna una lista vuota 
-} 
- 
-static List<Dictionary<string, object>> CaricaCatalogo() 
-{ 
-    string catalogoPathJson = @"catalogo.json"; 
-    if (File.Exists(catalogoPathJson)) 
-    { 
-        string jsonCatalogo = File.ReadAllText(catalogoPathJson); 
-        return JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(jsonCatalogo); 
-    } 
-    else 
-    { 
-        // Popola il catalogo con alcuni prodotti predefiniti 
-        return PopolaCatalogo(); 
-    } 
-} 
- 
-static List<Dictionary<string, object>> PopolaCatalogo() 
-{ 
-    return new List<Dictionary<string, object>>() 
-    { 
-        new Dictionary<string, object> { { "Id", "001" }, { "Nome", "Pane" }, { "Prezzo", "1,50" }, { "Quantita", "100" } }, 
-        new Dictionary<string, object> { { "Id", "002" }, { "Nome", "Latte" }, { "Prezzo", "0,99" }, { "Quantita", "50" } }, 
-        new Dictionary<string, object> { { "Id", "003" }, { "Nome", "Mela" }, { "Prezzo", "2,00" }, { "Quantita", "200" } } 
-    }; 
-}  // popolaCatalogo deve popolare il file Json
 
+    // Salva lo scontrino in un file JSON
+    var fileScontrino = @"scontrino.json";
+    var scontrinoJson = JsonConvert.SerializeObject(scontrino, Formatting.Indented);
+    File.WriteAllText(fileScontrino, scontrinoJson); // Scrivi il file JSON
+    Console.WriteLine("\nScontrino salvato in 'scontrino.json'.");
+}
+
+
+static void AggiungiAlCarrello(List<Dictionary<string, object>> carrello, List<Dictionary<string, object>> catalogo, string fileCatalogo)
+{
+    VisualizzaCatalogo(catalogo);
+
+    Console.WriteLine("");
+    Console.Write("Inserisci il nome del prodotto: ");
+    string nome = Console.ReadLine()!;
+
+    Console.Write("Inserisci la quantità: ");
+    string quantita = Console.ReadLine()!;
+
+    var prodotto = catalogo.FirstOrDefault(p => p["Nome"].ToString() == nome);
+
+    if (prodotto == null)
+    {
+        Console.WriteLine("Prodotto non trovato.");
+        return;
+    }
+
+    if (int.Parse(prodotto["Quantita"].ToString()!) < int.Parse(quantita))
+    {
+        Console.WriteLine("Quantità non disponibile.");
+        return;
+    }
+
+    carrello.Add(new Dictionary<string, object>
+    {
+        { "Nome", prodotto["Nome"] },
+        { "Prezzo singolo", prodotto["Prezzo"] },
+        { "Quantita", quantita },
+        { "Prezzo", (Convert.ToDouble(prodotto["Prezzo"]) * int.Parse(quantita)).ToString("F2") },
+        
+    });
+
+    prodotto["Quantita"] = (int.Parse(prodotto["Quantita"].ToString()!) - int.Parse(quantita)).ToString();
+    // Sovrascrivi il file JSON con il catalogo aggiornato
+    var catalogoJson = JsonConvert.SerializeObject(catalogo, Formatting.Indented);
+    File.WriteAllText(fileCatalogo, catalogoJson);
+
+    Console.WriteLine("Prodotto aggiunto al carrello.");
+    VisualizzaCarrello(carrello);
+}
+
+static void VisualizzaCarrello(List<Dictionary<string, object>> carrello)
+{
+    if (carrello.Count == 0)
+    {
+        Console.WriteLine("Il carrello è vuoto.");
+
+    }
+    else
+    {
+        Console.WriteLine("");
+        Console.WriteLine("------- Carrello -------");
+        foreach (var prodotto in carrello)
+        {
+            Console.WriteLine($"Nome: {prodotto["Nome"]} - Prezzo: {prodotto["Prezzo"]:C2} - Quantita: {prodotto["Quantita"]}");
+        }
+    }
+}
+
+static void ModificaCarrello(List<Dictionary<string, object>> carrello, List<Dictionary<string, object>> catalogo, string fileCatalogo)
+{
+    if (carrello.Any()) // Verifica che ci siano articoli nel carrello
+    {
+        VisualizzaCarrello(carrello);
+
+        Console.WriteLine("");
+        Console.Write("Inserisci il nome dell'articolo che desideri modificare: ");
+        string nome = Console.ReadLine()!;
+
+        // Trova il prodotto nel carrello
+        var prodottoDaModificare = carrello.FirstOrDefault(p => p.ContainsKey("Nome") && p["Nome"].ToString() == nome);
+
+        if (prodottoDaModificare != null)
+        {
+            Console.WriteLine($"Prodotto trovato: {prodottoDaModificare["Nome"]}, Prezzo: {prodottoDaModificare["Prezzo"]}, Quantità: {prodottoDaModificare["Quantita"]}");
+
+            // Chiedi la nuova quantità
+            Console.Write("Inserisci la nuova quantità: ");
+            if (int.TryParse(Console.ReadLine(), out int nuovaQuantita) && nuovaQuantita > 0)
+            {
+                // Calcola la differenza di quantità
+                int vecchiaQuantita = Convert.ToInt32(prodottoDaModificare["Quantita"]);
+                int differenzaQuantita = nuovaQuantita - vecchiaQuantita;
+
+                // Aggiorna la quantità nel carrello
+                prodottoDaModificare["Quantita"] = nuovaQuantita;
+
+                // Ricalcola il totale
+                double prezzo = Convert.ToDouble(prodottoDaModificare["Prezzo"]);
+                prodottoDaModificare["Totale"] = prezzo * nuovaQuantita;
+
+                Console.WriteLine($"Quantità aggiornata a {nuovaQuantita}. Totale aggiornato a {Convert.ToDouble(prodottoDaModificare["Totale"]):C2}.");
+
+                // Trova il prodotto nel catalogo per aggiornare la quantità disponibile
+                var prodottoNelCatalogo = catalogo.FirstOrDefault(p => p.ContainsKey("Nome") && p["Nome"].ToString() == nome);
+                if (prodottoNelCatalogo != null)
+                {
+                    int quantitaCatalogo = Convert.ToInt32(prodottoNelCatalogo["Quantita"]);
+
+                    // Se la quantità nel carrello è stata ridotta, aggiungi la differenza al catalogo
+                    if (differenzaQuantita < 0)
+                    {
+                        prodottoNelCatalogo["Quantita"] = quantitaCatalogo - differenzaQuantita;
+                    }
+                    // Se la quantità nel carrello è stata aumentata, sottrai la differenza dal catalogo
+                    else if (differenzaQuantita > 0)
+                    {
+                        // Verifica che ci sia abbastanza disponibilità nel catalogo
+                        if (quantitaCatalogo >= differenzaQuantita)
+                        {
+                            prodottoNelCatalogo["Quantita"] = quantitaCatalogo - differenzaQuantita;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Errore: la quantità nel catalogo non è sufficiente. Disponibilità nel catalogo: {quantitaCatalogo}");
+                            return;
+                        }
+                    }
+
+                    Console.WriteLine($"La quantità del prodotto nel catalogo è stata aggiornata a {prodottoNelCatalogo["Quantita"]}.");
+                }
+                else
+                {
+                    Console.WriteLine("Errore: prodotto non trovato nel catalogo.");
+                }
+
+                // Scrivere le modifiche nel file JSON
+                var catalogoJson = JsonConvert.SerializeObject(catalogo, Formatting.Indented);
+                File.WriteAllText(fileCatalogo, catalogoJson); // Sovrascrivi il file JSON con il catalogo aggiornato
+            }
+            else
+            {
+                Console.WriteLine("Quantità non valida.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Prodotto non trovato nel carrello.");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Il carrello è vuoto.");
+    }
+}
+
+static void EliminaDalCarrello(List<Dictionary<string, object>> carrello, List<Dictionary<string, object>> catalogo, string fileCatalogo)
+{
+    VisualizzaCarrello(carrello);
+
+    Console.Write("Inserisci il nome del prodotto da eliminare: ");
+    string nome = Console.ReadLine()!;
+
+    // Trova il prodotto da eliminare nel carrello
+    var prodottoDaEliminare = carrello.FirstOrDefault(p => p.ContainsKey("Nome") && p["Nome"].ToString() == nome);
+
+    if (prodottoDaEliminare != null)
+    {
+        // Recupera la quantità del prodotto da rimuovere dal carrello
+        int quantitaDaRimuovere = Convert.ToInt32(prodottoDaEliminare["Quantita"]);
+
+        // Rimuovi il prodotto dal carrello
+        carrello.Remove(prodottoDaEliminare);
+        Console.WriteLine($"Prodotto '{nome}' rimosso dal carrello.");
+
+        // Trova il prodotto nel catalogo per aggiornare la quantità disponibile
+        var prodottoNelCatalogo = catalogo.FirstOrDefault(p => p.ContainsKey("Nome") && p["Nome"].ToString() == nome);
+
+        if (prodottoNelCatalogo != null)
+        {
+            int quantitaCatalogo = Convert.ToInt32(prodottoNelCatalogo["Quantita"]);
+
+            // Aggiungi la quantità del prodotto rimosso nel catalogo
+            prodottoNelCatalogo["Quantita"] = quantitaCatalogo + quantitaDaRimuovere;
+            Console.WriteLine($"La quantità del prodotto nel catalogo è stata aggiornata a {prodottoNelCatalogo["Quantita"]}.");
+
+            // Scrivere le modifiche nel file JSON
+            var catalogoJson = JsonConvert.SerializeObject(catalogo, Formatting.Indented);
+            File.WriteAllText(fileCatalogo, catalogoJson); // Sovrascrivi il file JSON con il catalogo aggiornato
+            Console.WriteLine("Catalogo aggiornato nel file.");
+        }
+        else
+        {
+            Console.WriteLine("Errore: prodotto non trovato nel catalogo.");
+        }
+    }
+    else
+    {
+        Console.WriteLine($"Prodotto non trovato nel carrello.");
+    }
+}
 
 /*using Newtonsoft.Json; // libreria per gestire il file JSON
 
@@ -546,3 +716,4 @@ static void VisualizzaCarrello(List<Dictionary<string, object>> carrello)
 
    Console.WriteLine($"\nTotale: €{totale}");
 }*/
+
