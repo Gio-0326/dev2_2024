@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "NomeProdotto": "prodotto1",
+    "PrezzoProdotto": 3.0,
+    "GiacenzaProdotto": 5
+  },
+  {
+    "Id": 2,
+    "NomeProdotto": "prodotto4",
+    "PrezzoProdotto": 4.0,
+    "GiacenzaProdotto": 9
+  },
+  {
+    "Id": 3,
+    "NomeProdotto": "prodotto7",
+    "PrezzoProdotto": 4.0,
+    "GiacenzaProdotto": 3
+  }
+]

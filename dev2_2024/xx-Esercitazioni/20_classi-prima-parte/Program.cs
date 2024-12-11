@@ -45,7 +45,6 @@ public class Prodotto
     public string NomeProdotto { get; set; }
     public decimal PrezzoProdotto { get; set; }
     public int GiacenzaProdotto { get; set; }
-    public string DescrizioneProdotto { get; set; }
 }
 
 // esempio di classe con proprietà private rese pubbliche tramite metodi get e set dopo aver applicato delle regole di validazione

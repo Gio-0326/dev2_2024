@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23_classi-quarta-parte", "x
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24_classi-quinta-parte", "xx-Esercitazioni\24_classi-quinta-parte\24_classi-quinta-parte.csproj", "{DA8CF262-0A43-40ED-BB59-53514004B66C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25_classi-sesta-parte", "xx-Esercitazioni\25_classi-sesta-parte\25_classi-sesta-parte.csproj", "{DB1B65CE-BE84-47BF-8507-06E390FA34F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -238,6 +240,10 @@ Global
 		{DA8CF262-0A43-40ED-BB59-53514004B66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA8CF262-0A43-40ED-BB59-53514004B66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA8CF262-0A43-40ED-BB59-53514004B66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1B65CE-BE84-47BF-8507-06E390FA34F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1B65CE-BE84-47BF-8507-06E390FA34F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1B65CE-BE84-47BF-8507-06E390FA34F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1B65CE-BE84-47BF-8507-06E390FA34F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{05C0E73D-EE4E-45F7-95A2-E3538DD4B482} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
@@ -277,5 +283,6 @@ Global
 		{8C414B22-6040-42D2-B69C-FDA54DC453EC} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 		{0CA650B6-C603-46D8-AB37-DBB3094BAFDD} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 		{DA8CF262-0A43-40ED-BB59-53514004B66C} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
+		{DB1B65CE-BE84-47BF-8507-06E390FA34F1} = {BCCE0FA6-2F24-4B84-B00E-555E414A6146}
 	EndGlobalSection
 EndGlobal

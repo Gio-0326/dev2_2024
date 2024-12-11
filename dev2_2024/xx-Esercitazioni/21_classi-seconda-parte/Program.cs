@@ -78,7 +78,7 @@ class Program
     public class ProdottoAdvanced
     {
         // definisco una variabile privata id
-        // la definisco privata in modo che non possa essere ,odificata direttamente dall'esterno della classe
+        // la definisco privata in modo che non possa essere , modificata direttamente dall'esterno della classe
         // cosi solo la classe ProdottoAdvanced può accedere e modificare la variabile id
         private int id; // campo privato
 
