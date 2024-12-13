@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("13_verifica-competenze-1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3c66ae6c99672747a565c89aad7a9ca991880c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfe06314689544ea09eeb271d5ba9f5d72feb16e")]
 [assembly: System.Reflection.AssemblyProductAttribute("13_verifica-competenze-1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("13_verifica-competenze-1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
