@@ -8,14 +8,35 @@ class Program
         // Creare un oggetto di tipo ProdottoRepository per gestire il salvataggio e il caricamento dei dati
         ProdottoRepository repository = new ProdottoRepository();
         // Caricare i dati da file con il metodo CaricaProdotti della classe ProdottoRepository (respository)
-        List<ProdottoAdvanced> prodotti = repository.CaricaProdotti();
+        List<Prodotto> prodotti = repository.CaricaProdotti();
 
         // Creare un oggetto di tipo ProdottoAdvancedManager per gestire i prodotti 
-        ProdottoAdvancedManager manager = new ProdottoAdvancedManager(prodotti);
+        ProdottoManager manager = new ProdottoManager(prodotti);
+
+        Dipendente dipendente = new Dipendente(prodotti);
+
+        Purchases acquisti = new Purchases();
+
+        Cliente cliente = new Cliente();
+
+        Categoria categoria1 = new Categoria();
+
+        Cassa cassa = new Cassa();
+
+
+
+        Console.WriteLine("Che ruolo sei? \n1.Cliente \n2.Dipendente \n3.Amministratore");
+        string scelta1 = InputManager.LeggiIntero("\nScelta", 1, 3).ToString();
+        Console.Clear();
+        bool continua = true;
+        switch (scelta1)
+        {
+            case "1":
+        }
 
         // Menu interattivo per eseguire operazioni CRUD sui prodotti
         // variabile per controllare se il programma deve continuare o uscire
-        bool continua = true;
+
 
         // il ciclo while continua finchè la variabile continua è true
         while (continua)
@@ -53,7 +74,9 @@ class Program
 
                     int giacenza = InputManager.LeggiIntero("\nGiacenza: ");
 
-                    manager.AggiungiProdotto(new ProdottoAdvanced { NomeProdotto = nome, PrezzoProdotto = prezzo, GiacenzaProdotto = giacenza });
+                    string categoria = InputManager.LeggiStringa("\nCategoria: ");
+
+                    manager.AggiungiProdotto(new Prodotto { Nome = nome, Prezzo = prezzo, Giacenza = giacenza, Categoria = categoria });
                     break;
                 case "3":
                     Console.Write("ID: ");
@@ -61,10 +84,10 @@ class Program
                     // acquisisco l'id mediante il metodo LeggiIntero della classe InputManager
                     int idProdotto = InputManager.LeggiIntero("\nID: ");
 
-                    ProdottoAdvanced prodottoTrovato = manager.TrovaProdotto(idProdotto);
+                    Prodotto prodottoTrovato = manager.TrovaProdotto(idProdotto);
                     if (prodottoTrovato != null)
                     {
-                        Console.WriteLine($"\nProdotto trovato per ID {idProdotto}: {prodottoTrovato.NomeProdotto}");
+                        Console.WriteLine($"\nProdotto trovato per ID {idProdotto}: {prodottoTrovato.Nome}");
                     }
                     else
                     {
@@ -80,7 +103,9 @@ class Program
 
                     int giacenzaNuova = InputManager.LeggiIntero("\nGiacenza: ");
 
-                    manager.AggiornaProdotto(idProdottoDaAggiornare, new ProdottoAdvanced { NomeProdotto = nomeNuovo, PrezzoProdotto = prezzoNuovo, GiacenzaProdotto = giacenzaNuova });
+                    string categoriaNuova = InputManager.LeggiStringa("\nCategoria: ");
+
+                    manager.AggiornaProdotto(idProdottoDaAggiornare, new Prodotto { Nome = nomeNuovo, Prezzo = prezzoNuovo, Giacenza = giacenzaNuova, Categoria = categoriaNuova });
                     break;
                 case "5":
                     Console.Write("ID: ");
@@ -105,19 +130,15 @@ class Program
 }
 
 
-// creare una classe Dipendente
 
-public class Dipendente
-{
-    private int prossimoId;
-    private string username;
-    private string ruolo;
 
-    public Dipendente(List<ProdottoAdvanced> Prodotti)
-    {
-        
-    }
-}
+
+
+
+
+
+
+
 
 
 

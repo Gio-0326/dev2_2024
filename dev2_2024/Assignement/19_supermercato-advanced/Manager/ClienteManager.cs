@@ -1,40 +1,48 @@
-public class ProdottoAdvancedManager // (CRUD)
+public class ClienteManager // (CRUD)
 {
-    private List<ProdottoAdvanced> prodotti; // prodotti è private perchè non voglio che venga modificato dall'esterno
-    // questo new è necessario affinche dal dominio privato la classe possa comunicare all'esterno i dati aggiornati
-    // un modo per rendere pubblico un dato privato
-    private int prossimoId;
-
     private ProdottoRepository repository;
-    public ProdottoAdvancedManager(List<ProdottoAdvanced> Prodotti)
+    private int id; 
+    public string username;
+    private List<Prodotto> carrello;
+    private List<Purchases> storicoAcquisti;
+    private int percentualeSconto;
+    private double credito;
+    
+    public ClienteManager(List<Prodotto> Carrello, List<Purchases> StoricoAcquisti)
     {
-        prodotti = Prodotti;
+        carrello = Carrello;
+        storicoAcquisti = StoricoAcquisti;
         repository = new ProdottoRepository();
 
-        prossimoId = 1;
 
-        foreach (var prodotto in prodotti)
+
+        id = 1;
+
+        foreach (var prodotto in carrello)
         {
-            if (prodotto.Id >= prossimoId)
+            if (prodotto.Id >= id)
             {
-                prossimoId = prodotto.Id + 1;
+                id = prodotto.Id + 1;
             }
         }
     }
 
+    
+
+
     // metodo per aggiungere un prodotto alla lista
-    public void AggiungiProdotto(ProdottoAdvanced prodotto)
+    public void AggiungiProdotto(Prodotto prodotto)
     {
-        prodotto.Id = prossimoId;
-        prossimoId++;
-        prodotti.Add(prodotto);
+        prodotto.Id = id;
+        id++;
+        carrello.Add(prodotto);
         Console.WriteLine($"Prodotto aggiunto con ID: {prodotto.Id}");
     }
 
     // metodo per visualizzare la lista di prodotti
-    public List<ProdottoAdvanced> OttieniProdotti()
+    public List<Prodotto> OttieniProdotti()
     {
-        return prodotti;
+        return carrello;
     }
 
     // Ogni campo utilizza il formato {Campo - Larghezza} dove:
@@ -50,23 +58,23 @@ public class ProdottoAdvancedManager // (CRUD)
     {
         // Intestazioni con larghezza fissa
         Console.WriteLine(
-        $"{"ID",-5} {"Nome",-20} {"Prezzo",-10} {"Giacenza",-10}"
+        $"{"ID",-5} {"Nome",-20} {"Prezzo",-10} {"Giacenza",-10} {"Categoria",-10}"
         );
         Console.WriteLine(new string('-', 50)); // Linea separatrice
 
         // Stampa ogni prodotto con larghezza fissa
-        foreach (var prodotto in prodotti)
+        foreach (var prodotto in carrello)
         {
             Console.WriteLine(
-                $"{prodotto.Id,-5} {prodotto.NomeProdotto,-20} {prodotto.PrezzoProdotto,-10:0.00} {prodotto.GiacenzaProdotto,-10}"
+                $"{prodotto.Id,-5} {prodotto.Nome,-20} {prodotto.Prezzo,-10:0.00} {prodotto.Giacenza,-10} {prodotto.Categoria,-10}"
             );
         }
     }
 
     // metodo per cercare un prodotto
-    public ProdottoAdvanced TrovaProdotto(int id)
+    public Prodotto TrovaProdotto(int id)
     {
-        foreach (var prodotto in prodotti)
+        foreach (var prodotto in carrello)
         {
             if (prodotto.Id == id)
             {
@@ -76,14 +84,15 @@ public class ProdottoAdvancedManager // (CRUD)
         return null;
     }
     // metodo per modificare un prodotto esistente
-    public void AggiornaProdotto(int id, ProdottoAdvanced nuovoProdotto)
+    public void AggiornaProdotto(int id, Prodotto nuovoProdotto)
     {
         var prodotto = TrovaProdotto(id);
         if (prodotto != null)
         {
-            prodotto.NomeProdotto = nuovoProdotto.NomeProdotto;
-            prodotto.PrezzoProdotto = nuovoProdotto.PrezzoProdotto;
-            prodotto.GiacenzaProdotto = nuovoProdotto.GiacenzaProdotto;
+            prodotto.Nome = nuovoProdotto.Nome;
+            prodotto.Prezzo = nuovoProdotto.Prezzo;
+            prodotto.Giacenza = nuovoProdotto.Giacenza;
+            prodotto.Categoria = nuovoProdotto.Categoria;
         }
     }
 
@@ -93,7 +102,7 @@ public class ProdottoAdvancedManager // (CRUD)
         var prodotto = TrovaProdotto(id);
         if (prodotto != null)
         {
-            prodotti.Remove(prodotto);
+            carrello.Remove(prodotto);
             // elimina il file JSON corrispondente al prodotto
             string filePath = Path.Combine("ProdottiJson", $"{prodotto.Id}.json");
             File.Delete(filePath);
