@@ -1,28 +1,23 @@
 public class ClienteManager // (CRUD)
 {
-    private ProdottoRepository repository;
-    private int id; 
-    public string username;
-    private List<Prodotto> carrello;
-    private List<Purchases> storicoAcquisti;
-    private int percentualeSconto;
-    private double credito;
-    
+    private ClienteRepository repository;
+    private int prossimoId;
+    List<Prodotto> carrello;
+    List<Purchases> storicoAcquisti;
+
     public ClienteManager(List<Prodotto> Carrello, List<Purchases> StoricoAcquisti)
     {
         carrello = Carrello;
         storicoAcquisti = StoricoAcquisti;
-        repository = new ProdottoRepository();
+        repository = new ClienteRepository();
 
-
-
-        id = 1;
+        prossimoId = 1;
 
         foreach (var prodotto in carrello)
         {
-            if (prodotto.Id >= id)
+            if (prodotto.Id >= prossimoId)
             {
-                id = prodotto.Id + 1;
+                prossimoId = prodotto.Id + 1;
             }
         }
     }
@@ -31,10 +26,10 @@ public class ClienteManager // (CRUD)
 
 
     // metodo per aggiungere un prodotto alla lista
-    public void AggiungiProdotto(Prodotto prodotto)
+    public void AggiungiProdottoAlCarrello(Prodotto prodotto)
     {
-        prodotto.Id = id;
-        id++;
+        prodotto.Id = prossimoId;
+        prossimoId++;
         carrello.Add(prodotto);
         Console.WriteLine($"Prodotto aggiunto con ID: {prodotto.Id}");
     }
@@ -45,14 +40,6 @@ public class ClienteManager // (CRUD)
         return carrello;
     }
 
-    // Ogni campo utilizza il formato {Campo - Larghezza} dove:
-    // Campo è il valore da stampare
-    // Larghezza specifica la larghezza del campo; il segno - allinea il testo a sinistra.
-    // {"Nome", -20} significa che il nome del prodotto avrà una larghezza fissa di 20 caratteri, allineato a sinistra
-    // Formato dei numeri:
-    // Per i pezzi, viene usato il formato 0.00 per mostrare sempre due cifre decimali
-    // Linea separatrice:
-    // La riga Console.WriteLine(new string('-', 50)); stampa una line divisoria lunga 50 caratteri per migliorare la lggibilità
 
     public void StampaProdottiIncolonnati()
     {
@@ -72,7 +59,7 @@ public class ClienteManager // (CRUD)
     }
 
     // metodo per cercare un prodotto
-    public Prodotto TrovaProdotto(int id)
+    public Prodotto TrovaProdottoNelCarrello(int id)
     {
         foreach (var prodotto in carrello)
         {
@@ -86,7 +73,7 @@ public class ClienteManager // (CRUD)
     // metodo per modificare un prodotto esistente
     public void AggiornaProdotto(int id, Prodotto nuovoProdotto)
     {
-        var prodotto = TrovaProdotto(id);
+        var prodotto = TrovaProdottoNelCarrello(id);
         if (prodotto != null)
         {
             prodotto.Nome = nuovoProdotto.Nome;
@@ -97,14 +84,14 @@ public class ClienteManager // (CRUD)
     }
 
     // metodo per eliminare un prodotto esistente
-    public void EliminaProdotto(int id)
+    public void EliminaProdottoNelCarrello(int id)
     {
-        var prodotto = TrovaProdotto(id);
+        var prodotto = TrovaProdottoNelCarrello(id);
         if (prodotto != null)
         {
             carrello.Remove(prodotto);
             // elimina il file JSON corrispondente al prodotto
-            string filePath = Path.Combine("ProdottiJson", $"{prodotto.Id}.json");
+            string filePath = Path.Combine("ClientiJson", $"{prodotto.Id}.json");
             File.Delete(filePath);
             Console.WriteLine($"Prodotto eliminato: {filePath}");
         }

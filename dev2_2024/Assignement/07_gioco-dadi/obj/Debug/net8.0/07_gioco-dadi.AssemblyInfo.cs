@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("07_gioco-dadi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c592afc2eac497851af40b1f5aa2710842a2ad61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd4cd6014e744641a98979e86108cf2f8eb2f28e")]
 [assembly: System.Reflection.AssemblyProductAttribute("07_gioco-dadi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("07_gioco-dadi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
