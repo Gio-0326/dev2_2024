@@ -10,6 +10,40 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <!-- Optional: Aggiungi il tuo stile personalizzato -->
   <style>
+    /* Impostazioni di base per il corpo e l'HTML */
+    html, body {
+      height: 100%; /* Garantisce che la pagina occupi l'intera altezza della finestra */
+      margin: 0; /* Rimuove i margini predefiniti */
+      padding: 0; /* Rimuove i padding predefiniti */
+    /* Sfondo per schermo grande (desktop) */
+     }
+    body {
+      background-color: #f8f9fa; /* Colore di sfondo per schermi desktop */
+    }
+
+    /* Sfondo per schermo medio (tablet) */
+    @media (max-width: 991px) {
+      body {
+        background-color: #88afd5 !important; /* Colore di sfondo per schermi medi */
+      }
+      section.bg-light {
+      background-color: #88afd5 !important; /* Impostiamo un colore di sfondo per la sezione prodotti in offerta */
+    }
+    }
+
+    /* Sfondo per schermo piccolo (mobile) */
+    @media (max-width: 767px) {
+      body {
+        background-color: #db9b9b !important; /* Colore di sfondo per schermi piccoli */
+      }
+      section.bg-light {
+      background-color: #db9b9b !important ; /* Impostiamo un colore di sfondo per la sezione prodotti in offerta */
+    }
+    }
+   
+    header{
+    margin-top: 70px;
+    }
     .highlighted-product {
       margin-top: 20px;
     }
@@ -17,15 +51,33 @@
       margin-bottom: 20px;
     }
     .carousel-item img {
-      height: 400px;
-      object-fit: cover;
+      width: 100%;
+      height: 400px;  /* Regola l'altezza a 400px (oppure scegli un'altezza più adatta) */
+      object-fit: contain;  /* Usa contain invece di cover per evitare che l'immagine venga tagliata */
+      object-position: center;  /* Centra l'immagine */
+    }
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    }
+
+    footer div {
+    margin-top: 1rem;
+    }
+
+    footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
     }
   </style>
 </head>
 <body>
 
   <!-- Barra di Navigazione -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"><img
         src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000"
@@ -68,7 +120,7 @@
 
   <!-- Intestazione -->
   <header class="bg-info text-white text-center py-5">
-    <div class="container">
+    <div class="container"> 
       <h1>Benvenuti nel nostro Supermercato Online!</h1>
       <p>Acquista i tuoi prodotti freschi e convenienti direttamente a casa.</p>
     </div>
@@ -86,7 +138,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://www.coopshop.it/photo/2024/11/27/44/banner/raw/BARILLA.jpg" class="d-block w-100" alt="Prodotto 1" >
+            <img src="https://www.coopshop.it/photo/2024/11/27/44/banner/raw/BARILLA.jpg" class="d-block w-100 img-fluid" alt="Prodotto 1">
             <div class="carousel-caption d-none d-md-block">
               <h5></h5>
               <p></p>
@@ -213,4 +265,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+<footer>
+  <p>&copy; 2024 Nome Cognome</p>
+        <div>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+</footer>
 </html>

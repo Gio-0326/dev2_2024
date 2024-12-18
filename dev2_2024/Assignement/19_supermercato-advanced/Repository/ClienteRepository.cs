@@ -23,7 +23,7 @@ public class ClienteRepository
 
     // metodo per caricare i dati da file
     // restituisce una lista di prodotti se il file esiste e contiene dati
-    public List<Cliente> CaricaProdotti()
+    public List<Cliente> CaricaClienti()
     {
         List<Cliente> clienti = new List<Cliente>(); // Crea una lista vuota che conterrà tutti i prodotti caricati
 

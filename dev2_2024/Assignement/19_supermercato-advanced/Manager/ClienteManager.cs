@@ -26,12 +26,14 @@ public class ClienteManager // (CRUD)
 
 
     // metodo per aggiungere un prodotto alla lista
-    public void AggiungiCliente(Cliente cliente)
+    public void AggiungiCliente(Cliente cliente, Prodotto prodotto)
     {
         cliente.id = prossimoId;
         prossimoId++;
         clienti.Add(cliente);
         Console.WriteLine($"Cliente aggiunto con ID: {cliente.id}");
+        cliente.carrello.Add(prodotto);
+        Console.WriteLine($"Prodotto aggiunto al carrello: {prodotto.Id}");
     }
 
     // metodo per visualizzare la lista di prodotti

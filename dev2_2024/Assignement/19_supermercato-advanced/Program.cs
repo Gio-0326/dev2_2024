@@ -9,8 +9,12 @@ class Program
 
         ClienteRepository clienteRepository = new ClienteRepository();
         List<Cliente> clienti = new List<Cliente>();
-       
+
+        Cliente cliente = new Cliente();
+        Prodotto prodotto = new Prodotto();
+        
         List<Prodotto> prodotti = repository.CaricaProdotti();
+        ClienteManager clienteManager = new ClienteManager(clienti);
 
         ProdottoManager manager = new ProdottoManager(prodotti);
         Console.WriteLine("Benvenuto nel supermercato!");
@@ -32,12 +36,36 @@ class Program
                     if (tipoCliente == "1") // Cliente frequente
                     {
                         Console.WriteLine("Benvenuto, cliente frequente!");
+                        
                         // Puoi caricare dati specifici, come il carrello salvato, per il cliente frequente.
+                        Console.WriteLine("Inserisci il tuo username: ");
+                        string username = InputManager.LeggiStringa("\nUsername: ");
+                        Cliente clienteFrequente = clienteManager.TrovaCliente(cliente.id);
+                        List<Cliente> Clienti = clienteRepository.CaricaClienti();
+
+                        if (clienteFrequente != null)
+                        {
+                            Console.WriteLine($"Benvenuto, {clienteFrequente.username}! Il tuo carrello contiene:");
+                            manager.StampaProdottiIncolonnati(); // Supponendo che Cliente abbia una lista di Prodotti chiamata "Carrello"
+                        }
+                        else
+                        {
+                            Console.WriteLine("Cliente non trovato. Registrati come nuovo cliente.");
+                        }
+                        break;
+
                     }
                     else // Nuovo cliente
                     {
                         Console.WriteLine("Benvenuto, nuovo cliente!");
-                        
+                        Console.WriteLine("Inserisci il tuo username: ");
+                        string Username = InputManager.LeggiStringa("\nUsername: ");
+                        // Crea un nuovo cliente e aggiungilo alla lista
+                        Cliente nuovoCliente = new Cliente { username = Username, carrello = new List<Prodotto>() };
+                        clienteManager.AggiungiCliente(nuovoCliente, prodotto);
+                        Console.WriteLine($"Cliente {Username} registrato con successo!");
+                        clienteRepository.SalvaClienti(cliente);
+
                         // Puoi aggiungere logiche per creare un nuovo cliente, ad esempio registrando un nuovo account.
                     }
 
@@ -68,7 +96,8 @@ class Program
 
                             string categoria = InputManager.LeggiStringa("\nCategoria: ");
 
-                            manager.AggiungiProdotto(new Prodotto { Nome = nome, Prezzo = prezzo, Giacenza = giacenza, Categoria = categoria });
+                            manager.AggiungiProdotto( new Prodotto  { Nome = nome, Prezzo = prezzo, Giacenza = giacenza, Categoria = categoria });
+
                             break;
                         case "3":
                             Console.Write("ID: ");
@@ -104,7 +133,7 @@ class Program
                             manager.EliminaProdotto(idProdottoDaEliminare);
                             break;
                         case "6":
-                            foreach (var prodotto in manager.OttieniProdotti())
+                            foreach (var item in manager.OttieniProdotti())
                             {
                                 repository.SalvaProdotti(prodotto);
                             }
@@ -118,7 +147,7 @@ class Program
 
 
                 case "2": // Dipendente
-                    
+
                     Console.WriteLine("\n--------Menu Dipendente--------");
                     Console.WriteLine("1.Visualizza Prodotti del catalogo");
                     Console.WriteLine("2.Aggiungi Prodotto al catalogo");
@@ -183,7 +212,7 @@ class Program
                             break;
                         case "6":
                             // Salva ogni prodotto singolarmente
-                            foreach (var prodotto in manager.OttieniProdotti())
+                            foreach (var item in manager.OttieniProdotti())
                             {
                                 repository.SalvaProdotti(prodotto);
                             }
