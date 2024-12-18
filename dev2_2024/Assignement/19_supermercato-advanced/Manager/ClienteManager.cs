@@ -2,22 +2,22 @@ public class ClienteManager // (CRUD)
 {
     private ClienteRepository repository;
     private int prossimoId;
-    List<Prodotto> carrello;
-    List<Purchases> storicoAcquisti;
+    private List<Cliente> clienti;
+    
 
-    public ClienteManager(List<Prodotto> Carrello, List<Purchases> StoricoAcquisti)
+    public ClienteManager(List<Cliente> Clienti)
     {
-        carrello = Carrello;
-        storicoAcquisti = StoricoAcquisti;
+        clienti = Clienti;
+        
         repository = new ClienteRepository();
 
         prossimoId = 1;
 
-        foreach (var prodotto in carrello)
+        foreach (var cliente in clienti)
         {
-            if (prodotto.Id >= prossimoId)
+            if (cliente.id >= prossimoId)
             {
-                prossimoId = prodotto.Id + 1;
+                prossimoId = cliente.id + 1;
             }
         }
     }
@@ -26,52 +26,52 @@ public class ClienteManager // (CRUD)
 
 
     // metodo per aggiungere un prodotto alla lista
-    public void AggiungiProdottoAlCarrello(Prodotto prodotto)
+    public void AggiungiCliente(Cliente cliente)
     {
-        prodotto.Id = prossimoId;
+        cliente.id = prossimoId;
         prossimoId++;
-        carrello.Add(prodotto);
-        Console.WriteLine($"Prodotto aggiunto con ID: {prodotto.Id}");
+        clienti.Add(cliente);
+        Console.WriteLine($"Cliente aggiunto con ID: {cliente.id}");
     }
 
     // metodo per visualizzare la lista di prodotti
-    public List<Prodotto> OttieniProdotti()
+    public List<Cliente> OttieniProdotti()
     {
-        return carrello;
+        return clienti;
     }
 
 
-    public void StampaProdottiIncolonnati()
+    public void StampaClientiIncolonnati()
     {
         // Intestazioni con larghezza fissa
         Console.WriteLine(
-        $"{"ID",-5} {"Nome",-20} {"Prezzo",-10} {"Giacenza",-10} {"Categoria",-10}"
+        $"{"ID",-5} {"Username",-20} {"PercentualeSconto",-10} {"Credito",-10} "
         );
         Console.WriteLine(new string('-', 50)); // Linea separatrice
 
         // Stampa ogni prodotto con larghezza fissa
-        foreach (var prodotto in carrello)
+        foreach (var cliente in clienti)
         {
             Console.WriteLine(
-                $"{prodotto.Id,-5} {prodotto.Nome,-20} {prodotto.Prezzo,-10:0.00} {prodotto.Giacenza,-10} {prodotto.Categoria,-10}"
+                $"{cliente.id,-5} {cliente.username,-20} {cliente.percentualeSconto,-10:0.00} {cliente.credito,-10}" 
             );
         }
     }
 
-    // metodo per cercare un prodotto
-    public Prodotto TrovaProdottoNelCarrello(int id)
+    
+    public Cliente TrovaCliente(int id)
     {
-        foreach (var prodotto in carrello)
+        foreach (var cliente in clienti)
         {
-            if (prodotto.Id == id)
+            if (cliente.id == id)
             {
-                return prodotto;
+                return cliente;
             }
         }
         return null;
     }
-    // metodo per modificare un prodotto esistente
-    public void AggiornaProdotto(int id, Prodotto nuovoProdotto)
+    
+    /*public void AggiornaProdotto(int id, Prodotto nuovoProdotto)
     {
         var prodotto = TrovaProdottoNelCarrello(id);
         if (prodotto != null)
@@ -81,17 +81,17 @@ public class ClienteManager // (CRUD)
             prodotto.Giacenza = nuovoProdotto.Giacenza;
             prodotto.Categoria = nuovoProdotto.Categoria;
         }
-    }
+    }*/
 
     // metodo per eliminare un prodotto esistente
-    public void EliminaProdottoNelCarrello(int id)
+    public void EliminaCliente(int id)
     {
-        var prodotto = TrovaProdottoNelCarrello(id);
-        if (prodotto != null)
+        var cliente = TrovaCliente(id);
+        if (cliente != null)
         {
-            carrello.Remove(prodotto);
+            clienti.Remove(cliente);
             // elimina il file JSON corrispondente al prodotto
-            string filePath = Path.Combine("ClientiJson", $"{prodotto.Id}.json");
+            string filePath = Path.Combine("Data/Clienti", $"{cliente.id}.json");
             File.Delete(filePath);
             Console.WriteLine($"Prodotto eliminato: {filePath}");
         }

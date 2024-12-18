@@ -6,6 +6,9 @@ class Program
     static void Main(string[] args)
     {
         ProdottoRepository repository = new ProdottoRepository();
+
+        ClienteRepository clienteRepository = new ClienteRepository();
+        List<Cliente> clienti = new List<Cliente>();
        
         List<Prodotto> prodotti = repository.CaricaProdotti();
 
@@ -17,9 +20,27 @@ class Program
         string scelta = InputManager.LeggiIntero("\nScelta", 1, 2).ToString();
         while (continua)
         {
+
             switch (scelta)
             {
                 case "1": // Cliente
+                    Console.WriteLine("\nSei un cliente frequente o un nuovo cliente?");
+                    Console.WriteLine("1.Cliente frequente");
+                    Console.WriteLine("2.Nuovo cliente");
+                    string tipoCliente = InputManager.LeggiIntero("\nScelta", 1, 2).ToString();
+
+                    if (tipoCliente == "1") // Cliente frequente
+                    {
+                        Console.WriteLine("Benvenuto, cliente frequente!");
+                        // Puoi caricare dati specifici, come il carrello salvato, per il cliente frequente.
+                    }
+                    else // Nuovo cliente
+                    {
+                        Console.WriteLine("Benvenuto, nuovo cliente!");
+                        
+                        // Puoi aggiungere logiche per creare un nuovo cliente, ad esempio registrando un nuovo account.
+                    }
+
                     Console.WriteLine("\n--------Menu Cliente--------");
                     Console.WriteLine("1.Visualizza Prodotti nel carrello");
                     Console.WriteLine("2.Aggiungi Prodotto al carrello");

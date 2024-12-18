@@ -13,12 +13,12 @@ public class ClienteRepository
             Directory.CreateDirectory(folderPath);
         }
     }
-    public void SalvaProdotti(Cliente cliente)
+    public void SalvaClienti(Cliente cliente)
     {
         string filePath = Path.Combine(folderPath, $"{cliente.id}.json"); // Ogni file è denominato con l'ID del prodotto
         string jsonData = JsonConvert.SerializeObject(cliente, Formatting.Indented);
         File.WriteAllText(filePath, jsonData);
-        Console.WriteLine($"Prodotto salvato in {filePath}");
+        Console.WriteLine($"Cliente salvato in {filePath}");
     }
 
     // metodo per caricare i dati da file
@@ -35,7 +35,7 @@ public class ClienteRepository
                 string jsonData = File.ReadAllText(filePath);  // Legge tutto il contenuto del file JSON
                 Cliente cliente = JsonConvert.DeserializeObject<Cliente>(jsonData);  // Mi deserializza il contenuto JSON in un oggetto 'ProdottoAdvanced'
                 clienti.Add(cliente); // Aggiunge l'oggetto 'ProdottoAdvanced' alla lista di prodotti
-                Console.WriteLine($"Prodotto caricato da {filePath}: {cliente.username}");
+                Console.WriteLine($"Cliente caricato da {filePath}: {cliente.username}");
             }
         }
         else
