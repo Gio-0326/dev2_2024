@@ -1,0 +1,43 @@
+:root {  
+    --bs-primary: #ff5733;   /* Colore principale */  
+    --bs-secondary: #33c1ff; /* Colore secondario */  
+    --bs-success: #28a745;   /* Colore per il successo */  
+    --bs-info: #17a2b8;      /* Colore per informazioni */  
+    --bs-warning: #ffc107;   /* Colore di avviso */  
+    --bs-danger: #dc3545;    /* Colore per errori */  
+    --bs-light: #f8f9fa;     /* Colore chiaro */  
+    --bs-dark: #343a40;      /* Colore scuro */  
+    
+  }
+ /*js*/
+ /*document.documentElement.style.setProperty('--bs-warning', '#ff5722');*/
+  
+
+ /* (hover)cambia il colore di un pulsante quando l'utente ci passa sopra con il mouse.
+ .btn-primary:hover {  
+    background-color: #44056e;  
+    border-color: #44056e;  
+  }*/
+
+  body {
+    font-family: 'Roboto', sans-serif !important;  
+    font-size: 16px !important;  
+    line-height: 1.5 !important;
+    background-color: #f8f9fa; /* Colore di sfondo per schermi desktop */
+  }
+ 
+  header{
+    margin-top: 200px; /* Assicurati che l'header inizi subito sotto la navbar */
+    padding: 2rem 0; /* Padding per migliorare l'aspetto */
+    background-color: #17a2b8;
+    color: white;
+  }
+  .highlighted-product {
+    margin-top: 20px;
+  }
+  .product-card {
+    margin-bottom: 20px;
+  }
+
+
+  

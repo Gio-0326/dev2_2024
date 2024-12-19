@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("17_supermercato-completo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d02b3ad1999270a73a190f382437f6177aaf215")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f409dde545721fb2d43cc2d0eb5d08ec6f57f5cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("17_supermercato-completo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("17_supermercato-completo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

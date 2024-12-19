@@ -617,3 +617,16 @@ Esempio nell'HTML:
 - [x] Allineamento e spaziature responsivi
 - [x] Utilizzo di font responsive
 - [x] Personalizzazione dei modali e di altri componenti
+
+# Pagine (work in progress)
+- [ ] Homepage-supermercato (da sistemare responsive e altre personalizzazioni e aggiustare footer)
+- [ ] Carrello 
+- [ ] Contatti
+- [ ] Dettaglio
+- [ ] Login
+- [ ] Registrazione
+- [ ] Amministratori
+- [ ] Dipendenti
+- [ ] Clienti
+- Aggiungere i link alle varie pagine della navbar
+- Aggiungere footer con info di contatto e le icone social network
