@@ -619,14 +619,14 @@ Esempio nell'HTML:
 - [x] Personalizzazione dei modali e di altri componenti
 
 # Pagine (work in progress)
-- [ ] Homepage-supermercato (da sistemare responsive e altre personalizzazioni e aggiustare footer)
-- [ ] Carrello 
-- [ ] Contatti
-- [ ] Dettaglio
-- [ ] Login
-- [ ] Registrazione
-- [ ] Amministratori
+- [x] Homepage-supermercato 
+- [x] Carrello 
+- [x] Contatti
+- [x] Dettaglio
+- [x] Login
+- [x] Registrazione
+- [x] Amministratori
 - [ ] Dipendenti
 - [ ] Clienti
-- Aggiungere i link alle varie pagine della navbar
-- Aggiungere footer con info di contatto e le icone social network
+- [x] Aggiungere i link alle varie pagine della navbar
+- [ ] Aggiungere footer con info di contatto e le icone social network

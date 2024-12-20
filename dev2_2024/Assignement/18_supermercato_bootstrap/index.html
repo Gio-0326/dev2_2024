@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,65 +9,168 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Include Font Awesome per le icone -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">  
-   <i class="bi bi-heart-fill"></i>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <i class="bi bi-heart-fill"></i>
 </head>
+<style>
+  /* Dichiarazione delle variabili CSS */
+  :root {
+    --primary-color: #343a40;
+    /* Colore principale */
+    --secondary-color: #2dc2cd;
+    /* Colore secondario */
+    --bg-color: #e6b6b6;
+    /* Colore di sfondo */
+    --text-color: #black;
+    /* Colore del testo */
+    --font-family: 'Arial', sans-serif;
+    /* Font personalizzato */
+    --header-padding: 1.5rem;
+    /* Padding dell'intestazione */
+  }
+
+  /* Utilizzo delle variabili CSS */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  /* Per schermi di larghezza fino a 768px (tablet o schermi più piccoli) */
+  @media (max-width: 768px) {
+    body /* Font ancora più piccolo per dispositivi mobili */{
+      background-color: lightgreen;
+      font-size: 14px;
+      
+      
+      /* Font ancora più piccolo per dispositivi mobili */
+    }
+  }
+
+
+  nav {
+    background-color: var(--primary-color);
+  }
+
+  .navbar-brand {
+    color: var(--text-color);
+  }
+
+  .navbar-nav .nav-link {
+    color: var(--text-color);
+  }
+
+  .navbar-toggler-icon {
+    background-color: var(--text-color);
+  }
+
+  header {
+    background-color: var(--secondary-color);
+    padding: var(--header-padding);
+    margin-top: 46px;
+    height: 200px;
+
+  }
+
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: var(--primary-color);
+  }
+
+  footer {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer i {
+    color: var(--text-color);
+    margin: 0 10px;
+  }
+</style>
+
 <body>
+<div class="container" >
+
+
+
 
   <!-- Barra di Navigazione -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"><img
-        src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000"
-        width="50" height="44">Supermercato</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000" width="50"
+          height="44">Supermercato</a>
+
+      <!-- Icone di Login e Carrello -->
+      <div class="d-flex ml-auto">
+        <a class="nav-item nav-link" href="login.html">
+          <i class="fas fa-user-circle fa-lg"></i> <!-- Icona Login -->
+        </a>
+        <a class="nav-item nav-link" href="carrello.html">
+          <i class="fas fa-shopping-cart fa-lg"></i> <!-- Icona Carrello -->
+          
+        </a>
+      </div>
+
+      <!-- Bottone -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Menu collassato -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Prodotti</a>
+            <a class="nav-link" href="dettaglio.html">Prodotti</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Offerte</a>
+            <a class="nav-link" href="#index.html">Offerte</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contatti</a>
+            <a class="nav-link" href="contatti.html">Contatti</a>
           </li>
         </ul>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
         <!-- Barra di ricerca -->
         <form class="form-inline my-2 my-lg-0 ml-3">
-            <input class="form-control mr-sm-2" type="search" placeholder="Cerca prodotti" aria-label="Cerca">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cerca</button>
-          </form>
-          <!-- Icone di Login e Carrello -->
-        <div class="navbar-nav ml-3">
-            <a class="nav-item nav-link" href="#">
-              <i class="fas fa-user-circle fa-lg"></i> <!-- Icona Login -->
-            </a>
-            <a class="nav-item nav-link" href="#">
-              <i class="fas fa-shopping-cart fa-lg"></i> <!-- Icona Carrello -->
-            </a>
-          </div>
+          <input class="form-control mr-sm-2" type="search" placeholder="Cerca prodotti" aria-label="Cerca">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cerca</button>
+        </form>
       </div>
     </div>
   </nav>
-
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
+  </div>
+  
   <!-- Intestazione -->
-  <header class="bg-info text-white text-center py-5">
-    <div class="container"> 
+  <header class="text-white text-center py-5 d-none d-sm-block">
+    <div class="container ">
       <h1>Benvenuti nel nostro Supermercato Online!</h1>
       <p>Acquista i tuoi prodotti freschi e convenienti direttamente a casa.</p>
     </div>
   </header>
-
   <!-- Sezione Prodotti in Evidenza (Carousel) -->
   <section class="highlighted-product">
     <div class="container">
-      <h2 class="text-center mb-4">Prodotti in Evidenza</h2>
+      <h2 class="text-center my-4">Prodotti in Evidenza</h2>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -75,7 +179,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://www.coopshop.it/photo/2024/11/27/44/banner/raw/BARILLA.jpg" class="d-block w-100 img-fluid" alt="Prodotto 1">
+            <img src="https://via.placeholder.com/800x400" class="d-block w-100 img-fluid" alt="Prodotto 1">
             <div class="carousel-caption d-none d-md-block">
               <h5></h5>
               <p></p>
@@ -109,105 +213,109 @@
   </section>
 
   <!-- Sezione Prodotti in Offerta -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Prodotti in Offerta</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Offerta 1">
-            <div class="card-body">
-              <h5 class="card-title">Offerta 1</h5>
-              <p class="card-text">Descrizione breve dell'offerta.</p>
-              <a href="#" class="btn btn-primary">Acquista</a>
-            </div>
+  <div class="container my-5">
+    <h2 class="text-center my-4">Prodotti in Offerta</h2>
+    <div class="row text-center d-flex align-items-stretch">
+      <div class="col-md-4">
+        <div class="card h-100 border-1 ">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Offerta 1">
+          <div class="card-body">
+            <h5 class="card-title">Offerta 1</h5>
+            <p class="card-text">Descrizione breve dell'offerta.</p>
+            <a href="#" class="btn btn-primary">Acquista</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Offerta 2">
-            <div class="card-body">
-              <h5 class="card-title">Offerta 2</h5>
-              <p class="card-text">Descrizione breve dell'offerta.</p>
-              <a href="#" class="btn btn-primary">Acquista</a>
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-1 ">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Offerta 2">
+          <div class="card-body">
+            <h5 class="card-title">Offerta 2</h5>
+            <p class="card-text">Descrizione breve dell'offerta.</p>
+            <a href="#" class="btn btn-primary">Acquista</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Offerta 3">
-            <div class="card-body">
-              <h5 class="card-title">Offerta 3</h5>
-              <p class="card-text">Descrizione breve dell'offerta.</p>
-              <a href="#" class="btn btn-primary">Acquista</a>
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-1">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Offerta 3">
+          <div class="card-body">
+            <h5 class="card-title">Offerta 3</h5>
+            <p class="card-text">Descrizione breve dell'offerta.</p>
+            <a href="#" class="btn btn-primary">Acquista</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
 
   <!-- Sezione Prodotti in Vetrina -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">I Nostri Prodotti</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 1">
-            <div class="card-body">
-              <h5 class="card-title">Prodotto 1</h5>
-              <p class="card-text">Descrizione del prodotto 1</p>
-              <a href="#" class="btn btn-primary">Acquista</a>
-            </div>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">I Nostri Prodotti</h2>
+    <div class="row text-center d-flex align-items-stretch">
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-1 ">
+          <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" alt="Prodotto 1">
+          <div class="card-body">
+            <h5 class="card-title">Prodotto 1</h5>
+            <p class="card-text">Descrizione del prodotto 1</p>
+            <a href="#" class="btn btn-primary">Acquista</a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 2">
-            <div class="card-body">
-              <h5 class="card-title">Prodotto 2</h5>
-              <p class="card-text">Descrizione del prodotto 2</p>
-              <a href="#" class="btn btn-primary">Acquista</a>
-            </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-1">
+          <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" alt="Prodotto 2">
+          <div class="card-body">
+            <h5 class="card-title">Prodotto 2</h5>
+            <p class="card-text">Descrizione del prodotto 2</p>
+            <a href="#" class="btn btn-primary">Acquista</a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 3">
-            <div class="card-body">
-              <h5 class="card-title">Prodotto 3</h5>
-              <p class="card-text">Descrizione del prodotto 3</p>
-              <a href="#" class="btn btn-primary">Acquista</a>
-            </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-1 ">
+          <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" alt="Prodotto 3">
+          <div class="card-body">
+            <h5 class="card-title">Prodotto 3</h5>
+            <p class="card-text">Descrizione del prodotto 3</p>
+            <a href="#" class="btn btn-primary">Acquista</a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Prodotto 4">
-            <div class="card-body">
-              <h5 class="card-title">Prodotto 4</h5>
-              <p class="card-text">Descrizione del prodotto 4</p>
-              <a href="#" class="btn btn-primary">Acquista</a>
-            </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 border-1 ">
+          <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" alt="Prodotto 4">
+          <div class="card-body">
+            <h5 class="card-title">Prodotto 4</h5>
+            <p class="card-text">Descrizione del prodotto 4</p>
+            <a href="#" class="btn btn-primary">Acquista</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- Include Bootstrap JS e jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
+</div>
 <footer>
-  <p>&copy; 2024 Nome Cognome</p>
-        <div>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
+  <p>&copy; 2024 Supermercato</p>
+  <div>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
 </footer>
+</body>
+
+
 </html>

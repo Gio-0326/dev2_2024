@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina Amministratore - Supermercato</title>
+  <title>Amministratore - Supermercato</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .admin-container {
@@ -44,30 +44,31 @@
   </style>
 </head>
 <body>
-
-  <!-- Barra di Navigazione -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+   <!-- Barra di Navigazione -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Supermercato Admin</a>
+      <a class="navbar-brand" href="#"><img
+        src="https://img.icons8.com/?size=100&id=FGjwLQZaL7Eh&format=png&color=000000"
+        width="50" height="44">Supermercato</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Gestione Prodotti</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gestione Utenti</a>
+            <a class="nav-link" href="dettaglio.html">Prodotti</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
+            <a class="nav-link" href="#index.html">Offerte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contatti.html">Contatti</a>
           </li>
         </ul>
-      </div>
     </div>
   </nav>
 
@@ -93,7 +94,7 @@
           <th scope="col">Nome</th>
           <th scope="col">Categoria</th>
           <th scope="col">Prezzo</th>
-          <th scope="col">Disponibilità</th>
+          <th scope="col">Giacenza</th>
           <th scope="col">Azione</th>
         </tr>
       </thead>
