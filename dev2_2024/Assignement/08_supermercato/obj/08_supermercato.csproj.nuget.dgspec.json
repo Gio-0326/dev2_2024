@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dev2\\Documents\\DEV2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj": {}
+    "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dev2\\Documents\\DEV2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj": {
+    "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dev2\\Documents\\DEV2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj",
+        "projectUniqueName": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj",
         "projectName": "08_supermercato",
-        "projectPath": "C:\\Users\\Dev2\\Documents\\DEV2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj",
-        "packagesPath": "C:\\Users\\Dev2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dev2\\Documents\\DEV2_2024\\dev2_2024\\Assignement\\08_supermercato\\obj\\",
+        "projectPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\08_supermercato\\08_supermercato.csproj",
+        "packagesPath": "C:\\Users\\gioju\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\08_supermercato\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dev2\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gioju\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
