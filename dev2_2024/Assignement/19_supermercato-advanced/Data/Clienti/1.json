@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "username": "gio",
+  "carrello": [
+    {
+      "Id": 0,
+      "Nome": null,
+      "Prezzo": 0.0,
+      "Giacenza": 0,
+      "Categoria": null
+    }
+  ],
+  "storicoAcquisti": null,
+  "percentualeSconto": 0,
+  "credito": 0.0
+}

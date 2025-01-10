@@ -37,7 +37,6 @@ class Program
                     {
                         Console.WriteLine("Benvenuto, cliente frequente!");
                         
-                        // Puoi caricare dati specifici, come il carrello salvato, per il cliente frequente.
                         Console.WriteLine("Inserisci il tuo username: ");
                         string username = InputManager.LeggiStringa("\nUsername: ");
                         Cliente clienteFrequente = clienteManager.TrovaCliente(cliente.id);
@@ -64,9 +63,8 @@ class Program
                         Cliente nuovoCliente = new Cliente { username = Username, carrello = new List<Prodotto>() };
                         clienteManager.AggiungiCliente(nuovoCliente, prodotto);
                         Console.WriteLine($"Cliente {Username} registrato con successo!");
-                        clienteRepository.SalvaClienti(cliente);
+                        clienteRepository.SalvaClienti(nuovoCliente);
 
-                        // Puoi aggiungere logiche per creare un nuovo cliente, ad esempio registrando un nuovo account.
                     }
 
                     Console.WriteLine("\n--------Menu Cliente--------");
@@ -135,7 +133,7 @@ class Program
                         case "6":
                             foreach (var item in manager.OttieniProdotti())
                             {
-                                repository.SalvaProdotti(prodotto);
+                                repository.SalvaProdotti(item);
                             }
                             continua = false; // imposto la variabile continua a false per uscire dal ciclo while 
                             break;
@@ -214,7 +212,7 @@ class Program
                             // Salva ogni prodotto singolarmente
                             foreach (var item in manager.OttieniProdotti())
                             {
-                                repository.SalvaProdotti(prodotto);
+                                repository.SalvaProdotti(item);
                             }
                             continua = false; // imposto la variabile continua a false per uscire dal ciclo while 
                             break;
