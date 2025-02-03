@@ -16,8 +16,9 @@ public class ProdottiModel : PageModel
 
     public IEnumerable<Prodotto> Prodotti { get; set; }
     public string Ricerca { get; set; }
-    public void OnGet()
+    public void OnGet(string ricerca)
     {
+        Ricerca = ricerca;
         Prodotti = new List<Prodotto>()
         {
             new Prodotto { Nome = "Fanta", Prezzo = 100, Dettaglio = "Dettaglio 1" },
@@ -29,13 +30,14 @@ public class ProdottiModel : PageModel
 
         if (!string.IsNullOrEmpty(Ricerca))
         {
-            foreach (var prodotto in Prodotti)
+            foreach (Prodotto prodotto in Prodotti)
             {
-                if (prodotto.Nome.Contains(Ricerca))
+                if (prodotto.Nome.Contains(Ricerca, StringComparison.OrdinalIgnoreCase))
                 {
                     prodottiFiltrati.Add(prodotto);
                 }
             }
+            Prodotti = prodottiFiltrati;
         }
     }
 }

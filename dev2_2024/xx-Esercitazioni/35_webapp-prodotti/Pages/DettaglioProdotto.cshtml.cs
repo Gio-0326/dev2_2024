@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Globalization;
 
 namespace _35_webapp_prodotti.Pages;
 
@@ -12,6 +13,7 @@ public class DettaglioProdottoModel : PageModel
     public DettaglioProdottoModel(ILogger<DettaglioProdottoModel> logger)
     {
         _logger = logger;
+        //var cultureInfo =  CultureInfo.CurrentCulture;
     }
 
     public Prodotto Prodotto { get; set; }
