@@ -1,0 +1,112 @@
+@*Il file nome.cshtml è un file di vista Razor (Razor View), che contiene il markup HTML della pagina.
+Può includere anche codice C# incorporato per generare dinamicamente contenuti.
+Razor è una sintassi per scrivere codice C# direttamente nel markup HTML.*@
+
+
+@* Specifica che questa è una pagina Razor. Quando un file .cshtml ha @page all'inizio, diventa una pagina che può essere direttamente raggiunta via URL.*@
+@page
+@*Collega il file .cshtml al modello di pagina NomeModel (dove viene definita la logica di business e i dati che verranno usati nella vista).*@
+@model ProdottiModel
+@{
+    ViewData["Title"] = "Prodotti";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<div class="row mb-4 text-center d-flex align-items-strecth">
+    @foreach (var item in Model.Prodotti)
+    {
+        <div class="col-md-4 col-sm-12 col-lg-3">
+            <div class="card h-100">
+                <img src="@item.Immagine" class="card-img-top" alt="@item.Nome" width="300" height="200" />
+                <div class="card-body">
+                    <h5 class="card-title text-dark">@item.Nome</h5>
+                    <p class="card-text text-success">@item.Prezzo</p>
+                    <p class="card-text">@item.Dettaglio</p>
+
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><a asp-page="ProdottoDettaglio"
+                                asp-route-id="@item.Id" asp-route-nome="@item.Nome" asp-route-prezzo="@item.Prezzo"
+                                asp-route-dettaglio="@item.Dettaglio"
+                                asp-route-immagine="@item.Immagine">Dettaglio</a></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div>
+    <form method="get">
+        <div class="form-group">
+            <label for="minPrezzo">Min Prezzo</label>
+            <input type="text" class="form-control" name="minPrezzo" />
+        </div>
+        <div class="form-group">
+            <label for="maxPrezzo">Max Prezzo</label>
+            <input type="text" class="form-control" name="maxPrezzo" />
+            <button type="submit" class="btn btn-primary mt-3">Filtra</button>
+        </div>
+    </form>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Prezzo</th>
+                <th>Dettaglio</th>
+                <th>Immagine</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prodotto in Model.Prodotti)
+            // Model è una variabile che contiene i dati e le funzionalità di
+            //quella pagina
+            { // se vuoi accedere a qualcosa all'interno di Model devi specificare che stai prendendo
+                <tr>
+                    <td>@prodotto.Id</td>
+                    <td>@prodotto.Nome</td>
+                    <td>@prodotto.Prezzo</td>
+                    <td>@prodotto.Dettaglio</td>
+                    <td><img src="@prodotto.Immagine" alt="@prodotto.Nome" width="300" height="200" /></td>
+                    <td><a asp-page="ProdottoDettaglio" asp-route-id="@prodotto.Id" asp-route-nome="@prodotto.Nome"
+                            asp-route-prezzo="@prodotto.Prezzo" asp-route-dettaglio="@prodotto.Dettaglio"
+                            asp-route-immagine="@prodotto.Immagine">Dettaglio</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <form method="get">
+        <input type="hidden" name="minPrezzo" value="@Request.Query["minPrezzo"]" />
+        <!-- per mantenere il valore del filtro -->
+        <input type="hidden" name="maxPrezzo" value="@Request.Query["maxPrezzo"]" />
+        <!-- per mantenere il valore del filtro -->
+        @for (int i = 1; i <= Model.numeroPagine; i++)
+        {
+            <button type="submit" class="btn btn-dark" name="pageIndex" value="@i">@i</button>
+        }
+    </form>
+    <br>
+
+</div>
+
+
+@*Il markup HTML di base è simile a una normale pagina HTML, ma dentro di esso si trova una parte di codice Razor: @Model.Nome.
+ Questo è un riferimento al valore di Nome che proviene dal modello di pagina. 
+ @Model accede al modello NomeModel e Nome è una proprietà che verrà popolata dal codice nel file .cshtml.cs.*@
+
+
+@*Interazione tra i due file:
+nome.cshtml.cs è il "code-behind" che gestisce la logica, popola i dati e prepara il modello da visualizzare.
+nome.cshtml è la vista che presenta i dati all'utente finale (nel nostro caso, mostra il nome "Mario Rossi").
+
+In sintesi:
+
+nome.cshtml.cs: Contiene la logica di business e di gestione dei dati, ed è responsabile della preparazione della pagina prima che venga mostrata all'utente.
+nome.cshtml: Si occupa della parte visiva della pagina, che include HTML e codice Razor per visualizzare i dati.
+Questi due file lavorano insieme per separare la logica di business dalla presentazione, rendendo il codice più manutenibile e leggibile.*@
