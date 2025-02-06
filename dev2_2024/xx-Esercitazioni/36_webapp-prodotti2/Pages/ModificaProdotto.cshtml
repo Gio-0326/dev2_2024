@@ -1,0 +1,33 @@
+@page
+@model ModificaProdottoModel
+@{
+    ViewData["Title"] = "Modifica Prodotto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form method="post">
+        <div class="form-group">
+            <label for="id">Id
+            <input type="text" class="form-control" name="id" value="@Model.Prodotto.Id" /></label>
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome
+            <input type="text" class="form-control" name="nome" value="@Model.Prodotto.Nome" /></label>
+        </div>
+        <div class="form-group">
+            <label for="prezzo">Prezzo
+            <input type="text" class="form-control" name="prezzo" value="@Model.Prodotto.Prezzo" /></label>
+        </div>
+        <div class="form-group">
+            <label for="dettaglio">Dettaglio
+            <input type="text" class="form-control" name="dettaglio" value="@Model.Prodotto.Dettaglio" /></label>
+        </div>
+        <div class="form-group mb-3">
+            <label for="immagine">Immagine
+            <input type="text" class="form-control" name="immagine" value="@Model.Prodotto.Immagine" /></label>
+        </div>
+        <button type="submit" class="btn btn-dark">Salva</button>
+    </form>
+</div>

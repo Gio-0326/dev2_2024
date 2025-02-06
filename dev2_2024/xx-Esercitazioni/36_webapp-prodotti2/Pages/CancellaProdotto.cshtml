@@ -1,0 +1,32 @@
+@page
+@model CancellaProdottoModel
+@{
+    ViewData["Title"] = "Cancella Prodotto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+    <form method="post">
+        <div class="form-group">
+            <label for="id">Id</label>
+            <input type="text" class="form-control" name="id" value="@Model.Prodotto.Id" />
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" name="nome" value="@Model.Prodotto.Nome" />
+        </div>
+        <div class="form-group">
+            <label for="prezzo">Prezzo</label>
+            <input type="text" class="form-control" name="prezzo" value="@Model.Prodotto.Prezzo" />
+        </div>
+        <div class="form-group">
+            <label for="dettaglio">Dettaglio</label>
+            <input type="text" class="form-control" name="dettaglio" value="@Model.Prodotto.Dettaglio" />
+        </div>
+        <div class="form-group mb-3">
+            <label for="immagine">Immagine</label>
+            <input type="text" class="form-control" name="immagine" value="@Model.Prodotto.Immagine" />
+        </div>
+        <button type="submit" class="btn btn-dark">Cancella</button>
+    </form>

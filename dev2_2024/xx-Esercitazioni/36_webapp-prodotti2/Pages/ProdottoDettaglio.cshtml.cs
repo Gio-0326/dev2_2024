@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-
+using Newtonsoft.Json;
+using System.IO;
 public class ProdottoDettaglioModel : PageModel
 {
     private readonly ILogger<ProdottoDettaglioModel> _logger;
@@ -13,10 +14,22 @@ public class ProdottoDettaglioModel : PageModel
     }
 
     public Prodotto Prodotto { get; set; }
-    public void OnGet(int id, string nome, decimal prezzo, string dettaglio, string immagine)
+    public void OnGet(int id, string nome, decimal prezzo, string dettaglio, string immagine) // l'id è sufficiente perchè gli abbiamo passato gli altri parametri tr
     {
         Prodotto = new Prodotto { Id = id, Nome = nome, Prezzo = prezzo, Dettaglio = dettaglio, Immagine = immagine }; 
         // non e necessario mettere var perchè il tipo è già definito in Prodotto
+        
+        var json =  System.IO.File.ReadAllText("wwwroot/json/prodotti.json"); // legge i prodotti dal file json
+        var prodotti = JsonConvert.DeserializeObject<List<Prodotto>>(json);
+        foreach (var prodotto in prodotti)
+        {
+            if (prodotto.Id == id)
+            {
+                Prodotto = prodotto; // se l'id del prodotto corrisponde a quello passato come parametro, allora assegno il prodotto a Prodotto
+                break;
+            }
+        }
     }
 }
 
+        
