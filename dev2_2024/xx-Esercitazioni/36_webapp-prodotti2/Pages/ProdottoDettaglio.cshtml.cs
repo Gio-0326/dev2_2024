@@ -15,6 +15,7 @@ public class ProdottoDettaglioModel : PageModel
 
     public Prodotto Prodotto { get; set; }
     public void OnGet(int id) // l'id è sufficiente perchè gli abbiamo passato gli altri parametri tr
+                              // metodo onget che prende come parametro id del prodotto che viene passato nell'URL dalla pagina prodotti
     {
         
         // non e necessario mettere var perchè il tipo è già definito in Prodotto

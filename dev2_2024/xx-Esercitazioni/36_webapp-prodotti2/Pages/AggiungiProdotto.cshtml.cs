@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 public class AggiungiProdottoModel : PageModel
 {
-    public void OnGet()
+    public void OnGet() // OnGet è vuoto perche non servono i dati del prodotto
     {
 
     }
@@ -19,7 +19,7 @@ public class AggiungiProdottoModel : PageModel
             id = prodotti[prodotti.Count - 1].Id + 1;
         }
         prodotti.Add(new Prodotto { Id = id, Nome = nome, Prezzo = prezzo, Dettaglio = dettaglio, Immagine = immagine });
-        System.IO.File.WriteAllText("wwwroot/json/prodotti.json", JsonConvert.SerializeObject(prodotti));
+        System.IO.File.WriteAllText("wwwroot/json/prodotti.json", JsonConvert.SerializeObject(prodotti, Formatting.Indented));
         return RedirectToPage("Prodotti");
     }
 }

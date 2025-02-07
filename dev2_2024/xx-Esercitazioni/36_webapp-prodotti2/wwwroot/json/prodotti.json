@@ -1,19 +1,5 @@
 [
   {
-    "Id": 5,
-    "Nome": "pasta",
-    "Prezzo": 2.0,
-    "Dettaglio": "pasta",
-    "Immagine": null
-  },
-  {
-    "Id": 7,
-    "Nome": "pasta",
-    "Prezzo": 2.0,
-    "Dettaglio": "pasta",
-    "Immagine": null
-  },
-  {
     "Id": 8,
     "Nome": "pasta",
     "Prezzo": 2.0,
@@ -32,6 +18,62 @@
     "Nome": "pasta",
     "Prezzo": 3.0,
     "Dettaglio": "pane",
+    "Immagine": null
+  },
+  {
+    "Id": 11,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Immagine": null
+  },
+  {
+    "Id": 12,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Immagine": null
+  },
+  {
+    "Id": 13,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Immagine": null
+  },
+  {
+    "Id": 14,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Immagine": null
+  },
+  {
+    "Id": 15,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Immagine": null
+  },
+  {
+    "Id": 16,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Immagine": null
+  },
+  {
+    "Id": 17,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Immagine": null
+  },
+  {
+    "Id": 18,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
     "Immagine": null
   }
 ]

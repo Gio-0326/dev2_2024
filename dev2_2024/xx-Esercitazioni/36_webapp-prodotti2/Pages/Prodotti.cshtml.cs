@@ -13,7 +13,7 @@ public class ProdottiModel : PageModel
 {
     // Proprietà del modello
     private readonly ILogger<ProdottiModel> _logger; // _Logger è un campo privato di tipo ILogger<IndexModel>
-    // serve per registrare i messaggi di Log relativi a IndexModel
+    // serve per visualizzare i messaggi di Log relativi a IndexModel
 
     public ProdottiModel(ILogger<ProdottiModel> logger) // Costruttore di IndexModel
     {
@@ -23,7 +23,8 @@ public class ProdottiModel : PageModel
 
     public IEnumerable<Prodotto> Prodotti { get; set; }  //Questa è una proprietà che contiene il dato che vuoi visualizzare sulla pagina. 
                                                          // Nel nostro esempio, questa proprietà sarà il nome che viene mostrato nella vista.
-    //public string Ricerca { get; set; }
+    //public string Ricerca { get; set; }                // IEnumerable interfaccia di base di raccolte generiche,
+                                                         // Espone l'enumeratore, che supporta una semplice iterazione su una raccolta di un tipo specificato. 
     public int numeroPagine { get; set; } // aggiunta una proprietà per il numero di pagine
 
     public void OnGet(decimal? minPrezzo, decimal? maxPrezzo, int? pageIndex)   // Metodo che viene eseguito quando la pagina viene caricata
@@ -34,7 +35,7 @@ public class ProdottiModel : PageModel
         // Inizializziamo la lista filtrata
         
        
-        var prodottiFiltrati = new List<Prodotto>();
+        var prodottiFiltrati = new List<Prodotto>(); // una nuova lista che soddisa i criteri
 
         // Iteriamo su tutti i prodotti
         foreach (var prodotto in allProdotti)
@@ -42,11 +43,11 @@ public class ProdottiModel : PageModel
             bool aggiungi = true;
 
             // Applichiamo il filtro per maxPrezzo se presente
-            if (minPrezzo.HasValue)
+            if (minPrezzo.HasValue) // per contollare se il valore è stato assegnato
             {
-                if (prodotto.Prezzo < minPrezzo.Value)
+                if (prodotto.Prezzo < minPrezzo.Value) // è il corrispettivo di hasvalue, restituisce il valore del nullable
                 {
-                    aggiungi = false;
+                    aggiungi = false; // non viene aggiunto il prodotto alla lista filtrata
                 }
             }
             if (maxPrezzo.HasValue)
@@ -66,11 +67,13 @@ public class ProdottiModel : PageModel
 
         // Assegniamo i prodotti filtrati alla proprietà Prodotti
         Prodotti = prodottiFiltrati;
-         numeroPagine = (int)Math.Ceiling(Prodotti.Count() / 6.0); // calcola il numero di pagine
+         numeroPagine = (int)Math.Ceiling(Prodotti.Count() / 6.0); // calcola il numero di pagine // abbiamo messo int tra parentesi per fare un casting esplicito ad un numero intero
                                                                   // Math.Ceiling  arrotonda il numero di pagine all'interno più vicino
                                                                   // Prodotti.Count() restituisce il numero di prodotti
                                                                   // 6.0 è il numero di prodotti per pagina
-        Prodotti = Prodotti.Skip(((pageIndex ?? 1) - 1) * 6).Take(6); // esegue la paginazione
+        Prodotti = Prodotti.Skip(((pageIndex ?? 1) - 1) * 6).Take(6); // esegue la paginazione // 
+        // (??) operatore di coalescenza se pageIndex
+        // Take prende i successivi 6
     }
 }
 
@@ -81,7 +84,7 @@ public class ProdottiModel : PageModel
 
 /*Interazione tra i due file:
 nome.cshtml.cs è il "code-behind" che gestisce la logica, popola i dati e prepara il modello da visualizzare.
-nome.cshtml è la vista che presenta i dati all'utente finale (nel nostro caso, mostra il nome "Mario Rossi").
+nome.cshtml è la vista che presenta i dati all'utente finale.
 In sintesi:
 
 nome.cshtml: Si occupa della parte visiva della pagina, che include HTML e codice Razor per visualizzare i dati.
