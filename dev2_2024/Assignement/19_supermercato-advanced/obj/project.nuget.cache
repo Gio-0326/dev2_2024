@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mXFGLv0X+kY=",
+  "dgSpecHash": "2nh2dInOhrk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dev2\\Documents\\DEV2_2024\\dev2_2024\\Assignement\\19_supermercato-advanced\\19_supermercato-advanced.csproj",
+  "projectFilePath": "C:\\Users\\gioju\\OneDrive\\Documenti\\dev2_2024\\dev2_2024\\Assignement\\19_supermercato-advanced\\19_supermercato-advanced.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dev2\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\gioju\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

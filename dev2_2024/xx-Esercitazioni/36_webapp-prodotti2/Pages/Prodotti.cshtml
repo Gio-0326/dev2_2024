@@ -45,10 +45,10 @@ Razor è una sintassi per scrivere codice C# direttamente nel markup HTML.*@
                                 asp-route-dettaglio="@item.Dettaglio"
                                 asp-route-immagine="@item.Immagine">Dettaglio</a></button>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
-                            <a asp-page="ModificaProdotto" asp-route-id="@item.Id"></a>Edit
+                            <a asp-page="ModificaProdotto" asp-route-id="@item.Id">Edit</a>
                         </button>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
-                            <a asp-page="CancellaProdotto" asp-route-id="@item.Id"></a>Cancella
+                            <a asp-page="CancellaProdotto" asp-route-id="@item.Id">Cancella</a>
                         </button>
                         
                     </div>

@@ -40,7 +40,10 @@ public class CancellaProdottoModel : PageModel
                 break;
             }
         }
+        
+        
        System.IO.File.WriteAllText("wwwroot/json/prodotti.json", JsonConvert.SerializeObject(prodotti, Formatting.Indented));
-       return RedirectToAction("/Prodotti");
+       return RedirectToPage("Prodotti");
+
     }
 }

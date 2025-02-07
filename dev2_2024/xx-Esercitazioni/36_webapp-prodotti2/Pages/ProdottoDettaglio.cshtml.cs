@@ -14,9 +14,9 @@ public class ProdottoDettaglioModel : PageModel
     }
 
     public Prodotto Prodotto { get; set; }
-    public void OnGet(int id, string nome, decimal prezzo, string dettaglio, string immagine) // l'id è sufficiente perchè gli abbiamo passato gli altri parametri tr
+    public void OnGet(int id) // l'id è sufficiente perchè gli abbiamo passato gli altri parametri tr
     {
-        Prodotto = new Prodotto { Id = id, Nome = nome, Prezzo = prezzo, Dettaglio = dettaglio, Immagine = immagine }; 
+        
         // non e necessario mettere var perchè il tipo è già definito in Prodotto
         
         var json =  System.IO.File.ReadAllText("wwwroot/json/prodotti.json"); // legge i prodotti dal file json
