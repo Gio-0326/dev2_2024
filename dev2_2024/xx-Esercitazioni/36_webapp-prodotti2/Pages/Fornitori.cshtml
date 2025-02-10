@@ -1,0 +1,50 @@
+@page 
+@*Questa direttiva indica che il file è una pagina Razor.
+In altre parole, il file è una pagina web che può essere richiesta direttamente, come una normale pagina HTML.
+@page rende questa pagina una pagina Razor autonoma, che può essere acceduta tramite un URL nel browser.*@
+@model FornitoriModel 
+@*Questa direttiva associa il modello di pagina (PageModel) alla vista.
+FornitoriModel è la classe che contiene la logica della pagina e i dati che la vista deve visualizzare.*@
+
+@{
+    ViewData["Title"] = "Fornitori";
+}
+
+<h2>Fornitori</h2> @*Titolo visibile sulla pagina*@
+
+@if (Model.Fornitori != null && Model.Fornitori.Any()) @* Verifica se Model.Fornitori (la lista di fornitori) non è null e contiene almeno un elemento.*@
+{
+    <table class="table"> @*Creazione della tabella*@
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Indirizzo</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>Operazioni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var fornitore in Model.Fornitori)
+            {
+                <tr>
+                    <td>@fornitore.Nome</td>
+                    <td>@fornitore.Indirizzo</td>
+                    <td>@fornitore.Telefono</td>
+                    <td>@fornitore.Email</td>
+                    <td>
+                       <a asp-page="ModificaFornitore" asp-route-id="@fornitore.Id" class="btn btn-warning">Modifica</a>
+                       @*Utilizzo il tag helper asp-page per generare il link dinamicamente alla pagina di modifica (ModificaFornitore), passando l'ID del fornitore con asp-route-id="@fornitore.Id".*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Non ci sono fornitori da visualizzare.</p>
+}
+
+<a asp-page="AggiungiFornitore" class="btn btn-primary">Aggiungi Fornitore</a>
+@*Link per aggiungere un nuovo fornitore*@

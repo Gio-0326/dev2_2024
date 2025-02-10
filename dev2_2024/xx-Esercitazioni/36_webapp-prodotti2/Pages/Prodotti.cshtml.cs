@@ -17,7 +17,8 @@ public class ProdottiModel : PageModel
 
     public ProdottiModel(ILogger<ProdottiModel> logger) // Costruttore di IndexModel
     {
-        _logger = logger;
+        _logger = logger;                               // Questa riga assegna il parametro logger (che è stato passato al costruttore) al campo _logger della classe. 
+                                                        // Questo permette di utilizzare _logger per scrivere messaggi di log in qualsiasi parte del codice.
         logger.LogInformation("Prodotti caricati");
     }
 

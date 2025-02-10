@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Nome": "Fornitore A",
+    "Indirizzo": "Via Roma 1",
+    "Telefono": "0123456789",
+    "Email": "fornitoreA@example.com",
+    "Data": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": 2,
+    "Nome": "Fornitore B",
+    "Indirizzo": "Via Milano 10",
+    "Telefono": "0987654321",
+    "Email": "fornitoreB@example.com",
+    "Data": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": 3,
+    "Nome": "Fornitore C",
+    "Indirizzo": "Via 3",
+    "Telefono": "3456782919",
+    "Email": "fornitoreC@example.com",
+    "Data": "2025-02-10T14:52:18.540969+01:00"
+  }
+]

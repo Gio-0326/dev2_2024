@@ -18,10 +18,10 @@ public class AggiungiProdottoModel : PageModel
         var json = System.IO.File.ReadAllText("wwwroot/json/prodotti.json");
         var prodotti = JsonConvert.DeserializeObject<List<Prodotto>>(json);
 
-        var id = 1;
+        var id = 1; //Se la lista prodotti è vuota, il id del nuovo prodotto sarà 1.
         if (prodotti.Count > 0)
         {
-            id = prodotti[prodotti.Count - 1].Id + 1;
+            id = prodotti[prodotti.Count - 1].Id + 1; // Se ci sono già prodotti nella lista, il id del nuovo prodotto sarà uno in più dell'id dell'ultimo prodotto della lista.
         }
         prodotti.Add(new Prodotto { Id = id, Nome = nome, Prezzo = prezzo, Dettaglio = dettaglio, Categoria = categoria, Immagine = immagine,  Data = DateTime.Now });
         

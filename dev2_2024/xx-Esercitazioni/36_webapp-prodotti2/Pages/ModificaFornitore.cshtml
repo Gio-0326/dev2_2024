@@ -1,0 +1,36 @@
+@page
+@model ModificaFornitoreModel
+
+@{
+    ViewData["Title"] = "Modifica Fornitore";
+}
+
+<h2>Modifica Fornitore</h2>
+
+@if (Model.Fornitore != null)
+{
+    <form method="post">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" value="@Model.Fornitore.Nome" required />
+        </div>
+        <div class="form-group">
+            <label for="indirizzo">Indirizzo</label>
+            <input type="text" class="form-control" id="indirizzo" name="indirizzo" value="@Model.Fornitore.Indirizzo" required />
+        </div>
+        <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="text" class="form-control" id="telefono" name="telefono" value="@Model.Fornitore.Telefono" required />
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" value="@Model.Fornitore.Email" required />
+        </div>
+
+        <button type="submit" class="btn btn-warning">Modifica Fornitore</button>
+    </form>
+}
+else
+{
+    <p>Fornitore non trovato.</p>
+}

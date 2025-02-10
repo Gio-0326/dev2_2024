@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("02-sorteggio-partecipanti")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd21ca31fcab29c58e7d56c149b6b4e85e2db336")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c7aee9f673aa0cfffc498448b0bf8e39db59073")]
 [assembly: System.Reflection.AssemblyProductAttribute("02-sorteggio-partecipanti")]
 [assembly: System.Reflection.AssemblyTitleAttribute("02-sorteggio-partecipanti")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
