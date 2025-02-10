@@ -13,12 +13,18 @@ public class ModificaProdottoModel : PageModel
     {
         _logger = logger;
     }
-
+    
     public Prodotto Prodotto { get; set; }
+    public List<string> Categorie { get; set; }
+    public DateTime Data { get; set; }
     public void OnGet(int id) // riceve un parametro id in ingresso, per poi andarloo a modificare
     {
         var json = System.IO.File.ReadAllText("wwwroot/json/prodotti.json");
         var prodotti = JsonConvert.DeserializeObject<List<Prodotto>>(json);
+
+         var json1 = System.IO.File.ReadAllText("wwwroot/json/categorie.json");
+        Categorie = JsonConvert.DeserializeObject<List<string>>(json1);
+        
         foreach (var prodotto in prodotti)
         {
             if (prodotto.Id == id)
@@ -28,7 +34,7 @@ public class ModificaProdottoModel : PageModel
             }
         }
     }
-    public IActionResult OnPost(int id, string nome, decimal prezzo, string dettaglio, string immagine) 
+    public IActionResult OnPost(int id, string nome, decimal prezzo, string dettaglio, string categoria, string immagine) 
     {
         var json = System.IO.File.ReadAllText("wwwroot/json/prodotti.json");
         var prodotti = JsonConvert.DeserializeObject<List<Prodotto>>(json); // deserializza il file json in una lista di prodotti
@@ -53,7 +59,9 @@ public class ModificaProdottoModel : PageModel
         prodotto.Nome = nome;
         prodotto.Prezzo = prezzo;   
         prodotto.Dettaglio = dettaglio;
+        prodotto.Categoria = categoria;
         prodotto.Immagine = immagine;
+        prodotto.Data = Data;
 
         // Scrivi il file JSON aggiornato
         System.IO.File.WriteAllText("wwwroot/json/prodotti.json", JsonConvert.SerializeObject(prodotti, Formatting.Indented));

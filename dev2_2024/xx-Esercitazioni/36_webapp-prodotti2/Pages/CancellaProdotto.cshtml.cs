@@ -14,6 +14,8 @@ public class CancellaProdottoModel : PageModel
         _logger = logger;
     }
 
+    //[TempData]
+    // public string messaggio { get; set; }
     public Prodotto Prodotto { get; set; }
     public void OnGet(int id)
     {
@@ -27,6 +29,8 @@ public class CancellaProdottoModel : PageModel
                 break;
             }
         }
+        // messaggio = "Ciao";
+        // TempData.Keep("messaggio");
     }
     public IActionResult OnPost(int id)
     {
@@ -43,7 +47,9 @@ public class CancellaProdottoModel : PageModel
         
         
        System.IO.File.WriteAllText("wwwroot/json/prodotti.json", JsonConvert.SerializeObject(prodotti, Formatting.Indented));
+       
        return RedirectToPage("Prodotti");
+
 
     }
 }

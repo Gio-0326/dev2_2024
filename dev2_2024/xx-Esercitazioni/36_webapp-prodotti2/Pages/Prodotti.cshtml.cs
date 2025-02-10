@@ -26,7 +26,7 @@ public class ProdottiModel : PageModel
     //public string Ricerca { get; set; }                // IEnumerable interfaccia di base di raccolte generiche,
                                                          // Espone l'enumeratore, che supporta una semplice iterazione su una raccolta di un tipo specificato. 
     public int numeroPagine { get; set; } // aggiunta una proprietà per il numero di pagine
-
+    
     public void OnGet(decimal? minPrezzo, decimal? maxPrezzo, int? pageIndex)   // Metodo che viene eseguito quando la pagina viene caricata
     {          
         var json = System.IO.File.ReadAllText("wwwroot/json/prodotti.json");
@@ -90,3 +90,6 @@ In sintesi:
 nome.cshtml: Si occupa della parte visiva della pagina, che include HTML e codice Razor per visualizzare i dati.
 nome.cshtml.cs: Contiene la logica di business e di gestione dei dati, ed è responsabile della preparazione della pagina prima che venga mostrata all'utente.
 Questi due file lavorano insieme per separare la logica di business dalla presentazione, rendendo il codice più manutenibile e leggibile.*/
+
+//.Keep
+//.Peek

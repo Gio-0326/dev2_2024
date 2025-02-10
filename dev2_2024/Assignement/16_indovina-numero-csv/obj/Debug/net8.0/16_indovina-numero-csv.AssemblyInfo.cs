@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("16_indovina-numero-csv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80cff26c3f439fd43c25c465c27d1c3ef46b4d2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd21ca31fcab29c58e7d56c149b6b4e85e2db336")]
 [assembly: System.Reflection.AssemblyProductAttribute("16_indovina-numero-csv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("16_indovina-numero-csv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

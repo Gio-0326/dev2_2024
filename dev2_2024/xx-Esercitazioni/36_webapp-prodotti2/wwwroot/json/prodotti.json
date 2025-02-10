@@ -4,76 +4,143 @@
     "Nome": "pasta",
     "Prezzo": 2.0,
     "Dettaglio": "pasta",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 9,
     "Nome": "pasta",
     "Prezzo": 2.0,
-    "Dettaglio": "pasta",
-    "Immagine": null
+    "Dettaglio": "past",
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 10,
     "Nome": "pasta",
     "Prezzo": 3.0,
     "Dettaglio": "pane",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 11,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 12,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 13,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 14,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 15,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 16,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 17,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "0001-01-01T00:00:00"
   },
   {
     "Id": 18,
     "Nome": "Fanta",
     "Prezzo": 2.3,
     "Dettaglio": "Dettaglio3",
-    "Immagine": null
+    "Categoria": null,
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "2025-02-10T11:41:58.9131928+01:00"
+  },
+  {
+    "Id": 19,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Categoria": "Cucina",
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "2025-02-10T11:51:26.1675567+01:00"
+  },
+  {
+    "Id": 20,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Categoria": "Cucina",
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "2025-02-10T11:51:33.2156727+01:00"
+  },
+  {
+    "Id": 21,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Categoria": "Casa",
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "2025-02-10T11:52:21.4597525+01:00"
+  },
+  {
+    "Id": 22,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Categoria": "Cucina",
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "2025-02-10T12:01:18.229501+01:00"
+  },
+  {
+    "Id": 23,
+    "Nome": "Fanta",
+    "Prezzo": 2.3,
+    "Dettaglio": "Dettaglio3",
+    "Categoria": "Cucina",
+    "Immagine": "https://www.dummyimage.com/600x400/000/fff",
+    "Data": "2025-02-10T12:15:40.1191765+01:00"
   }
 ]
