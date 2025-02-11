@@ -1,0 +1,31 @@
+@page
+@model ProdottiModel
+@*using Prodotti*@
+
+@{
+    ViewData["Title"] = "Prodotti";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome Prodotto</th>
+            <th>Prezzo</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prodotto in Model.Prodotti)
+        {
+            <tr>
+                <td>@prodotto.Id</td>
+                <td>@prodotto.Nome</td>
+                <td>@prodotto.Prezzo</td>
+                <td>@prodotto.CategoriaNome</td>
+            </tr>
+        }
+    </tbody>
+</table>
