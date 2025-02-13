@@ -32,7 +32,7 @@ public class ProdottiModel : PageModel
 
         // uso il reader come un cursore per scorrere i record restituiti dalla query
         using var reader = command.ExecuteReader();
-
+        
         // leggo i record restituiti dalla query finchè ce ne sono
         while (reader.Read())
         {

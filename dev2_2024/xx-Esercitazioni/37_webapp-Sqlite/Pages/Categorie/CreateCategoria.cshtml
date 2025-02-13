@@ -1,0 +1,19 @@
+@page
+@model CreateCategoriaModel
+
+@{
+    ViewData["Title"] = "Crea Nuova Categoria";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Categoria.Nome"></label>
+        <input asp-for="Categoria.Nome" class="form-control" />
+        <span asp-validation-for="Categoria.Nome" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary my-3">Salva</button>
+    <a asp-page="Categorie" class="btn btn-secondary">Annulla</a>
+</form>

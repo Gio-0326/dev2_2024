@@ -1,0 +1,6 @@
+@*Pages/Shared/ProductSearch.cshtml*@
+<form method="get" asp-page="/Prodotti/Search" class="d-flex">
+    <input type="text" name="q" class="form-control me-2" placeholder="Cerca prodotto..."
+        value="@Context.Request.Query["q"]" />
+        <button type="submit" class="btn btn-outline-success">Cerca</button>
+</form>

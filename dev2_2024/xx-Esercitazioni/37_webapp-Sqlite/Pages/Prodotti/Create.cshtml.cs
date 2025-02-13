@@ -20,7 +20,7 @@ public class CreateModel : PageModel
 
     public IActionResult OnPost()
     {
-        // controllo se il modell è valido cioè se i dati inseriti dall'utente rispettano le regole di validazione
+        // controllo se il model è valido cioè se i dati inseriti dall'utente rispettano le regole di validazione
         // se il modello non e valido ritorno la pagina con gli errori
         if (!ModelState.IsValid)
         {
@@ -33,6 +33,24 @@ public class CreateModel : PageModel
         using var connection = DatabaseInitializer.GetConnection();
         // apro la connessione
         connection.Open();
+
+        // Verifico se esiste già una categoria con lo stesso nome
+        var checkSql = "SELECT COUNT(1) FROM Prodotti WHERE Nome = @nome"; // Conta quante righe nella tabella 'Prodotti' hanno un 'Nome' uguale al parametro @nome
+        using var checkCommand = new SQLiteCommand(checkSql, connection);
+        checkCommand.Parameters.AddWithValue("@nome", Prodotto.Nome);
+
+        // dato che count di sql è un valore numerico, posso usare execute scalar per ottenere il valore
+        // execute scalar ritorna un oggetto quindi faccio il casting a long per ottenere il valore numerico
+        var count = (long)checkCommand.ExecuteScalar();
+
+        if (count > 0)
+        {
+            // Aggiungo un errore di validazione se il prodotto esiste già
+            // ModelState è un oggetto che contiene gli errori di validazione per il modello corrente (nel contesto di una pagina o di un form).
+            // AddModelError è un metodo in ASP.NET (sia MVC che Razor Pages) che permette di aggiungere un errore di validazione al ModelState.
+            ModelState.AddModelError("Prodotto.Nome", "Il prodotto con questo nome esiste già.");
+            return Page();
+        }
 
         // creo la query sql per inserire un nuovo prodotto usando i parametri
         // i parametri servono in modo da evitare sql injection
@@ -59,7 +77,7 @@ public class CreateModel : PageModel
 
     // metodo per caricare le categorie
 
-    private void CaricaCategorie()
+    public void CaricaCategorie()
     {
         using var connection = DatabaseInitializer.GetConnection();
         connection.Open();

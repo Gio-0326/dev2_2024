@@ -1,0 +1,32 @@
+@page 
+@model DettagliModel
+
+@{
+    ViewData["Title"] = "Dettaglio Prodotto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Categoria</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+                <td>@Model.Prodotto.Id</td>
+                <td>@Model.Prodotto.Nome</td>
+                <td>@Model.Prodotto.Prezzo</td>
+                <td>@Model.Prodotto.CategoriaNome</td>
+                <td>
+                     <a asp-page="Edit" class="btn btn-secondary" asp-route-id="@Model.Prodotto.Id">Edit</a>
+                     <a asp-page="Delete" class="btn btn-secondary" asp-route-id="@Model.Prodotto.Id">Delete</a>
+                </td>
+            </tr>
+    </tbody>
+</table>

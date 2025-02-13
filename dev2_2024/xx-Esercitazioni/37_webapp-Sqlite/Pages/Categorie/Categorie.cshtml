@@ -1,0 +1,31 @@
+@page
+@model CategorieModel
+
+@{
+    ViewData["Title"] = "Categorie";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome Categoria</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categoria in Model.Categorie)
+        {
+            <tr>
+                <td>@categoria.Id</td>
+                <td>@categoria.Nome</td>
+                <td>
+                    <a asp-page="EditCategoria" class="btn btn-warning" asp-route-id="@categoria.Id">Modifica</a>
+                    <a asp-page="DeleteCategoria" class="btn btn-danger" asp-route-id="@categoria.Id">Elimina</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

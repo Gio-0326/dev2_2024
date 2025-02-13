@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/_37_webapp_Sqlite.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="bg-dark text-light">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -31,7 +31,16 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Prodotti/Create">Aggiungi Prodotto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Categorie/Categorie">Categorie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Categorie/CreateCategoria">Aggiungi Categoria</a>
+                        </li>
                     </ul>
+                    @* Inseriamo la partial view per la ricerca dei prodotti*@
+                    <div class="d-flex">
+                        @await Html.PartialAsync("ProductSearch")
                 </div>
             </div>
         </nav>

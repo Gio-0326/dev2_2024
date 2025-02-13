@@ -1,0 +1,20 @@
+@page
+@model DeleteCategoriaModel
+@{
+    ViewData["Title"] = "Elimina Categoria";
+    ViewData["ReturnUrl"] = Request.Headers["Referer"].ToString();  <!-- Salva l'URL di ritorno -->
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <input type="hidden" asp-for="Categoria.Id" />
+        <label>Nome Categoria</label>
+        <input type="text" value="@Model.Categoria.Nome" class="form-control" readonly />
+    </div>
+
+    <p>Sei sicuro di voler eliminare questa categoria?</p>
+    <button type="submit" class="btn btn-danger my-3">Elimina</button>
+    <a asp-page="Categorie" class="btn btn-secondary">Annulla</a>
+</form>
