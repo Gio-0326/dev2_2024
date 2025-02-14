@@ -1,0 +1,21 @@
+
+@using _37_webapp_Sqlite.Models
+@model List<ProdottoViewModel>
+<h3>Prodotti Recenti</h3>
+@if (Model != null && Model.Any())
+{
+    <ul class="list-group">
+        @foreach (var prodotto in Model)
+        {
+            <li class="list-group-item">
+                <a asp-asp-page="/Prodotti/Dettagli" asp-route-id="@prodotto.Id" class="text-dark"><strong>@prodotto.Nome</strong></a>
+                <span class="text-muted"> @prodotto.Prezzo € <br /></span>
+                <span class="text-muted">@prodotto.CategoriaNome</span>
+            </li>
+        }
+    </ul>
+} 
+else
+{
+    <p>Nessun prodotto trovato.</p>
+}   

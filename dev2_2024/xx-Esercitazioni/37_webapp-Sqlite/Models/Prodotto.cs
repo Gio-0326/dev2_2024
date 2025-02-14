@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+namespace _37_webapp_Sqlite.Models;
 public class Prodotto
 {
     public int Id { get; set; }
@@ -8,6 +9,7 @@ public class Prodotto
      [Required(ErrorMessage = "Il prezzo è obbligatorio.")]
      [Range(0.01, double.MaxValue, ErrorMessage = "Il prezzo deve essere maggiore di 0.")]
     public double Prezzo { get; set; }
+    
     [Required(ErrorMessage = "La categoria è obbligatoria.")]
     public int CategoriaId { get; set; }
 }

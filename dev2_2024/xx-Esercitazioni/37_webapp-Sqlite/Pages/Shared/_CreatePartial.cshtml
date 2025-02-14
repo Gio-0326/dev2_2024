@@ -1,7 +1,8 @@
+@using _37_webapp_Sqlite.Models
 @{
-    Prodotto Prodotto = Model.Prodotto;
-    List<SelectListItem> Categorie = Model.CategorieSelectList;
-
+    Prodotto Prodotto = Model.Prodotto; // oggetto che rappresenta il prodotto che verrà inserito/modificato. Viene ottenuto dal modello (Model.Prodotto).
+    List<SelectListItem> Categorie = Model.CategorieSelectList; // È una lista di oggetti SelectListItem che contiene le categorie di prodotti da visualizzare nel campo select. 
+                                                                //Questi vengono recuperati dal modello (Model.CategorieSelectList).
 }
 <tr>
     <td> # </td>

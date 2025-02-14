@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-
+namespace _37_webapp_Sqlite.Models;
 public class Categoria
 {
     public int Id { get; set; }

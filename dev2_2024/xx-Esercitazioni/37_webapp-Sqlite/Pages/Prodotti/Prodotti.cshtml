@@ -1,14 +1,17 @@
 @page
+@using _37_webapp_Sqlite.Models
 @model ProdottiModel
-@*using Prodotti*@
+
 
 @{
     ViewData["Title"] = "Prodotti";
-    CreateModel createModel = new();
+    CreateModel createModel = new CreateModel();
     createModel.CaricaCategorie();
 }
 
 <h1>@ViewData["Title"]</h1>
+
+
 <form method="post" asp-page="Create">
 <table class="table text-white">
     <thead>
@@ -21,7 +24,7 @@
         </tr>
     </thead>
     <tbody>
-       <partial name="_CreatePartial" model="@createModel"/>
+       @{ Html.RenderPartial("_CreatePartial", createModel); }
         @foreach (var prodotto in Model.Prodotti)
         {
             <tr>

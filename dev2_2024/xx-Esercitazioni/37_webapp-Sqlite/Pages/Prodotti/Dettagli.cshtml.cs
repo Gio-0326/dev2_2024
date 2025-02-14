@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Data.SQLite;
-
+namespace _37_webapp_Sqlite.Models;
 public class DettagliModel : PageModel
 {
     public ProdottoViewModel Prodotto { get; set; }

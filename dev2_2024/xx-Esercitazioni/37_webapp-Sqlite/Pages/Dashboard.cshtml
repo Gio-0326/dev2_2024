@@ -1,0 +1,26 @@
+@page 
+@using _37_webapp_Sqlite.Models
+@model DashboardModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+    
+}
+
+<h1>Dashboard</h1>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        @await Html.PartialAsync("_ProdottiCostosi", Model.ProdottiCostosi)
+    </div>
+    
+    <div class="col-md-4">
+         @await Html.PartialAsync("_ProdottiRecenti", Model.ProdottiRecenti)
+    </div>
+    
+    <div class="col-md-4">
+        @await Html.PartialAsync("_ProdottiCategoria", Model.ProdottiCategoria)
+    </div>
+</div>
+
+    

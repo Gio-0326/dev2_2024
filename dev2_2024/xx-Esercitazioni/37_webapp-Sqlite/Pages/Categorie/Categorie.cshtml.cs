@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc; // using in modo da usare IActionResult
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering; // using in modo da usare SelectListItem
 using System.Data.SQLite;
+namespace _37_webapp_Sqlite.Models;
 public class CategorieModel : PageModel
 {
     public List<Categoria> Categorie { get; set; } = new List<Categoria>();

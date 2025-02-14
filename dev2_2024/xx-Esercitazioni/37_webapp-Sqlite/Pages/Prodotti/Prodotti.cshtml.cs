@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SQLite;
+namespace _37_webapp_Sqlite.Models;
 // namespace 37_webapp-SQLite.Pages.Prodotti // dichiaro
 public class ProdottiModel : PageModel
 {
@@ -7,9 +8,10 @@ public class ProdottiModel : PageModel
     // creo una lista di prodotti view model per contenere i dati dei prodotti
 
     public List<ProdottoViewModel> Prodotti { get; set; } = new List<ProdottoViewModel>();
-
+    
     public void OnGet()
     { 
+        
         // invoco il metodo GetConnection per ottenere la connessione al db
         using var connection = DatabaseInitializer.GetConnection();
         // apro la connessione
@@ -51,6 +53,15 @@ public class ProdottiModel : PageModel
             });
             
         }
+
+        // Prodotti più costosi (Top 5)
+        //ProdottiCostosi = Prodotti.OrderByDescending(p => p.Prezzo).Take(5).ToList();
+
+        // Prodotti più recenti (Top 5)
+        //ProdottiRecenti = Prodotti.OrderByDescending(p => p.DataAggiunta).Take(5).ToList();
+
+        // Prodotti elettronici
+        //ProdottiElettronica = Prodotti.Where(p => p.CategoriaNome.Equals("Elettronica", StringComparison.OrdinalIgnoreCase)).ToList();
     }
 }
 
