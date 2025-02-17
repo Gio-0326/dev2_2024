@@ -1,0 +1,17 @@
+@using _37_webapp_Sqlite.Models
+@{
+    Categoria Categoria = Model.Categoria; // oggetto che rappresenta il prodotto che verrà inserito/modificato. Viene ottenuto dal modello (Model.Prodotto).
+}
+<tr>
+    <td> # </td>
+    <td>
+        <input asp-for="@Categoria.Nome" class="form-control" />
+        <span asp-validation-for="@Categoria.Nome" class="text-danger"></span>
+    </td>
+    <td>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-success">Aggiungi</button>
+            <a asp-page="Prodotti" class="btn btn-secondary">Annulla</a>
+        </div>
+    </td>
+</tr>

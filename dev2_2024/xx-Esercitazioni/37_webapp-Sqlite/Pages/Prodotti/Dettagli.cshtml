@@ -25,8 +25,9 @@
                 <td>@Model.Prodotto.Prezzo</td>
                 <td>@Model.Prodotto.CategoriaNome</td>
                 <td>
-                     <a asp-page="Edit" class="btn btn-secondary" asp-route-id="@Model.Prodotto.Id">Edit</a>
-                     <a asp-page="Delete" class="btn btn-secondary" asp-route-id="@Model.Prodotto.Id">Delete</a>
+                     <a asp-page="Edit" class="btn btn-warning" asp-route-id="@Model.Prodotto.Id">Edit</a>
+                     <a asp-page="Delete" class="btn btn-danger" asp-route-id="@Model.Prodotto.Id">Delete</a>
+                    <a asp-page="Prodotti" class="btn btn-secondary">Annulla</a>
                 </td>
             </tr>
     </tbody>

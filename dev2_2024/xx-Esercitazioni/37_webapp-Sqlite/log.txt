@@ -1,0 +1,162 @@
+2025-02-17 14:34:04 - Exception: SQL logic error
+near "INSER": syntax error
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 18
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 38
+2025-02-17 14:34:07 - Exception: SQL logic error
+near "INSER": syntax error
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 18
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 38
+2025-02-17 14:34:09 - Exception: SQL logic error
+near "INSER": syntax error
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 18
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 38
+2025-02-17 14:34:20 - Exception: SQL logic error
+near "INSER": syntax error
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 18
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 38
+2025-02-17 14:35:31 - Exception: SQL logic error
+no such table: Prodott
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 18
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 38
+2025-02-17 14:35:32 - Exception: SQL logic error
+no such table: Prodott
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 18
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 38
+2025-02-17 14:36:08 - Exception: SQL logic error
+no such table: Prodott
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 18
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 38
+2025-02-17 14:52:07 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 14:52:26 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 14:52:28 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 14:54:43 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:03:16 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:03:18 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:03:20 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:03:21 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:03:22 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:04:50 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:04:51 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:07:12 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26
+2025-02-17 15:07:13 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetString(Int32 i)
+   at _37_webapp_Sqlite.Models.SearchModel.<>c.<OnGet>b__8_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 28
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 60
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 26

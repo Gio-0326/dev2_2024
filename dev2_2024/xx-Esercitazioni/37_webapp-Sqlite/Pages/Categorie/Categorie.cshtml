@@ -4,6 +4,7 @@
 
 @{
     ViewData["Title"] = "Categorie";
+    CreateCategoriaModel createCategoriaModel= new CreateCategoriaModel();
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -17,6 +18,7 @@
         </tr>
     </thead>
     <tbody>
+        @{ Html.RenderPartial("_CategoriaPartial", createCategoriaModel); }
         @foreach (var categoria in Model.Categorie)
         {
             <tr>
