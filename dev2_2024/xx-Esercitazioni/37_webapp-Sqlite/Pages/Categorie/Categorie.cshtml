@@ -8,7 +8,7 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-
+<form method="post" asp-page="CreateCategoria">
 <table class="table text-white">
     <thead>
         <tr>
@@ -25,10 +25,13 @@
                 <td>@categoria.Id</td>
                 <td>@categoria.Nome</td>
                 <td>
-                    <a asp-page="EditCategoria" class="btn btn-warning" asp-route-id="@categoria.Id">Modifica</a>
-                    <a asp-page="DeleteCategoria" class="btn btn-danger" asp-route-id="@categoria.Id">Elimina</a>
+                    <div class="btn-group">
+                        <a asp-page="EditCategoria" class="btn btn-warning" asp-route-id="@categoria.Id">Modifica</a>
+                        <a asp-page="DeleteCategoria" class="btn btn-danger" asp-route-id="@categoria.Id">Elimina</a>
+                    </div>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+</form>
