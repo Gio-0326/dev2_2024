@@ -26,14 +26,14 @@ public class EditModel : PageModel
                 },
                 cmd =>
                 {
-                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@id", id); // Aggiungiamo l'id del prodotto come parametro alla query
                 }
             );
-            Prodotto = Prodotti.First();
+            Prodotto = Prodotti.First();  // Assegniamo il primo risultato alla proprietà Prodotto
         }
         catch (Exception ex)
         {
-            SimpleLogger.Log(ex);
+            SimpleLogger.Log(ex);  // Se c'è un errore, lo registriamo nei log e ritorniamo un errore "Not Found"
             return NotFound();
         }
         CaricaCategorie();

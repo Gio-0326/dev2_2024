@@ -10,7 +10,7 @@ public class ProdottiModel : PageModel
     // creo una lista di prodotti view model per contenere i dati dei prodotti
 
     public List<ProdottoViewModel> Prodotti { get; set; } = new List<ProdottoViewModel>();
-
+    public int TotaleProdotti { get; set; }
     public void OnGet()
     {
         try
@@ -29,6 +29,15 @@ public class ProdottiModel : PageModel
 
         }
         catch (Exception ex)
+        {
+            SimpleLogger.Log(ex);
+        }
+
+        try
+        {
+            TotaleProdotti = DbUtils.ExecuteScalar<int>("SELECT COUNT (*) FROM Prodotti");
+        }
+        catch(Exception ex)
         {
             SimpleLogger.Log(ex);
         }

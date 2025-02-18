@@ -9,6 +9,7 @@ public static class DbUtils
     /// <param name="sql">La query SQL.</param>
     /// <param name="setupParametres">Opzionale: callback per aggiungere parametri al comando.</param>
     /// <returns>Il numero di righe interessate.</returns>
+    // Uso Action per passare un metodo come parametro (in questo caso command) 
     public static int ExecuteNonQuery(string sql, Action<SQLiteCommand> setupParametres = null)
     {
         using var connection = DatabaseInitializer.GetConnection();

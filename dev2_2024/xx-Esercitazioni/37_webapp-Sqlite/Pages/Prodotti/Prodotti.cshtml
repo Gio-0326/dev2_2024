@@ -1,5 +1,6 @@
 @page
 @using _37_webapp_Sqlite.Models
+@using _37_webapp_Sqlite.Utilities
 @model ProdottiModel
 
 
@@ -11,7 +12,7 @@
 
 <h1>@ViewData["Title"]</h1>
 
-
+<h1>Totale prodotti: @Model.TotaleProdotti</h1>
 <form method="post" asp-page="Create">
 <table class="table text-white">
     <thead>
@@ -30,7 +31,7 @@
             <tr>
                 <td>@prodotto.Id</td>
                 <td>@prodotto.Nome</td>
-                <td>@prodotto.Prezzo</td>
+                <td>@PriceFormatter.Format(prodotto.Prezzo)</td>
                 <td>@prodotto.CategoriaNome</td>
                 <td>
                     <div class="btn-group">

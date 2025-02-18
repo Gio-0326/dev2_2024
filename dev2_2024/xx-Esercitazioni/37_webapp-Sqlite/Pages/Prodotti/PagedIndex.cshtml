@@ -1,0 +1,36 @@
+@page
+@model PageIndexModel
+@using _37_webapp_Sqlite.Utilities
+@{
+    ViewData["Title"] = "Prodotti Paginati";
+    // Configuriamo il modello per la paginazione.
+    var paginationModel = new PaginationModel
+    {
+        PageIndex = Model.Prodotti.PageIndex,
+        TotalPages = Model.Prodotti.TotalPages,
+        PageUrl = page => Url.Page("PagedIndex", new { pageIndex = page })
+    };
+}
+
+<h1>Prodotti Paginati</h1>
+
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prodotto in Model.Prodotti)
+        {
+            <tr>
+                <td>@prodotto.Nome</td>
+                <td>@PriceFormatter.Format(prodotto.Prezzo)</td>
+                <td>@prodotto.CategoriaNome</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@await Html.PartialAsync("_Pagination", paginationModel)
