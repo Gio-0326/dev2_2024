@@ -1,10 +1,18 @@
 @page
 @using _37_webapp_Sqlite.Models
+@using _37_webapp_Sqlite.Utilities
 @model CategorieModel
 
 @{
     ViewData["Title"] = "Categorie";
     CreateCategoriaModel createCategoriaModel= new CreateCategoriaModel();
+    
+    var paginationModel = new PaginationModel
+    {
+        PageIndex = Model.Categories.PageIndex,
+        TotalPages = Model.Categories.TotalPages,
+        PageUrl = page => Url.Page("Categorie", new { pageIndex = page })
+    };
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -19,7 +27,7 @@
     </thead>
     <tbody>
         @{ Html.RenderPartial("_CategoriaPartial", createCategoriaModel); }
-        @foreach (var categoria in Model.Categorie)
+        @foreach (var categoria in Model.Categories)
         {
             <tr>
                 <td>@categoria.Id</td>
@@ -34,4 +42,5 @@
         }
     </tbody>
 </table>
+@await Html.PartialAsync("_Pagination", paginationModel)
 </form>

@@ -171,3 +171,229 @@ Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLi
    at System.Data.SQLite.SQLiteCommand.ExecuteReader()
    at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 57
    at _37_webapp_Sqlite.Models.DeleteModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Delete.cshtml.cs:line 19
+2025-02-19 10:14:16 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:15:39 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:18:15 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:18:49 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:20:28 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:20:34 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:20:35 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:20:37 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:20:44 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:20:50 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:20:55 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:40:46 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:42:14 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:53:46 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 10:54:50 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 11:22:20 - Exception: SQL logic error
+no such column: p.Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.CategorieModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Categorie\Categorie.cshtml.cs:line 28
+2025-02-19 13:08:49 - Exception: unknown error
+Insufficient parameters supplied to the command
+Stack Trace:    at System.Data.SQLite.SQLiteStatement.BindParameter(Int32 index, SQLiteParameter param)
+   at System.Data.SQLite.SQLiteStatement.BindParameters()
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q, Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 31
+2025-02-19 13:09:18 - Exception: unknown error
+Insufficient parameters supplied to the command
+Stack Trace:    at System.Data.SQLite.SQLiteStatement.BindParameter(Int32 index, SQLiteParameter param)
+   at System.Data.SQLite.SQLiteStatement.BindParameters()
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q, Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 31
+2025-02-19 13:13:20 - Exception: unknown error
+Insufficient parameters supplied to the command
+Stack Trace:    at System.Data.SQLite.SQLiteStatement.BindParameter(Int32 index, SQLiteParameter param)
+   at System.Data.SQLite.SQLiteStatement.BindParameters()
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q, Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 31
+2025-02-19 13:15:50 - Exception: SQL logic error
+no such column: p.Nome
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q, Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 31

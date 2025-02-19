@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 public class PageIndexModel : PageModel
 {
-    public PaginatedList<ProdottoViewModel> Prodotti { get; set; }
+    public PaginatedList<ProdottoViewModel> Products { get; set; }
     public int PageSize { get; set; } = 5; // Numero di prodotti per pagina
     public void OnGet(int? pageIndex)
     {
@@ -38,6 +38,6 @@ public class PageIndexModel : PageModel
         );
 
         // Crea l'oggetto paginato
-        Prodotti = new PaginatedList<ProdottoViewModel>(items, totalCount, currentPage, PageSize);
+        Products = new PaginatedList<ProdottoViewModel>(items, totalCount, currentPage, PageSize);
     }
 }

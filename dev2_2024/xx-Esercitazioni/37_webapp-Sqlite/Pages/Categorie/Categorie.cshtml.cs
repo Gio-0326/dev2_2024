@@ -7,19 +7,33 @@ namespace _37_webapp_Sqlite.Models;
 public class CategorieModel : PageModel
 {
     public List<Categoria> Categorie { get; set; } = new List<Categoria>();
-
-    public void OnGet()
+    public PaginatedList<Categoria> Categories { get; set; }
+    public int PageSize { get; set; } = 5; 
+    public void OnGet(int? pageIndex)
     {
         try
         {
-            Categorie = DbUtils.ExecuteReader(
-                "SELECT Id, Nome FROM Categorie",
+            int currentPage = pageIndex ?? 1;
+            // Recupero il numero totale di prodotti
+            int totalCount = DbUtils.ExecuteScalar<int>("SELECT COUNT(*) FROM Categorie");
+            // Calcola l'offset per la query
+            int offset = (currentPage - 1) * PageSize;
+
+            string sql = $@"SELECT c.Id, c.Nome 
+            FROM Categorie c
+            ORDER BY c.Id
+            LIMIT {PageSize} OFFSET {offset}";
+
+            // Utilizzo di DbUtils per leggere la lista delle categorie
+            List<Categoria> items = DbUtils.ExecuteReader(sql,
                 reader => new Categoria
                 {
                     Id = reader.GetInt32(0),
                     Nome = reader.GetString(1)
                 }
             );
+             // Crea l'oggetto paginato
+            Categories = new PaginatedList<Categoria>(items, totalCount, currentPage, PageSize);
         }
         catch (Exception ex)
         {

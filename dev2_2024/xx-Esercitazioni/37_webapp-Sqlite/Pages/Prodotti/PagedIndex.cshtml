@@ -7,8 +7,8 @@
     // Configuriamo il modello per la paginazione.
     var paginationModel = new PaginationModel
     {
-        PageIndex = Model.Prodotti.PageIndex,
-        TotalPages = Model.Prodotti.TotalPages,
+        PageIndex = Model.Products.PageIndex,
+        TotalPages = Model.Products.TotalPages,
         PageUrl = page => Url.Page("PagedIndex", new { pageIndex = page })
     };
 }
@@ -24,7 +24,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var prodotto in Model.Prodotti)
+        @foreach (var prodotto in Model.Products)
         {
             <tr>
                 <td>@prodotto.Nome</td>

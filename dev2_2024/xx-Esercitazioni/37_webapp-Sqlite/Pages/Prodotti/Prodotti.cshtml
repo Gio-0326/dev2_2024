@@ -8,6 +8,14 @@
     ViewData["Title"] = "Prodotti";
     CreateModel createModel = new CreateModel();
     createModel.CaricaCategorie();
+    // Configuriamo il modello per la paginazione.
+    var paginationModel = new PaginationModel
+    {
+        PageIndex = Model.Products.PageIndex,
+        TotalPages = Model.Products.TotalPages,
+        PageUrl = page => Url.Page("Prodotti", new { pageIndex = page })
+    };
+
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -26,7 +34,7 @@
     </thead>
     <tbody>
        @{ Html.RenderPartial("_CreatePartial", createModel); }
-        @foreach (var prodotto in Model.Prodotti)
+        @foreach (var prodotto in Model.Products)
         {
             <tr>
                 <td>@prodotto.Id</td>
@@ -44,4 +52,5 @@
         }
     </tbody>
 </table>
+@await Html.PartialAsync("_Pagination", paginationModel)
 </form>

@@ -1,51 +1,59 @@
-@using _37_webapp_Sqlite.Models
-@model PaginationModel
-<nav aria-label="Page navigation">
-    <ul class="pagination">
-        @if (Model.HasPreviousPage)
+@using _37_webapp_Sqlite.Models <!-- Importa il modello di dati PaginationModel -->
+<!-- Specifica che il modello per questa vista è PaginationModel -->
+@model PaginationModel 
+<nav aria-label="Page navigation"> <!-- Inizia una sezione di navigazione per le pagine -->
+    <ul class="pagination"> <!-- Crea un elenco non ordinato per la paginazione -->
+        
+        @if (Model.HasPreviousPage) 
         {
-            <li class="page-item">
-                <a class="page-link" href="@Model.PageUrl(Model.PageIndex - 1)" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span> @* &laquo; è equivalente al maggiore e minore*@
+            <li class="page-item"> <!-- Crea un elemento di lista per la pagina precedente -->
+                <a class="page-link" href="@Model.PageUrl(Model.PageIndex - 1)" aria-label="Previous"> <!-- Collega alla pagina precedente -->
+                    <span aria-hidden="true">&laquo;</span> @* &laquo; è equivalente al maggiore e minore*@ <!-- Aggiunge un'icona di freccia sinistra (laquo) -->
                 </a>
             </li>
         }
-        else
+       
+        else 
         {
-            <li class="page-item disabled">
-                <span class="page-link" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
+            <li class="page-item disabled"> <!-- Disabilita il link della pagina precedente -->
+                <span class="page-link" aria-label="Previous"> <!-- Aggiunge il testo della pagina precedente disabilitato -->
+                    <span aria-hidden="true">&laquo;</span> <!-- Aggiunge l'icona di freccia sinistra (laquo) senza link -->
                 </span>
             </li>
         }
-        @for (int i = 1; i <= Model.TotalPages; i++)
+        
+        @for (int i = 1; i <= Model.TotalPages; i++) 
         {
+           
             if (i == Model.PageIndex)
             {
-                <li class="page-item active">
-                    <span class="page-link">@i</span>
+                <li class="page-item active"> <!-- Crea l'elemento di lista per la pagina attiva -->
+                    <span class="page-link">@i</span> <!-- Mostra il numero della pagina attiva -->
                 </li>
             }
+          
             else
             {
-                <li class="page-item">
-                    <a class="page-link" href="@Model.PageUrl(i)">@i</a>
+                <li class="page-item"> <!-- Crea l'elemento di lista per una pagina non attiva -->
+                    <a class="page-link" href="@Model.PageUrl(i)">@i</a> <!-- Crea il link alla pagina specificata -->
                 </li>
             }
         }
+       
         @if (Model.HasNextPage)
         {
-            <li class="page-item">
-                <a class="page-link" href="@Model.PageUrl(Model.PageIndex + 1)" aria-label="Next">
-                    <span aria-hidden="true">&laquo;</span>
+            <li class="page-item"> <!-- Crea un elemento di lista per la pagina successiva -->
+                <a class="page-link" href="@Model.PageUrl(Model.PageIndex + 1)" aria-label="Next"> <!-- Collega alla pagina successiva -->
+                    <span aria-hidden="true">&laquo;</span> <!-- Aggiunge un'icona di freccia destra (&raquo;) -->
                 </a>
             </li>
         }
-        else
+       
+        else 
         {
-            <li class="page-item disabled">
-                <span class="page-link" aria-label="Next">
-                    <span aria-hidden="true">&laquo;</span>
+            <li class="page-item disabled"> <!-- Disabilita il link alla pagina successiva -->
+                <span class="page-link" aria-label="Next"> <!-- Aggiunge il testo della pagina successiva disabilitato -->
+                    <span aria-hidden="true">&laquo;</span> <!-- Aggiunge l'icona di freccia destra (&raquo;) senza link -->
                 </span>
             </li>
         }

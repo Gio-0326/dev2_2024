@@ -1,23 +1,36 @@
 @page
-@using _37_webapp_Sqlite.Models
+@using _37_webapp_Sqlite.Models  @*Importa il namespace contenente il modello della pagina (SearchModel, ProdottoViewModel, etc.)*@
+@using _37_webapp_Sqlite.Utilities @*Importa il namespace per utilità come la gestione della paginazione*@
+@*Imposta il modello di questa Razor Page come SearchModel, che contiene la logica della ricerca*@
 @model SearchModel
 
 @{
     ViewData["Title"] = "Cerca Prodotti";
+     // Configura il modello per la paginazione, che verrà usato per generare i link di navigazione tra le pagine
+    var paginationModel = new PaginationModel
+    {
+        PageIndex = Model.Products.PageIndex, // Imposta l'indice della pagina corrente
+        TotalPages = Model.Products.TotalPages, // Imposta il numero totale di pagine
+         // Definisce la funzione per ottenere l'URL di una pagina specifica, passando il termine di ricerca e il numero della pagina
+        PageUrl = page => Url.Page("Search", new { q = Model.SearchTerm, pageIndex = page })
+    };
 }
 
 <h1>Cerca Prodotti</h1>
-
+<!-- Form per la ricerca dei prodotti -->
 <form method="get" class="mb-3">
     <div class="input-group">
+        <!-- Campo di input per la ricerca, il valore predefinito è il termine di ricerca corrente -->
         <input type="text" name="q" value="@Model.SearchTerm" placeholder="Inserisci il Nome del prodotto..."
             class="form-control" />
+        <!-- Bottone di invio per eseguire la ricerca -->
         <button type="submit" class="btn btn-outline-primary">Cerca</button>
     </div>
 </form>
-
-@if (Model.Prodotti?.Any() == true)
+<!-- Verifica se ci sono risultati nella lista dei prodotti -->
+@if (Model.Products?.Any() == true)
 {
+     <!-- Se ci sono prodotti, mostra una tabella con i dettagli -->
     <table class="table text-white">
         <thead>
             <tr>
@@ -29,7 +42,8 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var prodotto in Model.Prodotti)
+            <!-- Cicla attraverso tutti i prodotti nella lista -->
+            @foreach (var prodotto in Model.Products)
             {
                 <tr>
                     <td>@prodotto.Id</td>
@@ -37,6 +51,7 @@
                     <td>@prodotto.Prezzo</td>
                     <td>@prodotto.CategoriaNome</td>
                     <td>
+                         <!-- Aggiungo un link per visualizzare i dettagli del prodotto -->
                         <a asp-page="Dettagli" asp-route-id="@prodotto.Id" class="btn btn-outline-info">Dettagli</a>
                     </td>
                 </tr>
@@ -46,5 +61,8 @@
 }
 else
 {
+     <!-- Se non ci sono risultati, mostra un messaggio informativo -->
     <a>Nessun prodotto trovato</a>
 }
+<!-- Includo il controllo di paginazione parziale, passando il modello di paginazione configurato prima -->
+@await Html.PartialAsync("_Pagination", paginationModel)
