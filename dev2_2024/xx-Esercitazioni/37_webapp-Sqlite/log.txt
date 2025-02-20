@@ -397,3 +397,435 @@ Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLi
    at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
    at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
    at _37_webapp_Sqlite.Models.SearchModel.OnGet(String q, Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Search.cshtml.cs:line 31
+2025-02-20 10:03:44 - Exception: SQL logic error
+no such table: Fornitori
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 20
+2025-02-20 10:07:36 - Exception: SQL logic error
+no such table: Fornitori
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 20
+2025-02-20 10:47:22 - Exception: SQL logic error
+no such table: Fornitori
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 20
+2025-02-20 10:47:27 - Exception: SQL logic error
+no such table: Fornitori
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 20
+2025-02-20 10:47:48 - Exception: SQL logic error
+no such table: Fornitori
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteScalar[T](String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 35
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 20
+2025-02-20 11:50:28 - Exception: SQL logic error
+no such column: f.Indirizzo
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 32
+2025-02-20 11:50:51 - Exception: SQL logic error
+no such column: f.Indirizzo
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 32
+2025-02-20 12:05:02 - Exception: SQL logic error
+no such column: f.Indirizzo
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 29
+2025-02-20 12:21:47 - Exception: SQL logic error
+no such column: f.Indirizzo
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.FornitoriModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Fornitori\Fornitori.cshtml.cs:line 29
+2025-02-20 12:58:56 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 12:59:09 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 12:59:12 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 12:59:33 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 13:02:01 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 13:02:13 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 13:02:14 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 13:03:19 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 13:17:23 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 13:20:16 - Exception: SQL logic error
+table Prodotti has no column named FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteNonQuery(String sql, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 19
+   at _37_webapp_Sqlite.Models.CreateModel.OnPost() in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Create.cshtml.cs:line 41
+2025-02-20 13:22:46 - Exception: SQL logic error
+no such column: p.FornitoreId
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.ProdottiModel.OnGet(Nullable`1 pageIndex) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Prodotti.cshtml.cs:line 37
+2025-02-20 14:00:21 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 18
+2025-02-20 14:00:38 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 18
+2025-02-20 14:00:58 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 18
+2025-02-20 14:01:43 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 18
+2025-02-20 14:01:58 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 18
+2025-02-20 14:04:34 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:10:31 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:11:54 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:12:05 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:13:45 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:20:20 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:22:22 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:22:27 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:25:26 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:25:28 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:26:34 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:28:11 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:30:25 - Exception: SQL logic error
+ambiguous column name: Id
+Stack Trace:    at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader()
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 58
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:32:41 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetInt32(Int32 i)
+   at _37_webapp_Sqlite.Models.EditModel.<>c.<OnGet>b__12_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 25
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 61
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19
+2025-02-20 14:32:54 - Exception: Specified cast is not valid.
+Stack Trace:    at System.Data.SQLite.SQLiteDataReader.VerifyType(Int32 i, DbType typ)
+   at System.Data.SQLite.SQLiteDataReader.GetInt32(Int32 i)
+   at _37_webapp_Sqlite.Models.EditModel.<>c.<OnGet>b__12_0(SQLiteDataReader reader) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 25
+   at _37_webapp_Sqlite.Utilities.DbUtils.ExecuteReader[T](String sql, Func`2 converter, Action`1 setupParametres) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Utilities\DbUtils.cs:line 61
+   at _37_webapp_Sqlite.Models.EditModel.OnGet(Int32 id) in C:\Users\Dev2\Documents\DEV2_2024\dev2_2024\xx-Esercitazioni\37_webapp-Sqlite\Pages\Prodotti\Edit.cshtml.cs:line 19

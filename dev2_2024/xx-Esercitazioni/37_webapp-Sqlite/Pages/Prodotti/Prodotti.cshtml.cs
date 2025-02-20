@@ -26,9 +26,10 @@ public class ProdottiModel : PageModel
             int offset = (currentPage - 1) * PageSize;
 
             string sql = $@"
-            SELECT p.Id, p.Nome, p.Prezzo, c.Nome as CategoriaNome
+            SELECT p.Id, p.Nome, p.Prezzo, c.Nome as CategoriaNome, f.Nome as FornitoreNome
             FROM Prodotti p
             LEFT JOIN Categorie c ON p.CategoriaId = c.Id
+            LEFT JOIN Fornitori f ON p.FornitoreId = f.Id
             ORDER BY p.Id
             LIMIT {PageSize} OFFSET {offset}";
 
@@ -39,7 +40,8 @@ public class ProdottiModel : PageModel
                     Id = reader.GetInt32(0),
                     Nome = reader.GetString(1),
                     Prezzo = reader.GetDouble(2),
-                    CategoriaNome = reader.IsDBNull(3) ? "Nessuna" : reader.GetString(3)
+                    CategoriaNome = reader.IsDBNull(3) ? "Nessuna" : reader.GetString(3),
+                    FornitoreNome  = reader.IsDBNull(4) ? "Nessuna" : reader.GetString(4)
                 }
             );
             // Crea l'oggetto paginato

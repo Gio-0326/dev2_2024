@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Mvc; // using in modo da usare IActionResult
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering; // using in modo da usare SelectListItem
-namespace _37_webapp_Sqlite.Models;
 using _37_webapp_Sqlite.Utilities;
+namespace _37_webapp_Sqlite.Models;
+
 
 
 public class CreateModel : PageModel
@@ -14,10 +15,11 @@ public class CreateModel : PageModel
     // creo una lista di select list item per contenere le categorie
     // select list item è un oggetto che rappresenta un elemento di una select list
     public List<SelectListItem> CategorieSelectList { get; set; } = new List<SelectListItem>();
-
+    public List<SelectListItem> FornitoriSelectList { get; set; } = new List<SelectListItem>();
     public void OnGet()
     {
         CaricaCategorie();
+        CaricaFornitori();
     }
 
     public IActionResult OnPost()
@@ -27,7 +29,9 @@ public class CreateModel : PageModel
         // se il modello non e valido ritorno la pagina con gli errori
         if (!ModelState.IsValid)
         {
+            
             CaricaCategorie(); // carico le categorie se no quando si carica si carica senza categorie
+            CaricaFornitori();
             // page è un metodo di page model che restituisce un oggetto page result che rappresenta la pagina nella quale siamo
             return Page(); // se il modello non è valido ritorno la pagina
         }
@@ -35,12 +39,13 @@ public class CreateModel : PageModel
         try
         {
             DbUtils.ExecuteNonQuery(
-                "INSERT INTO Prodotti (Nome, Prezzo, CategoriaId) VALUES (@nome, @prezzo, @categoriaId)",
+                "INSERT INTO Prodotti (Nome, Prezzo, CategoriaId, FornitoreId) VALUES (@nome, @prezzo, @categoriaId, @fornitoreId)",
                 cmd =>
                 {
                     cmd.Parameters.AddWithValue("@nome", Prodotto.Nome);
                     cmd.Parameters.AddWithValue("@prezzo", Prodotto.Prezzo);
                     cmd.Parameters.AddWithValue("@categoriaId", Prodotto.CategoriaId);
+                    cmd.Parameters.AddWithValue("@fornitoreId", Prodotto.FornitoreId);
                 }
             );
         }
@@ -49,6 +54,7 @@ public class CreateModel : PageModel
             SimpleLogger.Log(ex);
             ModelState.AddModelError("", "Errore durante il salvataggio del prodotto.");
             CaricaCategorie();
+            CaricaFornitori();
             return Page();
         }
         return RedirectToPage("Prodotti");
@@ -107,6 +113,25 @@ public class CreateModel : PageModel
         {
             CategorieSelectList = DbUtils.ExecuteReader(
                 "SELECT Id, Nome FROM Categorie",
+                reader => new SelectListItem
+                {
+                    Value = reader.GetInt32(0).ToString(), // converto in stringa l'id cosi da poterlo usare come value
+                    Text = reader.GetString(1)
+                }
+            );
+        }
+        catch (Exception ex)
+        {
+            SimpleLogger.Log(ex);
+        }
+    }
+
+    public void CaricaFornitori()
+    {
+        try
+        {
+            FornitoriSelectList = DbUtils.ExecuteReader(
+                "SELECT Id, Nome FROM Fornitori",
                 reader => new SelectListItem
                 {
                     Value = reader.GetInt32(0).ToString(), // converto in stringa l'id cosi da poterlo usare come value

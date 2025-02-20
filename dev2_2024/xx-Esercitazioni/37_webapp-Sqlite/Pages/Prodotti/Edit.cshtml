@@ -25,14 +25,19 @@
         <input asp-for="Prodotto.Prezzo" class="form-control ">
          <span asp-validation-for="Prodotto.Prezzo" class="text-danger"></span>
     </div>
-
-
     <div class= "form-group">
         <label asp-for="Prodotto.CategoriaId"></label>
         <select asp-for="Prodotto.CategoriaId" class="form-control" asp-items="Model.CategorieSelectList">
             <option value="">--- Selezione Categoria --- </option>
             </select>
             <span asp-validation-for="Prodotto.CategoriaId" class="text-danger"></span>
+    </div>
+    <div class= "form-group">
+        <label asp-for="Prodotto.FornitoreId"></label>
+        <select asp-for="Prodotto.FornitoreId" class="form-control" asp-items="Model.FornitoriSelectList">
+            <option value="">--- Selezione Fornitore --- </option>
+            </select>
+            <span asp-validation-for="Prodotto.FornitoreId" class="text-danger"></span>
     </div>
     
     <button type= "submit" class="btn btn-primary my-3">Salva</button>

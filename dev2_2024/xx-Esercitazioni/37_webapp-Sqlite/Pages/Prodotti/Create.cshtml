@@ -31,6 +31,13 @@
         </select>
         <span asp-validation-for="Prodotto.CategoriaId" class="text-danger"></span>
     </div>
+    <div class="form-group">
+        <label asp-for="Prodotto.FornitoreId"></label>
+        <select asp-for="Prodotto.FornitoreId" class="form-control" asp-items="Model.FornitoriSelectList">
+            <option value="">-- Seleziona Fornitore --</option>
+        </select>
+        <span asp-validation-for="Prodotto.FornitoreId" class="text-danger"></span>
+    </div>
 
     <button type="submit" class="btn btn-primary my-3">Salva</button>
     <a asp-page="Prodotti" class="btn btn-secondary">Annulla</a>

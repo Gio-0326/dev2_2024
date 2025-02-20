@@ -10,19 +10,22 @@ public class EditModel : PageModel
     [BindProperty]
     public Prodotto Prodotto { get; set; }
     public List<SelectListItem> CategorieSelectList { get; set; } = new List<SelectListItem>();
+    public List<SelectListItem> FornitoriSelectList { get; set; } = new List<SelectListItem>();
     //passo l id come parametro perchè voglio modificare un prodottoesistente sul quale ho cliccato in precedenza
     public IActionResult OnGet(int id)
     {
         try
         {
             var Prodotti = DbUtils.ExecuteReader(
-                "SELECT Id, Nome, Prezzo, CategoriaId FROM Prodotti WHERE Id = @id",
+                @"SELECT * FROM Prodotti p 
+                WHERE p.Id = @id",
                 reader => new Prodotto
                 {
                     Id = reader.GetInt32(0),
                     Nome = reader.GetString(1),
                     Prezzo = reader.GetDouble(2),
-                    CategoriaId = reader.IsDBNull(3) ? 0 : reader.GetInt32(0)
+                    CategoriaId = reader.IsDBNull(3) ? 0 : reader.GetInt32(3),
+                    FornitoreId = reader.IsDBNull(4) ? 0 : reader.GetInt32(4)
                 },
                 cmd =>
                 {
@@ -37,6 +40,7 @@ public class EditModel : PageModel
             return NotFound();
         }
         CaricaCategorie();
+        CaricaFornitori();
         return Page();
     }
     /*using var connection = DatabaseInitializer.GetConnection();
@@ -80,6 +84,7 @@ public class EditModel : PageModel
         {
             //se il modello non è valido carico  e restiituisco la pagina
             CaricaCategorie();
+            CaricaFornitori();
             return Page();
 
         }
@@ -87,12 +92,13 @@ public class EditModel : PageModel
         try
         {
             DbUtils.ExecuteNonQuery(
-                "UPDATE Prodotti SET Nome = @nome, Prezzo = @prezzo, CategoriaId = @categoriaId WHERE Id = @id",
+                "UPDATE Prodotti SET Nome = @nome, Prezzo = @prezzo, CategoriaId = @categoriaId , FornitoreId = @fornitoreId WHERE Id = @id",
                 cmd =>
                 {
                     cmd.Parameters.AddWithValue("@nome", Prodotto.Nome);
                     cmd.Parameters.AddWithValue("@prezzo", Prodotto.Prezzo);
                     cmd.Parameters.AddWithValue("@categoriaId", Prodotto.CategoriaId);
+                    cmd.Parameters.AddWithValue("@fornitoreId", Prodotto.FornitoreId);
                     cmd.Parameters.AddWithValue("@id", Prodotto.Id);
                 }
             );
@@ -139,7 +145,27 @@ public class EditModel : PageModel
             SimpleLogger.Log(ex);
         }
     }
+
+    private void CaricaFornitori()
+    {
+        try
+        {
+            FornitoriSelectList = DbUtils.ExecuteReader(
+                "SELECT Id, Nome FROM Fornitori",
+                reader => new SelectListItem
+                {
+                    Value = reader.GetInt32(0).ToString(), // converto in stringa l'id cosi da poterlo usare come value
+                    Text = reader.GetString(1)
+                }
+            );
+        }
+        catch (Exception ex)
+        {
+            SimpleLogger.Log(ex);
+        }
+    }
 }
+
 /*Ottiene e apre una connessione al database.
 using var connection = DatabaseInitializer.GetConnection();
 connection.Open();

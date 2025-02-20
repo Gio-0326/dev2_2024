@@ -1,0 +1,25 @@
+@page
+@using _37_webapp_Sqlite.Models
+@model EditFornitoreModel
+@{
+    ViewData["Title"] = "Modifica Fornitore";
+}
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <input type="hidden" asp-for="Fornitore.Id" />
+        <label asp-for="Fornitore.Nome"></label>
+        <input asp-for="Fornitore.Nome" class="form-control" />
+        <span asp-validation-for="Fornitore.Nome" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary my-3">Salva</button>
+    <a asp-page="Fornitori" class="btn btn-secondary">Annulla</a>
+</form>

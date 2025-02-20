@@ -1,0 +1,21 @@
+@page
+@using _37_webapp_Sqlite.Models
+@model DeleteFornitoreModel
+@{
+    ViewData["Title"] = "Elimina Fornitore";
+    ViewData["ReturnUrl"] = Request.Headers["Referer"].ToString();  <!-- Salva l'URL di ritorno -->
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <input type="hidden" asp-for="Fornitore.Id" />
+        <label>Nome Fornitore</label>
+        <input type="text" value="@Model.Fornitore.Nome" class="form-control" readonly />
+    </div>
+
+    <p>Sei sicuro di voler eliminare questo fornitore?</p>
+    <button type="submit" class="btn btn-danger my-3">Elimina</button>
+    <a asp-page="Fornitori" class="btn btn-secondary">Annulla</a>
+</form>

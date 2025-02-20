@@ -1,0 +1,47 @@
+@page
+@using _37_webapp_Sqlite.Models
+@using _37_webapp_Sqlite.Utilities
+@model FornitoriModel
+
+@{
+    ViewData["Title"] = "Fornitori";
+    CreateFornitoreModel createFornitoreModel = new CreateFornitoreModel();
+
+    // Configuriamo il modello per la paginazione.
+    var paginationModel = new PaginationModel
+    {
+        PageIndex = Model.Fornitori.PageIndex,
+        TotalPages = Model.Fornitori.TotalPages,
+        PageUrl = page => Url.Page("Fornitori", new { pageIndex = page })
+    };
+}
+
+<h1>@ViewData["Title"]</h1>
+<form method="post" asp-page="CreateFornitore">
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome Fornitore</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ Html.RenderPartial("_FornitorePartial", createFornitoreModel); }
+        @foreach (var fornitore in Model.Fornitori)
+        {
+            <tr>
+                <td>@fornitore.Id</td>
+                <td>@fornitore.Nome</td>
+                <td>
+                    <div class="btn-group">
+                        <a asp-page="EditFornitore" class="btn btn-warning" asp-route-id="@fornitore.Id">Edit</a>
+                        <a asp-page="DeleteFornitore" class="btn btn-danger" asp-route-id="@fornitore.Id">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@await Html.PartialAsync("_Pagination", paginationModel)
+</form>

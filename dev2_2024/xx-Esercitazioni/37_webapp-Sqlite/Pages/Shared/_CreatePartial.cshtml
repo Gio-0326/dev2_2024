@@ -3,6 +3,7 @@
     Prodotto Prodotto = Model.Prodotto; // oggetto che rappresenta il prodotto che verrà inserito/modificato. Viene ottenuto dal modello (Model.Prodotto).
     List<SelectListItem> Categorie = Model.CategorieSelectList; // È una lista di oggetti SelectListItem che contiene le categorie di prodotti da visualizzare nel campo select. 
                                                                 //Questi vengono recuperati dal modello (Model.CategorieSelectList).
+    List<SelectListItem> Fornitori = Model.FornitoriSelectList;                                                            
 }
 <tr>
     <td> # </td>
@@ -19,6 +20,12 @@
             <option value="">-- Seleziona Categoria --</option>
         </select>
         <span asp-validation-for="@Prodotto.CategoriaId" class="text-danger"></span>
+    </td>
+    <td>
+        <select asp-for="@Prodotto.FornitoreId" class="form-control" asp-items="@Fornitori">
+            <option value="">-- Seleziona Fornitore --</option>
+        </select>
+        <span asp-validation-for="@Prodotto.FornitoreId" class="text-danger"></span>
     </td>
     <td>
         <div class="btn-group">
